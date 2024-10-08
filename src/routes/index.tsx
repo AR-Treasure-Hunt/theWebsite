@@ -1,15 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { Button } from '@/components/ui/button'
+import LandingPage from '@/pages/LandingPage'
 
 export const Route = createFileRoute('/')({
-  component: HomeComponent,
+  component: LandingPage,
 })
 
-function HomeComponent() {
-  return (
-    <div className="p-2 text-red-300">
-      <h3>Welcome Home!</h3>
-      <Button>Get Started</Button>
-    </div>
-  )
-}
