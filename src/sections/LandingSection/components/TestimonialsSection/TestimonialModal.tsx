@@ -1,7 +1,8 @@
-import ImageContainer from '../../../../components/ui/ImageContainer';
+import ImageContainer from "./ImageContainer";
+
 
 export interface TestimonialModalProps {
-  img?: string;
+  img: string;
   testimonial: string;
   name: string;
 }

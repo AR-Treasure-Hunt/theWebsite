@@ -17,7 +17,7 @@ function Footer() {
             </FooterTopContentWrapper>
             <FooterBottomContentWrapper>
                 <SocialHandles/>
-                <p className="text-[28px]">Copyright &#169; 2023 IT MEET. All rights reserved.</p>
+                <p className="text-[28px]">Copyright &#169; {new Date().getFullYear()} IT MEET. All rights reserved.</p>
             </FooterBottomContentWrapper>
         </div>
     )
