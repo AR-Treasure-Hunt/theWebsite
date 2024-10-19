@@ -17,11 +17,13 @@ body {
 
 /* Enable 3D perspective for the card flip effect */
 .wrapper {
+    
 	perspective: 900px; /* Sets the distance of the viewpoint for 3D effect */
 }
 
 /* Styling for the card itself */
 .single-card {
+    
 	text-align: center; /* Center the content inside the card */
 	transition: all 1.5s ease; /* Replacing the cubic-bezier with a smooth 'ease' transition */
 	transform-style: preserve-3d; /* Preserve 3D transformations for child elements */
@@ -48,19 +50,36 @@ body {
 .front {
 	cursor: pointer; /* Change the cursor to pointer to indicate interactivity */
 	height: 100%; /* Full height of the card */
-	background-image: url(test.jpg); /* Set a background image for the front side */
-	-webkit-backface-visibility: hidden; /* Hide the back face again for WebKit browsers */
+	width: 100%; /* Full width of the card */
+	background-color: #fff; /* Optional: Set a background color for contrast */
+	border-radius: 16px; /* Rounded corners */
+	-webkit-backface-visibility: hidden; /* Hide the back face for WebKit browsers */
 	backface-visibility: hidden; /* Hide the back face in 3D space */
-	border-radius: 50px; /* Rounded corners */
-	background-size: cover; /* Ensure the background image covers the entire card */
-	background-position: center center; /* Center the background image */
+	display: flex; /* Use flexbox for centering */
+	align-items: center; /* Center items vertically */
+	justify-content: center; /* Center items horizontally */
+	padding: 20px; /* Add padding to create space around the image */
+	box-sizing: border-box; /* Include padding in the total height and width */
 }
+
+.front::before {
+	content: ""; /* Create a pseudo-element for the background image */
+	background-image: url(test.jpg); /* Set the background image */
+	background-size: contain; /* Ensure the image fits within the space */
+	background-repeat: no-repeat; /* Prevent the image from repeating */
+	background-position: center; /* Center the image */
+	width: 90%; /* Full width of the padded area */
+	height: 100%; /* Full height of the padded area */
+	position: absolute; /* Position it absolutely within the parent */
+
+}
+
 
 /* Styling for the back side of the card */
 .back {
 	transform: rotateY(180deg); /* Rotate the back side to make it hidden initially */
 	position: absolute; /* Position the back side on top of the front */
-	border-radius: 50px; /* Rounded corners for the back side */
+	border-radius: 16px; /* Rounded corners for the back side */
 	height: 450px; /* Same height as the front */
 	background: #fff; /* White background for the back */
 }
