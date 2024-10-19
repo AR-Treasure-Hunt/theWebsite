@@ -23,7 +23,6 @@ body {
 
 /* Styling for the card itself */
 .single-card {
-    
 	text-align: center; /* Center the content inside the card */
 	transition: all 1.5s ease; /* Replacing the cubic-bezier with a smooth 'ease' transition */
 	transform-style: preserve-3d; /* Preserve 3D transformations for child elements */
@@ -74,6 +73,18 @@ body {
 
 }
 
+.back::before {
+	content: ""; /* Create a pseudo-element for the background image */
+	background-image: url(background.png); /* Set the background image */
+	background-size: contain; /* Ensure the image fits within the space */
+	background-repeat: no-repeat; /* Prevent the image from repeating */
+	background-position: center; /* Center the image */
+	width: 90%; /* Full width of the padded area */
+	height: 100%; /* Full height of the padded area */
+	position: absolute; /* Position it absolutely within the parent */
+
+}
+
 
 /* Styling for the back side of the card */
 .back {
@@ -82,6 +93,15 @@ body {
 	border-radius: 16px; /* Rounded corners for the back side */
 	height: 450px; /* Same height as the front */
 	background: #fff; /* White background for the back */
+    cursor: pointer; /* Change the cursor to pointer to indicate interactivity */
+	height: 100%; /* Full height of the card */
+	width: 100%; /* Full width of the card */
+
+	display: flex; /* Use flexbox for centering */
+	align-items: center; /* Center items vertically */
+	justify-content: center; /* Center items horizontally */
+	padding: 20px; /* Add padding to create space around the image */
+	box-sizing: border-box; /* Include padding in the total height and width */
 }
 
 /* Content styling inside the card (for both front and back) */
@@ -98,6 +118,8 @@ body {
 }
 /* Styling for the heading on the card */
 .content-para h2 {
+    color: white;
+
 	font-size: 35px; /* Large font size for the heading */
 	margin: 0; /* Remove margin around the heading */
 	font-weight: 300; /* Light font weight */
@@ -105,10 +127,19 @@ body {
 
 /* Styling for the subheading on the card */
 .content-para h4 {
+    color: white;
+
 	margin: 0; /* Remove margin around the subheading */
 }
 
+.content-para p {
+    color: #FBD9BE;
+}
+
+
 .socials {
+    color: white;
+
     position: absolute; /* Allow positioning relative to the parent */
     bottom: 20px; /* Adjust the distance from the bottom */
     right: 20px; /* Adjust the distance from the right */
