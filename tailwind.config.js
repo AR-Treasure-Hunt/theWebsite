@@ -7,6 +7,12 @@ export default {
 	],
 	theme: {
 		extend: {
+			screens: {
+				'sm': '640px',
+				'md': '768px',
+				'lg': '1024px',
+				'xl': '1440px',
+			  },
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
@@ -58,4 +64,3 @@ export default {
 	},
 	plugins: [require("tailwindcss-animate")],
 }
-

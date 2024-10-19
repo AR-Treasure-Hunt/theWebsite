@@ -85,8 +85,30 @@
   }
 }
 
-@layer components {
-  .content-container {
-    @apply max-w-[1440px] w-full mx-auto px-8;
+/* iPad Portrait */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .ipad-friendly {
+    padding-top: 8vh; /* Adjust padding as needed */
+    padding-left: 8vh; /* Adjust padding as needed */
+    padding-right: 8vh; /* Adjust padding as needed */
+  }
+  .responsive-image {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/* iPad Landscape */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .ipad-friendly {
+    padding-top: 8vh; /* Adjust padding as needed */
+    padding-left: 8vh; /* Adjust padding as needed */
+    padding-right: 8vh; /* Adjust padding as needed */
+  }
+  .responsive-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
