@@ -68,11 +68,46 @@ body {
 	background-size: contain; /* Ensure the image fits within the space */
 	background-repeat: no-repeat; /* Prevent the image from repeating */
 	background-position: center; /* Center the image */
-	width: 90%; /* Full width of the padded area */
-	height: 100%; /* Full height of the padded area */
+	width: 100px; /* Full width of the padded area */
+	height: 100px; /* Full height of the padded area */
 	position: absolute; /* Position it absolutely within the parent */
 
 }
+
+/* .front::after {
+    content: "\2660"; 
+    font-size: 45px; 
+    color: #702412; 
+    position: absolute; 
+    top: 20px; 
+    left: 30px; 
+    z-index: 20; 
+} */
+
+.card-letter {
+    position: absolute;
+    top: 19px;
+    left: 25px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #702412;
+    z-index: 21;
+  }
+
+  .card-symbol {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-size: 45px;
+    color: #702412;
+    z-index: 20;
+
+  }
+
+  .card-symbol::after {
+    content: "\2660"; /* Unicode for the spade symbol */
+  }
+
 
 .back::before {
 	content: ""; /* Create a pseudo-element for the background image */

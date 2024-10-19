@@ -7,7 +7,10 @@ const Team: React.FC = () => {
   return (
     <div className="wrapper">
       <div className="single-card">
-        <div className="front"></div>
+        <div className="front">
+        <div className="card-letter">K</div>
+        <div className="card-symbol"></div>
+        </div>
         <div className="back">
           <div className="content">
             <div className="content-para">
