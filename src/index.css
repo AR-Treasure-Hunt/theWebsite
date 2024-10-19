@@ -89,4 +89,10 @@
   .content-container {
     @apply max-w-[1440px] w-full mx-auto px-8;
   }
+
+  .ground-tile-bg {
+    width: 100%;
+    background-image: url("/images/ground_tile.png");
+    background-repeat: repeat;
+  }
 }
