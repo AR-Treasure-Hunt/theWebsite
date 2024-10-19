@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
-import { FaSmile } from 'react-icons/fa';
 
 // Interface for FAQ items
 interface FAQItem {
@@ -9,7 +8,6 @@ interface FAQItem {
 }
 
 // Sample FAQ data
-// TODO: Consider moving this data to a separate file or fetching from an API
 const faqData: FAQItem[] = [
   {
     question: "What is an AR treasure hunt?",
@@ -53,74 +51,19 @@ const FAQItem: React.FC<FAQItem> = ({ question, answer }) => {
   );
 };
 
-// Category section component
-const CategoryList: React.FC = () => {
-  // State to manage the selected category
-  const [selectedCategory, setSelectedCategory] = useState<string>("About the Event");
-
-  // List of categories
-  // TODO: Consider moving this to a configuration file or fetching from an API
-  const categories = [
-    "About the Event",
-    "Event Logistics",
-    "Participation Guidelines",
-    "Other",
-  ];
-
-  // Handler for category selection
-  const handleCategoryClick = (category: string) => {
-    setSelectedCategory(category);
-  };
-
+// Main FAQ Section
+const FAQSection: React.FC = () => {
   return (
-    <div className="w-full md:w-1/4 px-4">
-      <ul className="space-y-4 mt-8 md:mt-0">
-        {categories.map((category) => (
-          <li
-            key={category}
-            className={`flex items-center space-x-3 cursor-pointer ${
-              selectedCategory === category ? "text-[#884510]" : "text-[#FBD9BE]"
-            }`}
-            onClick={() => handleCategoryClick(category)}
-          >
-            {/* Smile icon for each category */}
-            <FaSmile
-              className={`${
-                selectedCategory === category ? "text-[#884510]" : "text-[#FBD9BE]"
-              } w-6 h-6`}
-            />
-            <span className={`font-bold ${selectedCategory === category ? "text-brown-600" : ""}`}>
-              {category}
-            </span>
-          </li>
+    <div className="max-w-7xl mx-auto my-8 px-4">
+      <h2 className="text-2xl font-bold mb-6 text-center">Frequently Asked Questions</h2>
+      <div className="space-y-2">
+        {/* Render FAQ items */}
+        {faqData.map((faq, index) => (
+          <FAQItem key={index} question={faq.question} answer={faq.answer} />
         ))}
-      </ul>
-    </div>
-  );
-};
-
-// Main FAQ Section with Category List
-const FAQSectionWithCategories: React.FC = () => {
-  return (
-    <div className="max-w-7xl mx-auto my-8 px-4 flex flex-col md:flex-row">
-      {/* Combined Section */}
-      <div className="flex flex-col md:flex-row w-full mt-8">
-        {/* Category Section */}
-        <CategoryList />
-
-        {/* FAQ Section */}
-        <div className="faq-section w-full md:w-3/4 px-4">
-          <h2 className="text-2xl font-bold mb-6 text-center">Frequently Asked Questions</h2>
-          <div className="space-y-2">
-            {/* Render FAQ items */}
-            {faqData.map((faq, index) => (
-              <FAQItem key={index} question={faq.question} answer={faq.answer} />
-            ))}
-          </div>
-        </div>
       </div>
     </div>
   );
 };
 
-export default FAQSectionWithCategories;
+export default FAQSection;
