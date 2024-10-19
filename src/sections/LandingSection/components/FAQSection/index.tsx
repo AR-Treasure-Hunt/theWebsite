@@ -35,7 +35,7 @@ const FAQItem: React.FC<FAQItem> = ({ question, answer }) => {
         className="flex justify-between items-center w-full text-left font-medium text-gray-900 focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span>{question}</span>
+         <span style={{ fontSize: '26px' }}>{question}</span>
         {/* ChevronDown icon that rotates when the item is open */}
         <ChevronDown
           className={`w-5 h-5 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`}
@@ -45,8 +45,7 @@ const FAQItem: React.FC<FAQItem> = ({ question, answer }) => {
       <div
         className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
       >
-        <p className="pt-4 pb-2 text-gray-600">{answer}</p>
-      </div>
+<p className="pt-4 pb-2 text-gray-600" style={{ fontSize: '20px' }}>{answer}</p>      </div>
     </div>
   );
 };
