@@ -10,12 +10,14 @@ const Team: React.FC = () => {
         <div className="front"></div>
         <div className="back">
           <div className="content">
+            <div className="content-para">
             <h2>Mark Jones</h2>
             <h4>Web Developer</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut molestias quaerat consectetur. Voluptas sed,
               aliquam reiciendis odio, labore quod itaque.
             </p>
+            </div>
             <p className="socials">
               <i className="fa fa-youtube"></i>
               <i className="fa fa-instagram"></i>
