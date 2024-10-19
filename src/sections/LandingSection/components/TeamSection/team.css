@@ -1,0 +1,93 @@
+/* Set the full height of the viewport for the body, and center content both vertically and horizontally */
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Poppins, sans-serif; /* Font family for the whole page */
+}
+
+/* Define the size, maximum width, and positioning for both the wrapper and the card */
+.wrapper, .single-card {
+	height: 450px; /* Height for both wrapper and card */
+	max-width: 300px; /* Maximum width for both wrapper and card */
+	margin: 0 auto; /* Center them horizontally */
+	position: relative; /* To control child element positioning */
+}
+
+/* Enable 3D perspective for the card flip effect */
+.wrapper {
+	perspective: 900px; /* Sets the distance of the viewpoint for 3D effect */
+}
+
+/* Styling for the card itself */
+.single-card {
+	text-align: center; /* Center the content inside the card */
+	transition: all 1.5s ease; /* Replacing the cubic-bezier with a smooth 'ease' transition */
+	transform-style: preserve-3d; /* Preserve 3D transformations for child elements */
+}
+
+/* Flip the card when the user hovers over the wrapper */
+.wrapper:hover .single-card {
+	transform: rotateY(180deg); /* Rotate the card on the Y-axis by 180 degrees */
+}
+
+/* Common styles for both the front and back sides of the card */
+.front, .back {
+    border: black solid;
+	width: 300px; /* Set the width for both sides of the card */
+	position: relative; /* Allow for precise positioning */
+	top: 0; /* Align at the top */
+	left: 0; /* Align at the left */
+	-webkit-backface-visibility: hidden; /* Hide the back face of the element in 3D space (WebKit specific) */
+	backface-visibility: hidden; /* Hide the back face of the element in 3D space */
+}
+
+/* Styling for the front side of the card */
+.front {
+	cursor: pointer; /* Change the cursor to pointer to indicate interactivity */
+	height: 100%; /* Full height of the card */
+	background-image: url(test.jpg); /* Set a background image for the front side */
+	-webkit-backface-visibility: hidden; /* Hide the back face again for WebKit browsers */
+	backface-visibility: hidden; /* Hide the back face in 3D space */
+	border-radius: 50px; /* Rounded corners */
+	background-size: cover; /* Ensure the background image covers the entire card */
+	background-position: center center; /* Center the background image */
+}
+
+/* Styling for the back side of the card */
+.back {
+	transform: rotateY(180deg); /* Rotate the back side to make it hidden initially */
+	position: absolute; /* Position the back side on top of the front */
+	border-radius: 50px; /* Rounded corners for the back side */
+	height: 450px; /* Same height as the front */
+	background: #fff; /* White background for the back */
+}
+
+/* Content styling inside the card (for both front and back) */
+.content {
+	padding-top: 25%; /* Add top padding to center content vertically */
+}
+
+/* Styling for the heading on the card */
+.content h2 {
+	font-size: 35px; /* Large font size for the heading */
+	margin: 0; /* Remove margin around the heading */
+	font-weight: 300; /* Light font weight */
+}
+
+/* Styling for the subheading on the card */
+.content h4 {
+	margin: 0; /* Remove margin around the subheading */
+}
+
+/* Styling for the social media icons section */
+.socials {
+	margin-top: 20%; /* Add space above the social icons */
+}
+
+/* Styling for individual social media icons */
+.socials i {
+	font-size: 30px; /* Size of the icons */
+	margin: 0 10px; /* Horizontal spacing between the icons */
+}
