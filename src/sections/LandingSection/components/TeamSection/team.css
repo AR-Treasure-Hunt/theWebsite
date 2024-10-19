@@ -81,13 +81,15 @@ body {
 	margin: 0; /* Remove margin around the subheading */
 }
 
-/* Styling for the social media icons section */
 .socials {
-	margin-top: 20%; /* Add space above the social icons */
+    position: absolute; /* Allow positioning relative to the parent */
+    bottom: 20px; /* Adjust the distance from the bottom */
+    right: 20px; /* Adjust the distance from the right */
 }
 
 /* Styling for individual social media icons */
 .socials i {
-	font-size: 30px; /* Size of the icons */
-	margin: 0 10px; /* Horizontal spacing between the icons */
+    font-size: 20px; /* Size of the icons */
+    margin: 0 10px; /* Horizontal spacing between the icons */
 }
+
