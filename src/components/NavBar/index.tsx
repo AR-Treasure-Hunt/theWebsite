@@ -22,7 +22,6 @@ const BlueTriangle: React.FC<{ isOpen: boolean }> = ({ isOpen }) => (
     <path d="M10 14L5 7H15L10 14Z" fill="#004B6E" />
   </svg>
 );
-
 const Navbar: React.FC = () => {
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -31,7 +30,7 @@ const Navbar: React.FC = () => {
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
 
   return (
-    <nav className="sticky top-0 z-50 h-14 lg:h-16 py-3 px-10 sm:px-10 lg:px-12 border-b border-[#004B6E] backdrop-blur bg-white/80">
+    <nav className="fixed top-0 left-0 right-0 z-50 h-14 lg:h-16 py-3 px-10 sm:px-10 lg:px-12 border-b border-[#004B6E] backdrop-blur bg-white/80">
       <div className="max-w-full relative h-full flex justify-between items-center">
         <div className="flex items-center flex-shrink-0">
           <img className="h-6 md:h-10 w-6 md:w-10" src={assets.Logo} alt="logo" />
@@ -47,7 +46,7 @@ const Navbar: React.FC = () => {
                 {item.hasDropdown && <BlueTriangle isOpen={isDropdownOpen} />}
               </a>
               {item.hasDropdown && isDropdownOpen && (
-                <ul className="absolute  top-full mt-2 shadow-lg rounded-md p-2 bg-white border-t border-[#004B6E]">
+                <ul className="absolute top-full mt-2 shadow-lg rounded-md p-2 bg-white border-t border-[#004B6E]">
                   {item.dropdownItems?.map((dropdownItem, idx) => (
                     <li key={idx}>
                       <a href={dropdownItem.href} className="block text-md px-3 py-2 hover:bg-gray-100 text-[#FF8700]">
@@ -65,7 +64,7 @@ const Navbar: React.FC = () => {
             </a>
           </li>
         </ul>
-          <button className="lg:hidden" onClick={toggleNavbar} aria-expanded={isMobileDrawerOpen} aria-label="Toggle navigation menu">
+        <button className="lg:hidden" onClick={toggleNavbar} aria-expanded={isMobileDrawerOpen} aria-label="Toggle navigation menu">
           {isMobileDrawerOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
@@ -104,4 +103,3 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
-
