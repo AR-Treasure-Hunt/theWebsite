@@ -9,11 +9,15 @@ function LandingSection() {
     return (
         <>
             <HeroSection />
-            <AboutSection />
-            <PastIterationSection />
-            <TestimonialsSection />
-            <TeamSection />
-            <FAQSection />
+            <div className="ground-tile-bg">
+                <div className="content-container">
+                    <AboutSection />
+                    <PastIterationSection />
+                    <TestimonialsSection />
+                    <TeamSection />
+                    <FAQSection />
+                </div>
+            </div>
         </>
     )
 }
