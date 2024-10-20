@@ -92,7 +92,7 @@ const HeroSection: React.FC = () => {
           default: { show: false, width: '0', height: '0', position: { right: '0' }  },
           sm: { show: false, width: '0', height: '0', position: { right: '0' } },
           md: { show: false, width: '0', height: '0', position: { right: '0' } },
-          lg: { show: true, width: '30vw', height: 'auto', position: { right: '0%', bottom: '7%', zIndex: '10' } },
+          lg: { show: true, width: '30vw', height: 'auto', position: { right: '0%', bottom: '8%', zIndex: '10' } },
           xl: { show: true, width: '30vw', height: 'auto', position: { right: '0%', bottom: '9%', zIndex: '10' } },
           '2xl': { show: true, width: '30vw', height: 'auto', position: { right: '0%', bottom: '9%', zIndex: '10' } },
         }}
@@ -102,9 +102,9 @@ const HeroSection: React.FC = () => {
         alt="Temple"
         sizes={{
           default:{ show: true, width: 'auto', height: '7%', position: { left: '55%', bottom: '5.5%', zIndex: '10' }},
-          sm: { show: true, width: 'auto', height: '7%', position: { left: '54%', bottom: '4%', zIndex: '10' } },
-          md: { show: true, width: 'auto', height: '9%', position: { left: '38%', bottom: '7%', zIndex: '10' } },
-          lg: { show: true, width: 'auto', height: '11%', position: { left: '20%', bottom: '7%', zIndex: '10' } },
+          sm: { show: true, width: 'auto', height: '7%', position: { left: '54%', bottom: '5.3%', zIndex: '10' } },
+          md: { show: true, width: 'auto', height: '9%', position: { left: '38%', bottom: '6%', zIndex: '10' } },
+          lg: { show: true, width: 'auto', height: '11%', position: { left: '20%', bottom: '9%', zIndex: '10' } },
           xl: { show: true, width: 'auto', height: '11%', position: { left: '21%', bottom: '10.5%', zIndex: '10' } },
           '2xl': { show: true, width: 'auto', height: '11%', position: { left: '21%', bottom: '11.5%', zIndex: '10' } },
         }}
@@ -114,9 +114,9 @@ const HeroSection: React.FC = () => {
         alt="Tree 1"
         sizes={{
           default: { show: true, width: 'auto', height: '7%', position: { left: '37%', bottom: '5.5%', zIndex: '10' } },
-          sm: { show: true, width: 'auto', height: '7%', position: { left: '37%', bottom: '5%', zIndex: '10' } },
-          md: { show: true, width: 'auto', height: '9%', position: { left: '20%', bottom: '6.5%', zIndex: '10' } },
-          lg: { show: true, width: 'auto', height: '11%', position: { left: '9%', bottom: '6.5%', zIndex: '10' } },
+          sm: { show: true, width: 'auto', height: '7%', position: { left: '37%', bottom: '5.2%', zIndex: '10' } },
+          md: { show: true, width: 'auto', height: '9%', position: { left: '20%', bottom: '6%', zIndex: '10' } },
+          lg: { show: true, width: 'auto', height: '11%', position: { left: '9%', bottom: '9%', zIndex: '10' } },
           xl: { show: true, width: 'auto', height: '11%', position: { left: '9%', bottom: '10%', zIndex: '10' } },
           '2xl': { show: true, width: 'auto', height: '11%', position: { left: '9%', bottom: '11%', zIndex: '10' } },
         }}
@@ -126,9 +126,9 @@ const HeroSection: React.FC = () => {
         alt="Tree 2"
         sizes={{
           default: { show: true, width: 'auto', height: '7%', position: { left: '26%', bottom: '5.5%', zIndex: '10' } },
-          sm: { show: true, width: 'auto', height: '7%', position: { left: '26%', bottom: '5%', zIndex: '10' } },
-          md: { show: true, width: 'auto', height: '9%', position: { left: '25%', bottom: '6.5%', zIndex: '10' } },
-          lg: { show: true, width: 'auto', height: '11%', position: { left: '13%', bottom: '6.5%', zIndex: '10' } },
+          sm: { show: true, width: 'auto', height: '7%', position: { left: '26%', bottom: '5.2%', zIndex: '10' } },
+          md: { show: true, width: 'auto', height: '9%', position: { left: '25%', bottom: '6%', zIndex: '10' } },
+          lg: { show: true, width: 'auto', height: '11%', position: { left: '13%', bottom: '9%', zIndex: '10' } },
           xl: { show: true, width: 'auto', height: '11%', position: { left: '13%', bottom: '10%', zIndex: '10' } },
           '2xl': { show: true, width: 'auto', height: '11%', position: { left: '13%', bottom: '11%', zIndex: '10' } },
         }}
@@ -138,9 +138,9 @@ const HeroSection: React.FC = () => {
         alt="Tree R"
         sizes={{
           default:  { show: true, width: 'auto', height: '7%', position: { left: '77%', bottom: '5.5%', zIndex: '10' }},
-          sm: { show: true, width: 'auto', height: '7%', position: { left: '77%', bottom: '5%', zIndex: '10' } },
-          md: { show: true, width: 'auto', height: '9%', position: { left: '65%', bottom: '6.5%', zIndex: '10' } },
-          lg: { show: true, width: 'auto', height: '11%', position: { left: '29%', bottom: '6.6%', zIndex: '10' } },
+          sm: { show: true, width: 'auto', height: '7%', position: { left: '77%', bottom: '5.2%', zIndex: '10' } },
+          md: { show: true, width: 'auto', height: '9%', position: { left: '65%', bottom: '6%', zIndex: '10' } },
+          lg: { show: true, width: 'auto', height: '11%', position: { left: '29%', bottom: '9%', zIndex: '10' } },
           xl: { show: true, width: 'auto', height: '11%', position: { left: '29%', bottom: '10%', zIndex: '10' } },
           '2xl': { show: true, width: 'auto', height: '11%', position: { left: '29%', bottom: '11%', zIndex: '10' } },
         }}
@@ -151,8 +151,8 @@ const HeroSection: React.FC = () => {
         sizes={{
           default: { show: false, width: '0', height: '0', position: { left: '0' } },
           sm: { show: false, width: '0', height: '0', position: { left: '0' } },
-          md: { show: true, width: 'auto', height: '5.5%', position: { left: '52%', bottom: '6.5%', zIndex: '30'   } },
-          lg: { show: true, width: 'auto', height: '5.5%', position: { left: '52%', bottom: '6.5%', zIndex: '30' } },
+          md: { show: true, width: 'auto', height: '5.5%', position: { left: '52%', bottom: '6%', zIndex: '30'   } },
+          lg: { show: true, width: 'auto', height: '5.5%', position: { left: '52%', bottom: '9%', zIndex: '30' } },
           xl: { show: true, width: 'auto', height: '5.5%', position: { left: '52%', bottom: '9%', zIndex: '30' } },
           '2xl': { show: true, width: 'auto', height: '5.5%', position: { left: '52%', bottom: '10%', zIndex: '30' } },
         }}
