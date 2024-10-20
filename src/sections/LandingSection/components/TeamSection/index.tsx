@@ -1,6 +1,5 @@
 import React from 'react';
 import './team.css';
-import 'font-awesome/css/font-awesome.min.css';
 import davidImage from './david.png'; // Import the image
 import backgroundImage from './background.png'; // Import the background image
 
