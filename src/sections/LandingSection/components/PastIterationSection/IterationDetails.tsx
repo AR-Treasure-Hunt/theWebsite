@@ -27,15 +27,15 @@ export default function IterationDetails({ detailsObj, roundObj }: Props) {
 
     return (
         <div className="md:p-8 my-8 text-white">
-            <h2 className="text-4xl md:text-7xl font-bold mb-1">{detailsObj.year}</h2>
-            <p className="text-xl md:text-5xl mb-24 text-crayola-bright-yellow">({detailsObj.title})</p>
+            <h2 className="text-4xl md:text-7xl font-bold mb-1 tracking-wide">{detailsObj.year}</h2>
+            <p className="text-xl md:text-5xl mb-24 text-crayola-bright-yellow tracking-wide">({detailsObj.title})</p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
                 <div className="bg-moussaka border-none col-span-2 md:col-span-3 relative p-4 h-36 sm:h-52 rounded-lg flex">
                     <img src={CoinSparkle} alt="Prize" className="absolute top-[-40%] right-10 self-end w-48 sm:w-80 h-auto" />
                     <div className="flex flex-col justify-end h-full">
-                        <p className="text-3xl text-deep-saffron">Total Prize Pool</p>
-                        <p className="text-3xl md:text-8xl font-bold text-deep-saffron">
+                        <p className="text-3xl text-deep-saffron tracking-wide">Total Prize Pool</p>
+                        <p className="text-3xl md:text-8xl tracking-wide text-deep-saffron">
                             NRs.<span className='text-deep-saffron'> {detailsObj.prizePool}</span>+
                         </p>
                     </div>
@@ -44,28 +44,28 @@ export default function IterationDetails({ detailsObj, roundObj }: Props) {
                 <div className="bg-sacramento-state-green border-none col-span-1 mt-16  sm:mt-24 md:mt-0 flex items-center justify-center rounded-lg relative p-4 h-32 sm:h-52">
                     <img src={DiamondSword} alt="Participants" className="absolute top-[-50%] w-24 h-24 sm:w-48 sm:h-48" />
                     <div className="flex flex-col justify-end h-full">
-                        <p className="text-2xl text-maximum-blue-green">Participants</p>
-                        <p className="text-5xl md:text-7xl font-bold text-ice-citadel">{detailsObj.participants}</p>
+                        <p className="text-2xl text-maximum-blue-green tracking-wide">Participants</p>
+                        <p className="text-5xl md:text-7xl tracking-wide text-ice-citadel">{detailsObj.participants}</p>
                     </div>
                 </div>
 
                 <div className="bg-black border-none col-span-1 mt-16 sm:mt-24 md:hidden flex items-center justify-center rounded-lg relative p-4 h-32 sm:h-52">
                     <img src={Book} alt="Participants" className="absolute top-[-50%] w-24 h-24 sm:w-48 sm:h-48" />
                     <div className="flex flex-col justify-end h-full">
-                        <p className="text-2xl text-maximum-blue-green">College/Uni</p>
-                        <p className="text-5xl md:text-7xl font-bold text-ice-citadel">{detailsObj.college}</p>
+                        <p className="text-2xl text-maximum-blue-green tracking-wide">College/Uni</p>
+                        <p className="text-5xl md:text-7xl tracking-wide text-ice-citadel">{detailsObj.college}</p>
                     </div>
                 </div>
             </div>
 
             <div className="md:block hidden">
-                <h3 className="text-5xl md:text-7xl font-bold mb-32 text-deep-saffron">The <span className='text-metallic-yellow'>Three</span> roundObj</h3>
+                <h3 className="text-5xl md:text-7xl tracking-wide mb-32 text-deep-saffron">The <span className='text-metallic-yellow'>Three</span> rounds</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 z-30">
                     {roundObj.map((round, index) => (
                         <div key={index} className='relative'>
                             <img src={round.icon} alt={round.title} className="absolute top-[-45%] left-1/2 transform -translate-x-1/2 z-0 max-w-[200px] h-auto opacity-90" />
                             <div className="bg-moussaka relative border-none rounded-lg h-52 p-4 z-10">
-                                <h4 className="text-3xl font-bold mb-2 text-almondine z-10">{round.title}</h4>
+                                <h4 className="text-3xl tracking-wide mb-2 text-almondine z-10">{round.title}</h4>
                                 <hr className='bg-almondine h-[2px]' />
                             </div>
                         </div>
@@ -73,7 +73,7 @@ export default function IterationDetails({ detailsObj, roundObj }: Props) {
                 </div>
                 <Card className="bg-moussaka border-none mt-4">
                     <CardContent className="p-4">
-                        <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-1 text-almondine">Some Details</h4>
+                        <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-wide mb-1 text-almondine">Some Details</h4>
                         <p className="text-base sm:text-lg md:text-xl text-almondine">
                             {detailsObj.roundDetails}
                         </p>
@@ -84,7 +84,7 @@ export default function IterationDetails({ detailsObj, roundObj }: Props) {
             <div className="md:hidden">
                 <Button
                     onClick={() => setShowDetails(!showDetails)}
-                    className="w-full bg-yellow-400 text-black hover:bg-yellow-500 mt-4"
+                    className="w-full tracking-wide text-lg bg-yellow-400 text-black hover:bg-yellow-500 mt-4"
                 >
                     {showDetails ? 'Hide full details' : 'Read full details'}
                 </Button>
@@ -97,7 +97,7 @@ export default function IterationDetails({ detailsObj, roundObj }: Props) {
                                 <div key={index} className='relative'>
                                     <img src={round.icon} alt={round.title} className="absolute top-[-60%] sm:top[-20%] left-1/2 transform -translate-x-1/2 z-0 max-w-[200px] sm:max-w-[300px] h-auto opacity-90" />
                                     <div className="bg-moussaka relative border-none rounded-lg h-44 sm:h-56 p-4 z-10">
-                                        <h4 className="text-3xl font-bold mb-2 text-almondine z-10">{round.title}</h4>
+                                        <h4 className="text-3xl tracking-wide mb-2 text-almondine z-10">{round.title}</h4>
                                         <hr className='bg-almondine h-[2px]' />
                                     </div>
                                 </div>
@@ -106,8 +106,8 @@ export default function IterationDetails({ detailsObj, roundObj }: Props) {
 
                         <Card className="bg-moussaka border-none mt-4">
                             <CardContent className="p-4">
-                                <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-1 text-almondine">Some Details</h4>
-                                <p className="text-base sm:text-lg md:text-xl text-almondine">
+                                <h4 className="text-xl tracking-wide sm:text-2xl md:text-3xl lg:text-4xl mb-1 text-almondine">Some Details</h4>
+                                <p className="text-base tracking-wide sm:text-lg md:text-xl text-almondine">
                                     {detailsObj.roundDetails}
                                 </p>
                             </CardContent>
