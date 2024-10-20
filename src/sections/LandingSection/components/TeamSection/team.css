@@ -1,12 +1,7 @@
 /* Set the full height of the viewport for the body, and center content both vertically and horizontally */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-body {
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+
 
 /* Define the size, maximum width, and positioning for both the wrapper and the card */
 .wrapper, .single-card {
