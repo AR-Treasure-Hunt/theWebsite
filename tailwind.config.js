@@ -12,7 +12,7 @@ export default {
 				'md': '768px',
 				'lg': '1024px',
 				'xl': '1440px',
-			  },
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
@@ -58,7 +58,18 @@ export default {
 					'3': 'hsl(var(--chart-3))',
 					'4': 'hsl(var(--chart-4))',
 					'5': 'hsl(var(--chart-5))'
-				}
+				},
+				'ice-citadel': '#B1FCFA',
+				'moussaka': '#702412',
+				'almondine': '#FFDDBD',
+				'gold': '#FFD700',
+				'white': '#FFFFFF',
+				'opulent-blue': '#0556F3',
+				'deep-saffron': '#F79F29',
+				'metallic-yellow': '#FFD219',
+				'maximum-blue-green': '#30D3BB',
+				'crayola-bright-yellow': '#FEA52A',
+				'sacramento-state-green': '#04312B',
 			}
 		}
 	},
