@@ -25,7 +25,7 @@ body {
 /* Styling for the card itself */
 .single-card {
 	text-align: center; /* Center the content inside the card */
-	transition: all 1.5s ease; /* Replacing the cubic-bezier with a smooth 'ease' transition */
+	transition: all 0.5s ease; /* Replacing the cubic-bezier with a smooth 'ease' transition */
 	transform-style: preserve-3d; /* Preserve 3D transformations for child elements */
 }
 
@@ -62,16 +62,28 @@ body {
 	box-sizing: border-box; /* Include padding in the total height and width */
 }
 
-.front::before {
-	content: ""; /* Create a pseudo-element for the background image */
-	background-image: url(test.jpg); /* Set the background image */
-	background-size: contain; /* Ensure the image fits within the space */
-	background-repeat: no-repeat; /* Prevent the image from repeating */
-	background-position: center; /* Center the image */
-	width: 100px; /* Full width of the padded area */
-	height: 100px; /* Full height of the padded area */
-	position: absolute; /* Position it absolutely within the parent */
+/* .front::before {
+    top: 5px; 
 
+	content: ""; 
+	background-image: url(david.png); 
+	background-size: contain; 
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 85%; 
+	height: 100%; 
+	position: absolute; 
+
+} */
+
+.card-image {
+    width: 85%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 /* .front::after {
@@ -109,16 +121,28 @@ body {
   }
 
 
-.back::before {
-	content: ""; /* Create a pseudo-element for the background image */
-	background-image: url(background.png); /* Set the background image */
-	background-size: contain; /* Ensure the image fits within the space */
+/* .back::before {
+	content: ""; 
+	background-image: url(background.png); 
+	background-size: contain; 
+	background-repeat: no-repeat;
+	background-position: center; 
+	width: 90%;
+	height: 100%; 
+	position: absolute;
+
+} */
+
+.background-image {
+    width: 90%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: contain; /* Ensure the image fits within the space */
 	background-repeat: no-repeat; /* Prevent the image from repeating */
 	background-position: center; /* Center the image */
-	width: 90%; /* Full width of the padded area */
-	height: 100%; /* Full height of the padded area */
-	position: absolute; /* Position it absolutely within the parent */
-
 }
 
 
@@ -133,28 +157,27 @@ body {
 	height: 100%; /* Full height of the card */
 	width: 100%; /* Full width of the card */
 
-	display: flex; /* Use flexbox for centering */
-	align-items: center; /* Center items vertically */
-	justify-content: center; /* Center items horizontally */
-	padding: 20px; /* Add padding to create space around the image */
-	box-sizing: border-box; /* Include padding in the total height and width */
-}
+	display: flex;  
+	align-items: center; 
+	justify-content: center; 
+	padding: 20px;  
+	box-sizing: border-box; }
 
 /* Content styling inside the card (for both front and back) */
 .content {
-	padding-top: 25%; /* Add top padding to center content vertically */
+	padding-top: 25%; 
 }
 
 .content-para {
-    position: absolute; /* Change from absolute to relative */
-    top: 20px;         /* You can adjust this as needed */
-    left: 48px;           /* Set to 0 or adjust based on your layout */
+    position: absolute; 
+    top: 20px;        
+    left: 48px;          
     text-align: left;
-    display: flex;     /* Keep display as flex */
-    flex-wrap: wrap;   /* Allow wrapping of flex items */
-    flex-direction: column; /* Stack items vertically */
-    width: 80%;        /* Width of the container */
-    box-sizing: border-box; /* Include padding in width calculation */
+    display: flex;    
+    flex-wrap: wrap;   
+    flex-direction: column;  
+    width: 80%;         
+    box-sizing: border-box;  
 }
 
 /* Content styling for text elements inside the card */
@@ -202,3 +225,39 @@ color: rgba(255, 255, 255, 0.80);
     margin: 0 10px; /* Horizontal spacing between the icons */
 }
 
+
+
+
+
+
+/* Adjust the existing styles to accommodate the new image elements */
+.front, .back {
+    overflow: hidden;
+}
+
+
+.name-below-image {
+   
+    z-index: 10;
+    position: absolute;
+    bottom : 50px;
+
+color: #702412;
+ font-size: 34.36px;
+ font-family: Jersey 10;
+ font-weight: 400;
+ word-wrap: break-word
+}
+
+.position-below-name {
+    position: absolute;
+    bottom : 40px;
+    margin-top: 5px;
+    z-index: 10;
+
+    color: rgba(112, 36, 18, 0.60);
+ font-size: 17.18px;
+ font-family: Rubik;
+ font-weight: 400;
+ word-wrap: break-word
+}
