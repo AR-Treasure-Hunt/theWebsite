@@ -7,6 +7,12 @@ export default {
 	],
 	theme: {
 		extend: {
+			screens: {
+				'sm': '640px',
+				'md': '768px',
+				'lg': '1024px',
+				'xl': '1440px',
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
@@ -58,10 +64,14 @@ export default {
 				'almondine': '#FFDDBD',
 				'gold': '#FFD700',
 				'white': '#FFFFFF',
-				'opulent-blue': '#0556F3'
+				'opulent-blue': '#0556F3',
+				'deep-saffron': '#F79F29',
+				'metallic-yellow': '#FFD219',
+				'maximum-blue-green': '#30D3BB',
+				'crayola-bright-yellow': '#FEA52A',
+				'sacramento-state-green': '#04312B',
 			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
 }
-
