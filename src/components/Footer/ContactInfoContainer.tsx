@@ -3,12 +3,10 @@ import { FaLocationDot } from 'react-icons/fa6'
 import { FiMail } from 'react-icons/fi'
 
 
-const ContactInfo = (props: {
+const ContactInfo = ({ icon, content } : {
     icon: JSX.Element;
     content: string | JSX.Element;
   }) => {
-
-  const { icon, content } = props;
 
   return (
     <div className="flex gap-[16px] items-center">

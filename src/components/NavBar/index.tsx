@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { assets } from '../../sections/LandingSection/components/HeroSection/assets/assets';
-import { navItems } from './constants/index';
+import Logo from '/Logo.png'
+import { navItems } from './navitems';
 import { Menu, X } from 'lucide-react';
 
 interface NavItem {
@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 h-14 lg:h-16 py-3 px-10 sm:px-10 lg:px-12 border-b border-[#004B6E] backdrop-blur bg-white/80">
       <div className="max-w-full relative h-full flex justify-between items-center">
         <div className="flex items-center flex-shrink-0">
-          <img className="h-6 md:h-10 w-6 md:w-10" src={assets.Logo} alt="logo" />
+          <img className="h-6 md:h-10 w-6 md:w-10" src={Logo} alt="logo" />
           <h1 className="ml-2 sm:ml-4 text-3xl md:text-4xl lg:text-[40px] leading-tight tracking-normal text-[#004B6E] whitespace-nowrap">
             AR Treasure Hunt
           </h1>

@@ -1,8 +1,8 @@
 export const navItems = [
-    { label: <span>Home</span>, href: "#" },
-    { label: <span>About</span>, href: "#" },
+    { label: "Home", href: "#" },
+    { label: "About", href: "#" },
     { 
-      label: <span>Past Iterations <span className="text-xl"></span></span>, 
+      label: "Past Iterations", 
       href: "#", 
       hasDropdown: true, 
       dropdownItems: [
@@ -10,6 +10,6 @@ export const navItems = [
         { label: 'Iteration 2022', href: '#2021' },
       ],
     },
-    { label: <span>FAQ</span>, href: "#" },
+    { label:"FAQ", href: "#" },
   ];
   
