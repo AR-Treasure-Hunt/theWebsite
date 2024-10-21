@@ -1,15 +1,9 @@
 /* Set the full height of the viewport for the body, and center content both vertically and horizontally */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-/* body {
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-} */
 
 .meet-the-team-heading {
-    color: #F0EBFF;
+    color: white;
     font-size: 48px;
     font-family: 'Jersey 10', sans-serif;
     font-weight: 400;
@@ -24,34 +18,12 @@
     max-width: 1200px;
 }
 
-
-/* .wrapper-outer-for-margins {
-    display: flex;
-   
-    position: relative;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
-    width: 100%;
-} */
-
 .wrapper-outer-for-margins {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping of cards */
     justify-content: space-around; /* Use space-between for better distribution */
     width: 100%;
 }
-
-/* .wrapper {
-    display: flex;
-    gap: 40px;
-    flex-wrap:wrap;
-    justify-content: space-around;
-    position: relative;
-    margin-top: 20px;
-
-} */
 
 .wrapper {
     display: flex;
@@ -63,27 +35,6 @@
 
 }
 
-/* .single-card {
-    box-sizing: border-box;
-  
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-    padding: 25px;
-
-    
-	height: 460px; 
-	max-width: 320px; 
-	position: relative;
-
-} */
-/* .single-card {
-    box-sizing: border-box;
-    max-width: 320px; 
-    height: 460px; 
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-    padding: 25px;
-} */
 
 
 
@@ -109,16 +60,7 @@
 	transform: rotateY(180deg); /* Rotate the card on the Y-axis by 180 degrees */
 }
 
-/* Common styles for both the front and back sides of the card */
-/* .front, .back {
-    border: black solid;
 
-	width: 300px; 
-	position: relative; 
-	top: 0; 
-	left: 0; 
-	backface-visibility: hidden; 
-} */
 
 .front, .back {
     border: black solid;
@@ -134,18 +76,18 @@
 
 /* Styling for the front side of the card */
 .front {
-	cursor: pointer; /* Change the cursor to pointer to indicate interactivity */
-	height: 100%; /* Full height of the card */
-	width: 100%; /* Full width of the card */
-	background-color: #fff; /* Optional: Set a background color for contrast */
-	border-radius: 16px; /* Rounded corners */
-	-webkit-backface-visibility: hidden; /* Hide the back face for WebKit browsers */
-	backface-visibility: hidden; /* Hide the back face in 3D space */
-	display: flex; /* Use flexbox for centering */
-	align-items: center; /* Center items vertically */
-	justify-content: center; /* Center items horizontally */
-	padding: 20px; /* Add padding to create space around the image */
-	box-sizing: border-box; /* Include padding in the total height and width */
+	cursor: pointer; 
+	height: 100%; 
+	width: 100%; 
+	background-color: #fff; 
+	border-radius: 16px;
+	-webkit-backface-visibility: hidden; 
+	backface-visibility: hidden; 
+	display: flex;
+	align-items: center; 
+	justify-content: center; 
+	padding: 20px; 
+	box-sizing: border-box; 
 }
 
 
@@ -193,22 +135,22 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-size: contain; /* Ensure the image fits within the space */
-	background-repeat: no-repeat; /* Prevent the image from repeating */
-	background-position: center; /* Center the image */
+    background-size: contain; 
+	background-repeat: no-repeat; 
+	background-position: center; 
 }
 
 
 /* Styling for the back side of the card */
 .back {
-	transform: rotateY(180deg); /* Rotate the back side to make it hidden initially */
-	position: absolute; /* Position the back side on top of the front */
-	border-radius: 16px; /* Rounded corners for the back side */
-	height: 450px; /* Same height as the front */
-	background: #fff; /* White background for the back */
-    cursor: pointer; /* Change the cursor to pointer to indicate interactivity */
-	height: 100%; /* Full height of the card */
-	width: 100%; /* Full width of the card */
+	transform: rotateY(180deg); 
+	position: absolute; 
+	border-radius: 16px; 
+	height: 450px;
+	background: #fff; 
+    cursor: pointer;
+	height: 100%; 
+	width: 100%;
 
 	display: flex;  
 	align-items: center; 
@@ -246,9 +188,7 @@
 }
 
 .content-para h4 {
-    /* color: white;
-    margin: 0; 
-    font-family: "rubik"; */
+   
 color: rgba(255, 255, 255, 0.80);
  font-size: 18px;
  font-family: Rubik;
@@ -259,30 +199,24 @@ color: rgba(255, 255, 255, 0.80);
 .content-para p {
     color: #FBD9BE;
     margin: 0; 
-    width: 100%;           /* Ensure it takes full width of the parent */
-    word-wrap: break-word; /* Break long words */
+    width: 100%;          
+    word-wrap: break-word; 
 }
 
 
 .socials {
     color: white;
 
-    position: absolute; /* Allow positioning relative to the parent */
-    bottom: 25px; /* Adjust the distance from the bottom */
-    right: 25px; /* Adjust the distance from the right */
+    position: absolute; 
+    bottom: 25px; 
+    right: 25px; 
 }
 
 /* Styling for individual social media icons */
 .socials i {
-    font-size: 25px; /* Size of the icons */
-    margin: 0 10px; /* Horizontal spacing between the icons */
+    font-size: 25px;
+    margin: 0 10px; 
 }
-
-
-
-
-
-
 /* Adjust the existing styles to accommodate the new image elements */
 .front, .back {
     overflow: hidden;
