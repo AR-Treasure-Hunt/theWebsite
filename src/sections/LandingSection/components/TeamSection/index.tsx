@@ -61,27 +61,27 @@ const teamData: TeamMember[] = [
   },
   {
     name: "Neo Shakya",
-    role: "Content Creator",
+    role: "Character and Background Design",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
     name: "Sushila Shrestha ",
-    role: "Content Creator",
+    role: "Frontend Developer",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
     name: "Anuja Lamsal",
-    role: "Content Creator",
+    role: "Backend Developer",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
     name: "Aayusha Jaspau",
-    role: "Content Creator",
+    role: "?????",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
     name: "David Ramovich Mandal",
-    role: "Content Creator",
+    role: "Frontend Developer",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
@@ -91,62 +91,62 @@ const teamData: TeamMember[] = [
   },
   {
     name: "Shreejan Karmacharya",
-    role: "Content Creator",
+    role: "Social Media Manager",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
     name: "Nirbhica Shrestha",
-    role: "Content Creator",
+    role: "?????",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
     name: "Angelina Ghimire",
-    role: "Content Creator",
+    role: "Creative Lead",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
     name: "Sujay Pal",
-    role: "Content Creator",
+    role: "Marketing Lead",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
     name: "Samikshya Upadhyay",
-    role: "Content Creator",
+    role: "Talent Management",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
     name: "Mohit Rajbhandari",
-    role: "Content Creator",
+    role: "Frontend Developer",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
     name: "Regal Adhikari",
-    role: "Content Creator",
+    role: "Game development Lead",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
     name: "Aakriti Banjara",
-    role: "Content Creator",
+    role: "Game Development",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
     name: "Swarnim Bajracharya",
-    role: "Content Creator",
+    role: "Creative Team Member",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
     name: "Sally Shrestha",
-    role: "Content Creator",
+    role: "?????",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
     name: "Rohit Karki",
-    role: "Content Creator",
+    role: "?????",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
     name: "Albina Shrestha",
-    role: "Content Creator",
+    role: "Character and Background Design",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
@@ -156,22 +156,22 @@ const teamData: TeamMember[] = [
   },
   {
     name: "Kshitiz Khanal",
-    role: "Content Creator",
+    role: "?????",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
     name: "Nirjal Bhurtel",
-    role: "Content Creator",
+    role: "App developer",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
     name: "Arpan Aadhikari",
-    role: "Content Creator",
+    role: "?????",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
     name: "Nischal Baral",
-    role: "Content Creator",
+    role: "App Developer",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   }
 ];
