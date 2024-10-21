@@ -29,7 +29,7 @@ const HeroSection: React.FC = () => {
         {/* Learn More Button */}
         <a
           href="#"
-          className="flex justify-center items-center text-[#003F5A] text-[2.1vh] sm:text-[2.5vh] lg:text-[3vh] xl:text-[4vh] backdrop-blur border-[0.3vh] lg:border-[0.3vh] border-[#003F5A] hover:bg-[#f0f0f0] transition-colors whitespace-nowrap h-[5vh] md:h-[6vh] lg:h-[7vh] xl:h-[8vh] w-[20vh] md:w-[16vh] rounded-[1vh]"
+          className="flex justify-center items-center text-[#003F5A] text-[2.1vh] sm:text-[2.5vh] lg:text-[3vh] xl:text-[4vh] backdrop-blur border-[0.3vh] lg:border-[0.3vh] border-[#003F5A] hover:bg-[#f0f0f0] transition-colors whitespace-nowrap h-[5vh] md:h-[6vh] lg:h-[7vh] xl:h-[8vh] w-[20vh] md:w-[16vh] lg:w-[20vh] rounded-[1vh]"
         >
           Learn More
         </a>
