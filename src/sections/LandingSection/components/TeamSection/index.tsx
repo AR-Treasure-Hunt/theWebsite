@@ -40,152 +40,137 @@ const teamData: TeamMember[] = [
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Subani Malla",
+    role: "Character and Background Design ",
+    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
+  },
+  {
+    name: "Abi Shrestha",
+    role: "Web Development Lead",
+    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
+  },
+  {
+    name: "Himesh Dulal ",
+    role: "Backend Developer ",
+    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
+  },
+  {
+    name: "Manjul Tamrakar",
+    role: "Frontend Developer",
+    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
+  },
+  {
+    name: "Neo Shakya",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Sushila Shrestha ",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Anuja Lamsal",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Aayusha Jaspau",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "David Ramovich Mandal",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Sumira Makaju",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Shreejan Karmacharya",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Nirbhica Shrestha",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Angelina Ghimire",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Sujay Pal",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Samikshya Upadhyay",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Mohit Rajbhandari",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Regal Adhikari",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Aakriti Banjara",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Swarnim Bajracharya",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Sally Shrestha",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Rohit Karki",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Albina Shrestha",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Shreejan Prasad Karmacharya",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Kshitiz Khanal",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Nirjal Bhurtel",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
+    name: "Arpan Aadhikari",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   },
   {
-    name: "Sinja Ghimire ",
-    role: "Content Creator",
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
-  },
-  {
-    name: "Sinja Ghimire ",
-    role: "Content Creator",
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
-  },
-  {
-    name: "Sinja Ghimire ",
-    role: "Content Creator",
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
-  },
-  {
-    name: "Sinja Ghimire ",
-    role: "Content Creator",
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
-  },
-  {
-    name: "Sinja Ghimire ",
-    role: "Content Creator",
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
-  },
-  {
-    name: "Sinja Ghimire ",
-    role: "Content Creator",
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
-  },
-  {
-    name: "Sinja Ghimire ",
-    role: "Content Creator",
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
-  },
-  {
-    name: "Sinja Ghimire ",
+    name: "Nischal Baral",
     role: "Content Creator",
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
   }
