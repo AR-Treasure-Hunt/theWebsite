@@ -43,7 +43,7 @@ const teamData: TeamMember[] = [
 const Team: React.FC = () => {
   return (
     <>
-      {/* <div className="meet-the-team-heading">Meet the team</div> */}
+      <div className="meet-the-team-heading">Meet the team</div>
       <div className="wrapper-outer-for-margins">  
         <div className="wrapper">
           {teamData.map((member, index) => (
