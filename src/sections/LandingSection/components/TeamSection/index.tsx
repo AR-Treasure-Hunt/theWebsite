@@ -52,7 +52,8 @@ const Team: React.FC = () => {
                 <img src={davidImage} alt={member.name} className="card-image" />
                 <div className="name-below-image">{member.name}</div>
                 <div className="position-below-name">{member.role}</div>
-                <div className="card-letter">{member.name.charAt(0)}</div>
+                <div className="card-letter
+                ">{member.name.charAt(0)}</div>
                 <div className="card-symbol"></div>
               </div>
               <div className="back">
