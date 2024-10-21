@@ -8,7 +8,7 @@ export default function TestimonialsSection() {
             <div className="flex gap-[16px] flex-wrap justify-center ">
             {
                 TESTIMONIALS.map((testimonial) => (
-                    <TestimonialModal key={testimonial.name} img={testimonial.img} testimonial={testimonial.testimonial} name={testimonial.name}/>
+                    <TestimonialModal key={testimonial.id} img={testimonial.img} testimonial={testimonial.testimonial} name={testimonial.name}/>
                 ))
             }
             </div>

@@ -6,7 +6,6 @@ import { StrictMode } from 'react'
 import "./index.css"
 
 import { queryClient } from '@/utils/api'
-import FAQSection from './sections/LandingSection/components/FAQSection'
 
 // Set up a Router instance
 const router = createRouter({

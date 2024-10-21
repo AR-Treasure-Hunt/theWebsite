@@ -8,7 +8,7 @@ export default function AboutSection() {
 
     return (
         <div className="ground-tile-bg md:p-8 text-white">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl mb-4">
                 Wait, What is <span className="text-yellow-400">AR Treasure Hunt?</span>
             </h1>
             <p className="mb-6 text-xl sm:text-2xl md:text-3xl lg:text-4xl">
