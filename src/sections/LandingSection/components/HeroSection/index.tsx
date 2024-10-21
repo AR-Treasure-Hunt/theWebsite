@@ -4,7 +4,7 @@ import ResponsivePixelArtImage from './image';
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-[#F0EBFF]">
+    <div className="relative w-full h-[100svh] overflow-hidden bg-[#F0EBFF]">
       {/* Main Content */}
       <div className="text-center lg:text-start lg:px-0 lg:pl-[10vh] xl:pl-[15vh] pt-[25vh] sm:pt-[28vh] md:pt-[30vh] lg:pt-[25vh] xl:pt-[17vh] text-[#003F5A] z-30 relative">
         <h1 className="text-[9vh] sm:text-[11vh] md:text-[13vh] lg:text-[13vh] xl:text-[14.3vh] mb-[2vh] sm:mb-[1.5vh] lg:mb-[4vh] leading-[7.5vh] sm:leading-[8vh] lg:leading-[9vh] tracking-[0.005em]">
