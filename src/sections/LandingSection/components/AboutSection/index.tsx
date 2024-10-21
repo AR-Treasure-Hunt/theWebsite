@@ -8,7 +8,7 @@ export default function AboutSection() {
 
     return (
         <div className="ground-tile-bg md:p-8 text-white">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4">
                 Wait, What is <span className="text-yellow-400">AR Treasure Hunt?</span>
             </h1>
             <p className="mb-6 text-xl sm:text-2xl md:text-3xl lg:text-4xl">
@@ -21,10 +21,10 @@ export default function AboutSection() {
                             <div className='relative mb-4 w-full max-w-[150px] md:max-w-[200px]'>
                                 <img src={Heart} alt="Heart icon" className='w-full h-auto' />
                             </div>
-                            <span className="text-ice-citadel text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center">What Exactly Is Augmented Reality (AR)?</span>
+                            <span className="text-ice-citadel tracking-wide text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center">What Exactly Is Augmented Reality (AR)?</span>
                         </CardTitle>
                     </CardHeader>
-                    <CardContent className="text-base sm:text-lg md:text-xl text-white">
+                    <CardContent className="text-base tracking-wide sm:text-lg md:text-xl text-white">
                         {whatIsAR}
                     </CardContent>
                 </Card>
@@ -34,10 +34,10 @@ export default function AboutSection() {
                             <img src={TreasureOpen} alt="Treasure chest" className='w-full h-auto' />
                         </div>
                         <CardTitle className="flex items-center justify-center">
-                            <span className="text-ice-citadel text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center">Okay, then what is a Treasure Hunt?</span>
+                            <span className="text-ice-citadel tracking-wide text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center">Okay, then what is a Treasure Hunt?</span>
                         </CardTitle>
                     </CardHeader>
-                    <CardContent className="text-base sm:text-lg md:text-xl text-white">
+                    <CardContent className="text-base tracking-wide sm:text-lg md:text-xl text-white">
                         {treasureHuntDescription}
                     </CardContent>
                 </Card>
@@ -45,12 +45,12 @@ export default function AboutSection() {
             <Card className="bg-moussaka border-none mt-4">
                 <CardHeader>
                     <CardTitle>
-                        <span className="text-ice-citadel text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+                        <span className="text-ice-citadel tracking-wide text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
                             So, AR Treasure Hunt?
                         </span>
                     </CardTitle>
                 </CardHeader>
-                <CardContent className="text-base sm:text-lg md:text-xl text-white">
+                <CardContent className="text-base tracking-wide sm:text-lg md:text-xl text-white">
                     {whatIsARTH}
                 </CardContent>
             </Card>
