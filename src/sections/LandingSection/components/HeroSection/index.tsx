@@ -22,14 +22,14 @@ const HeroSection: React.FC = () => {
           {/* Join The Adventure Button */}
           <a
             href="#"
-            className="flex justify-center items-center bg-[#003F5A] text-white text-[2.1vh] sm:text-[3vh] lg:text-[3vh] xl:text-[4vh] rounded-lg hover:bg-[#002a3d] transition-colors whitespace-nowrap py-[0.6vh] px-[1vh] md:py-[1.2vh] md:px-[2.5vh] lg:py-[1.75vh] lg:px-[3vh] xl:py-[1.2vh]"
+            className="flex justify-center items-center bg-[#003F5A] text-white text-[2.1vh] sm:text-[3vh] lg:text-[3vh] xl:text-[4vh] rounded-[2vh] hover:bg-[#002a3d] transition-colors whitespace-nowrap py-[0.6vh] px-[1vh] md:py-[1.2vh] md:px-[2.5vh] lg:py-[1.75vh] lg:px-[3vh] xl:py-[1.2vh]"
           >
             Join The Adventure
           </a>
           {/* Learn More Button */}
           <a
             href="#"
-            className="flex justify-center items-center text-[#003F5A] text-[2.1vh] sm:text-[3vh] lg:text-[3vh] xl:text-[4vh] backdrop-blur border-[0.3vh] lg:border-[0.3vh] border-[#003F5A] hover:bg-[#f0f0f0] transition-colors whitespace-nowrap py-[0.5vh] px-[3.7vh] sm:px-[4.9vh]  md:px-[2.5vh]  md:py-[0.93vh] lg:py-[1.4vh] lg:px-[2.5vh] xl:py-[1vh] rounded-lg"
+            className="flex justify-center items-center text-[#003F5A] text-[2.1vh] sm:text-[3vh] lg:text-[3vh] xl:text-[4vh] backdrop-blur border-[0.3vh] lg:border-[0.3vh] border-[#003F5A] hover:bg-[#f0f0f0] transition-colors whitespace-nowrap py-[0.5vh] px-[3.7vh] sm:px-[4.9vh]  md:px-[2.5vh]  md:py-[0.93vh] lg:py-[1.4vh] lg:px-[2.5vh] xl:py-[1vh] rounded-[2vh]"
           >
             Learn More
           </a>
@@ -65,24 +65,24 @@ const HeroSection: React.FC = () => {
         src={assets.Mountains}
         alt="Mountains"
         sizes={{
-          default:{ show: true, width: '100%', height: '25%', position: { bottom: '3%', left: '0' }},
-          sm: { show: true, width: '100%', height: 'auto', position: { bottom: '0', left: '0' } },
-          md: { show: true, width: '100%', height: 'auto', position: { bottom: '0', left: '0' } },
-          lg: { show: true, width: '100%', height: 'auto', position: { bottom: '0', left: '0' } },
-          xl: { show: true, width: '100%', height: 'auto', position: { bottom: '0', left: '0' } },
-          '2xl': { show: true, width: '100%', height: 'auto', position: { bottom: '0', left: '0' } },
+          default:{ show: true, width: '100%', height: '22vh', position: { bottom: '3%', left: '0' }},
+          sm: { show: true, width: '100%', height: 'auto', position: { bottom: '5%', left: '0' } },
+          md: { show: true, width: '100%', height: 'auto', position: { bottom: '5%', left: '0' } },
+          lg: { show: true, width: '100%', height: 'auto', position: { bottom: '5%', left: '0' } },
+          xl: { show: true, width: '100%', height: 'auto', position: { bottom: '5%', left: '0' } },
+          '2xl': { show: true, width: '100%', height: 'auto', position: { bottom: '5%', left: '0' } },
         }}
       />
       <ResponsivePixelArtImage
         src={assets.Ground}
         alt="Ground"
         sizes={{
-          default:{ show: true, width: '100%', height: '6%', position: { bottom: '0%', left: '0', right: '0', zIndex: '20' } },
-          sm: { show: true, width: '100%', height: '6%', position: { bottom: '0%', left: '0', right: '0', zIndex: '20' } },
-          md: { show: true, width: '100%', height: '7%', position: { bottom: '0%', left: '0', right: '0', zIndex: '20' } },
-          lg: { show: true, width: 'auto', height: '10%', position: { bottom: '0%', left: '0', right: '0', zIndex: '20' } },
-          xl: { show: true, width: 'auto', height: 'auto', position: {bottom: '0%', left: '0', right: '0', zIndex: '20' } },
-          '2xl': { show: true, width: 'auto', height: 'auto', position: { bottom: '0%', left: '0', right: '0', zIndex: '20'}},
+          default:{ show: true, width: '100%', height: '6vh', position: { bottom: '0%', left: '0', right: '0', zIndex: '20' } },
+          sm: { show: true, width: '100%', height: '6vh', position: { bottom: '0%', left: '0', right: '0', zIndex: '20' } },
+          md: { show: true, width: '100%', height: '7vh', position: { bottom: '0%', left: '0', right: '0', zIndex: '20' } },
+          lg: { show: true, width: '100%', height: '10vh', position: { bottom: '0%', left: '0', right: '0', zIndex: '20' } },
+          xl: { show: true, width: '100%', height: '10vh', position: {bottom: '0%', left: '0', right: '0', zIndex: '20' } },
+          '2xl': { show: true, width: '100%', height: '12vh', position: { bottom: '0%', left: '0', right: '0', zIndex: '20'}},
         }}
       />
       <ResponsivePixelArtImage
@@ -101,60 +101,61 @@ const HeroSection: React.FC = () => {
         src={assets.Temple}
         alt="Temple"
         sizes={{
-          default:{ show: true, width: 'auto', height: '7%', position: { left: '55%', bottom: '5.5%', zIndex: '10' }},
-          sm: { show: true, width: 'auto', height: '7%', position: { left: '54%', bottom: '5.3%', zIndex: '10' } },
-          md: { show: true, width: 'auto', height: '9%', position: { left: '38%', bottom: '6%', zIndex: '10' } },
-          lg: { show: true, width: 'auto', height: '11%', position: { left: '20%', bottom: '9%', zIndex: '10' } },
-          xl: { show: true, width: 'auto', height: '11%', position: { left: '21%', bottom: '10.5%', zIndex: '10' } },
-          '2xl': { show: true, width: 'auto', height: '11%', position: { left: '21%', bottom: '11.5%', zIndex: '10' } },
+          default: { show: true, width: 'auto', height: '7vh', position: { left: '55%', bottom: '5.5vh', zIndex: '10' } },
+          sm: { show: true, width: 'auto', height: '7vh', position: { left: '54%', bottom: '5.3vh', zIndex: '10' } },
+          md: { show: true, width: 'auto', height: '9vh', position: { left: '38%', bottom: '6vh', zIndex: '10' } },
+          lg: { show: true, width: 'auto', height: '11vh', position: { left: '20%', bottom: '9vh', zIndex: '10' } },
+          xl: { show: true, width: 'auto', height: '11vh', position: { left: '21%', bottom: '9vh', zIndex: '10' } },
+          '2xl': { show: true, width: 'auto', height: '11vh', position: { left: '21%', bottom: '11.5vh', zIndex: '10' } },
         }}
       />
       <ResponsivePixelArtImage
         src={assets.TreeL1}
         alt="Tree 1"
         sizes={{
-          default: { show: true, width: 'auto', height: '7%', position: { left: '37%', bottom: '5.5%', zIndex: '10' } },
-          sm: { show: true, width: 'auto', height: '7%', position: { left: '37%', bottom: '5.2%', zIndex: '10' } },
-          md: { show: true, width: 'auto', height: '9%', position: { left: '20%', bottom: '6%', zIndex: '10' } },
-          lg: { show: true, width: 'auto', height: '11%', position: { left: '9%', bottom: '9%', zIndex: '10' } },
-          xl: { show: true, width: 'auto', height: '11%', position: { left: '9%', bottom: '10%', zIndex: '10' } },
-          '2xl': { show: true, width: 'auto', height: '11%', position: { left: '9%', bottom: '11%', zIndex: '10' } },
+          default: { show: true, width: 'auto', height: '7vh', position: { left: '37%', bottom: '5.5vh', zIndex: '10' } },
+          sm: { show: true, width: 'auto', height: '7vh', position: { left: '37%', bottom: '5.2vh', zIndex: '10' } },
+          md: { show: true, width: 'auto', height: '9vh', position: { left: '20%', bottom: '6vh', zIndex: '10' } },
+          lg: { show: true, width: 'auto', height: '11vh', position: { left: '9%', bottom: '9vh', zIndex: '10' } },
+          xl: { show: true, width: 'auto', height: '11vh', position: { left: '9%', bottom: '9vh', zIndex: '10' } },
+          '2xl': { show: true, width: 'auto', height: '11vh', position: { left: '9%', bottom: '11vh', zIndex: '10' } },
         }}
       />
       <ResponsivePixelArtImage
         src={assets.TreeL2}
         alt="Tree 2"
         sizes={{
-          default: { show: true, width: 'auto', height: '7%', position: { left: '26%', bottom: '5.5%', zIndex: '10' } },
-          sm: { show: true, width: 'auto', height: '7%', position: { left: '26%', bottom: '5.2%', zIndex: '10' } },
-          md: { show: true, width: 'auto', height: '9%', position: { left: '25%', bottom: '6%', zIndex: '10' } },
-          lg: { show: true, width: 'auto', height: '11%', position: { left: '13%', bottom: '9%', zIndex: '10' } },
-          xl: { show: true, width: 'auto', height: '11%', position: { left: '13%', bottom: '10%', zIndex: '10' } },
-          '2xl': { show: true, width: 'auto', height: '11%', position: { left: '13%', bottom: '11%', zIndex: '10' } },
+          default: { show: true, width: 'auto', height: '7vh', position: { left: '26%', bottom: '5.5vh', zIndex: '10' } },
+          sm: { show: true, width: 'auto', height: '7vh', position: { left: '26%', bottom: '5.2vh', zIndex: '10' } },
+          md: { show: true, width: 'auto', height: '9vh', position: { left: '25%', bottom: '6vh', zIndex: '10' } },
+          lg: { show: true, width: 'auto', height: '11vh', position: { left: '13%', bottom: '9vh', zIndex: '10' } },
+          xl: { show: true, width: 'auto', height: '11vh', position: { left: '13%', bottom: '9vh', zIndex: '10' } },
+          '2xl': { show: true, width: 'auto', height: '11vh', position: { left: '13%', bottom: '11vh', zIndex: '10' } },
         }}
       />
       <ResponsivePixelArtImage
         src={assets.TreeR}
         alt="Tree R"
         sizes={{
-          default:  { show: true, width: 'auto', height: '7%', position: { left: '77%', bottom: '5.5%', zIndex: '10' }},
-          sm: { show: true, width: 'auto', height: '7%', position: { left: '77%', bottom: '5.2%', zIndex: '10' } },
-          md: { show: true, width: 'auto', height: '9%', position: { left: '65%', bottom: '6%', zIndex: '10' } },
-          lg: { show: true, width: 'auto', height: '11%', position: { left: '29%', bottom: '9%', zIndex: '10' } },
-          xl: { show: true, width: 'auto', height: '11%', position: { left: '29%', bottom: '10%', zIndex: '10' } },
-          '2xl': { show: true, width: 'auto', height: '11%', position: { left: '29%', bottom: '11%', zIndex: '10' } },
+          default: { show: true, width: 'auto', height: '7vh', position: { left: '77%', bottom: '5.5vh', zIndex: '10' } },
+          sm: { show: true, width: 'auto', height: '7vh', position: { left: '77%', bottom: '5.2vh', zIndex: '10' } },
+          md: { show: true, width: 'auto', height: '9vh', position: { left: '65%', bottom: '6vh', zIndex: '10' } },
+          lg: { show: true, width: 'auto', height: '11vh', position: { left: '29%', bottom: '9vh', zIndex: '10' } },
+          xl: { show: true, width: 'auto', height: '11vh', position: { left: '29%', bottom: '9vh', zIndex: '10' } },
+          '2xl': { show: true, width: 'auto', height: '11vh', position: { left: '29%', bottom: '11vh', zIndex: '10' } },
         }}
       />
+
       <ResponsivePixelArtImage
         src={assets.Treasure}
         alt="Treasure"
         sizes={{
           default: { show: false, width: '0', height: '0', position: { left: '0' } },
           sm: { show: false, width: '0', height: '0', position: { left: '0' } },
-          md: { show: true, width: 'auto', height: '5.5%', position: { left: '52%', bottom: '6%', zIndex: '30'   } },
-          lg: { show: true, width: 'auto', height: '5.5%', position: { left: '52%', bottom: '9%', zIndex: '30' } },
-          xl: { show: true, width: 'auto', height: '5.5%', position: { left: '52%', bottom: '9%', zIndex: '30' } },
-          '2xl': { show: true, width: 'auto', height: '5.5%', position: { left: '52%', bottom: '10%', zIndex: '30' } },
+          md: { show: true, width: 'auto', height: '5.5vh', position: { left: '52%', bottom: '6%', zIndex: '30'   } },
+          lg: { show: true, width: 'auto', height: '5.5vh', position: { left: '52%', bottom: '9%', zIndex: '30' } },
+          xl: { show: true, width: 'auto', height: '5.5vh', position: { left: '52%', bottom: '9%', zIndex: '30' } },
+          '2xl': { show: true, width: 'auto', height: '5.5vh', position: { left: '52%', bottom: '10%', zIndex: '30' } },
         }}
       />
     </div>
