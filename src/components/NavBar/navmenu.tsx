@@ -49,9 +49,12 @@ const NavMenu: React.FC<NavMenuProps> = ({ navItems, isDropdownOpen, toggleDropd
         </li>
       ))}
       <li className="hidden lg:flex justify-center">
-        <a href="#" className="h-[5vh] lg:h-[6vh] py-[1.1vh] px-[1.5vh] 2xl:py-[2.4vh] border rounded-[2vh] 2xl:rounded-[34px] bg-[#004B6E] hover:bg-[#002a3d] transition-colors text-white text-[3vh] lg:text-[3.8vh]">
-          Sponsor Us
-        </a>
+      <a
+        href="#"
+        className="h-[5vh] lg:h-[6vh] w-auto flex justify-center items-center py-[1.1vh] px-[1.5vh] 2xl:py-[2.4vh] border rounded-[1vh] bg-[#004B6E] hover:bg-[#002a3d] transition-colors text-white text-[3vh] lg:text-[3.8vh]">
+        Sponsor Us
+      </a>
+
       </li>
     </ul>
   );

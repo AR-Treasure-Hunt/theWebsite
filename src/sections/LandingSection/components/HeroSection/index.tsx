@@ -19,21 +19,21 @@ const HeroSection: React.FC = () => {
         </h2>
         {/* Button Section */}
         <div className="flex flex-col md:flex-row items-center gap-[2vh] self-stretch mt-[1.5vh] lg:mt-[2vh] xl:mt-[2.5vh] w-full justify-center lg:justify-start">
-          {/* Join The Adventure Button */}
-          <a
-            href="#"
-            className="flex justify-center items-center bg-[#003F5A] text-white text-[2.1vh] sm:text-[3vh] lg:text-[3vh] xl:text-[4vh] rounded-[2vh] hover:bg-[#002a3d] transition-colors whitespace-nowrap py-[0.6vh] px-[1vh] md:py-[1.2vh] md:px-[2.5vh] lg:py-[1.75vh] lg:px-[3vh] xl:py-[1.2vh]"
-          >
-            Join The Adventure
-          </a>
-          {/* Learn More Button */}
-          <a
-            href="#"
-            className="flex justify-center items-center text-[#003F5A] text-[2.1vh] sm:text-[3vh] lg:text-[3vh] xl:text-[4vh] backdrop-blur border-[0.3vh] lg:border-[0.3vh] border-[#003F5A] hover:bg-[#f0f0f0] transition-colors whitespace-nowrap py-[0.5vh] px-[3.7vh] sm:px-[4.9vh]  md:px-[2.5vh]  md:py-[0.93vh] lg:py-[1.4vh] lg:px-[2.5vh] xl:py-[1vh] rounded-[2vh]"
-          >
-            Learn More
-          </a>
-        </div>
+        {/* Join The Adventure Button */}
+        <a
+          href="#"
+          className="flex justify-center items-center bg-[#003F5A] text-white text-[2.1vh] sm:text-[2.5vh] lg:text-[3vh] xl:text-[4vh] rounded-[1vh] hover:bg-[#002a3d] transition-colors whitespace-nowrap h-[5vh] md:h-[6vh] lg:h-[7vh] xl:h-[8vh] w-[20vh] lg:w-[23vh] xl:w-[30vh]"
+        >
+          Join The Adventure
+        </a>
+        {/* Learn More Button */}
+        <a
+          href="#"
+          className="flex justify-center items-center text-[#003F5A] text-[2.1vh] sm:text-[2.5vh] lg:text-[3vh] xl:text-[4vh] backdrop-blur border-[0.3vh] lg:border-[0.3vh] border-[#003F5A] hover:bg-[#f0f0f0] transition-colors whitespace-nowrap h-[5vh] md:h-[6vh] lg:h-[7vh] xl:h-[8vh] w-[20vh] rounded-[1vh]"
+        >
+          Learn More
+        </a>
+      </div>
       </div>
 
       {/* Background Elements */}

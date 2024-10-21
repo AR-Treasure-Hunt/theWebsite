@@ -50,9 +50,9 @@ const MobileNavMenu: React.FC<MobileNavMenuProps> = ({ navItems, isDropdownOpen,
           </li>
         ))}
         <li>
-          <a href="#" className="inline-block mt-[4vh] py-[1vh] px-[2vh] sm:px-[3vh] border rounded-[2vh] bg-[#004B6E] text-white">
-            Sponsor Us
-          </a>
+        <a href="#" className="mt-[2vh] h-[6vh] sm:h-[7vh] w-[19vh] sm:w-[24vh] flex justify-center items-center border rounded-[1vh] bg-[#004B6E] text-white text-[3vh] sm:text-[4vh] hover:bg-[#002a3d] transition-colors">
+          Sponsor Us
+        </a>
         </li>
       </ul>
     </div>
