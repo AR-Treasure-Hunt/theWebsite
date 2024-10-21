@@ -199,8 +199,9 @@ color: rgba(255, 255, 255, 0.80);
 .content-para p {
     color: #FBD9BE;
     margin: 0; 
-    width: 100%;          
+    width: 90%;          
     word-wrap: break-word; 
+
 }
 
 
