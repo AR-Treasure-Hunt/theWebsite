@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-
 /* Define the size, maximum width, and positioning for both the wrapper and the card */
 .wrapper, .single-card {
 	height: 460px; /* Height for both wrapper and card */
