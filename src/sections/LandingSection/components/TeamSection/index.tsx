@@ -322,7 +322,7 @@ const Team: React.FC = () => {
                         href={member.socialLinks.github}
                         target="_blank"
                         rel="noopener noreferrer">
-                        <i className="fa fa-youtube"></i>
+                        <i className="fa fa-github"></i>
                       </a>
                     )}
                     {member.socialLinks?.instagram && (
