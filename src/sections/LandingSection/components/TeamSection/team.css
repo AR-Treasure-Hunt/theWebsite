@@ -255,3 +255,21 @@ color: #702412;
  justify-content: center;
  display: flex;
 }
+  
+  .socials a:hover i {
+    transform: scale(1.5);
+  }
+  
+  .socials a[href*="github"]:hover i {
+    color: black; /* GitHub brand color */
+  }
+  
+  .socials a[href*="instagram"]:hover i {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .socials a[href*="linkedin"]:hover i {
+    color: #0077b5; /* LinkedIn brand color */
+  }
