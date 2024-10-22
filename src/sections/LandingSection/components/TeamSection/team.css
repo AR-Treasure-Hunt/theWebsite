@@ -225,16 +225,17 @@ color: rgba(255, 255, 255, 0.80);
 
 
 .name-below-image {
-   
+    /* background: red; */
+
     z-index: 10;
     position: absolute;
     bottom : 50px;
 
 color: #702412;
- font-size: 34.36px;
+ font-size: 28px;
  font-family: Jersey 10;
- font-weight: 400;
- word-wrap: break-word
+ word-wrap: break-word ; 
+
 }
 
 .position-below-name {

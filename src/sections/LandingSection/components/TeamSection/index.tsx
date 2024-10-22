@@ -239,7 +239,7 @@ const teamData: TeamMember[] = [
         linkedin: 'https://www.linkedin.com/in/albina-shrestha-75955b2a1/'
       }},
   {
-    name: 'Shreejan Prasad Karmacharya',
+    name: 'Shreejan P. Karmacharya', 
     role: 'Content Creator',
     quote:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
