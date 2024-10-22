@@ -240,12 +240,17 @@ color: #702412;
 .position-below-name {
     position: absolute;
     bottom : 40px;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     z-index: 10;
 
     color: rgba(112, 36, 18, 0.60);
- font-size: 17.18px;
+ font-size: 15px;
  font-family: Rubik;
  font-weight: 400;
- word-wrap: break-word
+ word-wrap: break-word ; 
+ /* background: red; */
+ width: 90%;
+ align-items: center;
+ justify-content: center;
+ display: flex;
 }
