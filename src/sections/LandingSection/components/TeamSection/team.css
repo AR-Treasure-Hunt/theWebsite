@@ -256,9 +256,7 @@ color: #702412;
  display: flex;
 }
   
-  .socials a:hover i {
-    transform: scale(1.5);
-  }
+
   
   .socials a[href*="github"]:hover i {
     color: black; /* GitHub brand color */
