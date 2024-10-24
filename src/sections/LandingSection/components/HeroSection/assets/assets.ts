@@ -6,7 +6,7 @@ import Temple from './Temple.png'
 import TreeL1 from './TreeL1.png'
 import TreeL2 from './TreeL2.png'
 import TreeR from './TreeR.png'
-import Pik from './Pik.gif'
+import Pik from './Pik.gif' 
 import Treasure from './Treasure.png'
 
 export const assets = {

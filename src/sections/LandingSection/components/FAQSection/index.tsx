@@ -29,13 +29,13 @@ const FAQItem: React.FC<FAQItem> = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-200 py-4">
+    <div className="border-b bg-moussaka p-4 border-gray-200 py-4">
       {/* Clickable button to toggle the FAQ item */}
       <button
-        className="flex justify-between items-center w-full text-left font-medium text-gray-900 focus:outline-none"
+        className="flex justify-between items-center w-full text-left font-medium text-white focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
-         <span style={{ fontSize: '26px' }}>{question}</span>
+        <span style={{ fontSize: '26px' }}>{question}</span>
         {/* ChevronDown icon that rotates when the item is open */}
         <ChevronDown
           className={`w-5 h-5 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`}
@@ -45,17 +45,19 @@ const FAQItem: React.FC<FAQItem> = ({ question, answer }) => {
       <div
         className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
       >
-<p className="pt-4 pb-2 text-gray-600" style={{ fontSize: '20px' }}>{answer}</p>      </div>
+        <p className="pt-4 pb-2 text-white" style={{ fontSize: '20px' }}>{answer}</p>
+      </div>
     </div>
   );
 };
 
 // Main FAQ Section
+// Main FAQ Section
 const FAQSection: React.FC = () => {
   return (
-    <div className="max-w-7xl mx-auto my-8 px-4">
-<h2 className="text-5xl font-bold mb-6 text-center">FAQ</h2>      
-<div className="space-y-2">
+    <div className="max-w-7xl mx-auto my-8 px-4 mb-8">
+      <h2 className="text-5xl font-bold mb-6 text-center text-white">FAQ</h2>
+      <div className="space-y-2">
         {/* Render FAQ items */}
         {faqData.map((faq, index) => (
           <FAQItem key={index} question={faq.question} answer={faq.answer} />
@@ -64,5 +66,6 @@ const FAQSection: React.FC = () => {
     </div>
   );
 };
+
 
 export default FAQSection;
