@@ -1,6 +1,5 @@
 import cloudup from './cloudup.png'
 import clouddown from './clouddown.png';
-import Logo from './Logo.png';
 import Mountains from './Mountains.png';
 import Ground from './Ground.png'
 import Temple from './Temple.png'
@@ -13,7 +12,6 @@ import Treasure from './Treasure.png'
 export const assets = {
     cloudup,
     clouddown,
-    Logo,
     Mountains,
     Ground,
     Temple,

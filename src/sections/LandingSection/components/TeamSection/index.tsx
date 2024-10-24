@@ -326,6 +326,7 @@ const teamData: TeamMember[] = [
   }}
 ];
 
+
 const Team: React.FC = () => {
   return (
     <>

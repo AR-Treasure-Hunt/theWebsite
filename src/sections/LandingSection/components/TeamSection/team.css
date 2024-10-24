@@ -18,6 +18,7 @@
     max-width: 1200px;
 }
 
+
 .wrapper-outer-for-margins {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping of cards */
