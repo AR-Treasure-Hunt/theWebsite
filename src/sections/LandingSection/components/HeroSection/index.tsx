@@ -1,6 +1,7 @@
 import React from 'react';
 import { assets } from './assets/assets';
 import ResponsivePixelArtImage from './image';
+import { Link } from '@tanstack/react-router';
 
 const HeroSection: React.FC = () => {
   return (
@@ -20,12 +21,12 @@ const HeroSection: React.FC = () => {
         {/* Button Section */}
         <div className="flex flex-col md:flex-row items-center gap-[2vh] self-stretch mt-[1.5vh] lg:mt-[2vh] xl:mt-[2.5vh] w-full justify-center lg:justify-start">
         {/* Join The Adventure Button */}
-        <a
-          href="#"
+        <Link
+          to="/registration"
           className="flex justify-center items-center bg-[#003F5A] text-white text-[2.1vh] sm:text-[2.5vh] lg:text-[3vh] xl:text-[4vh] rounded-[1vh] hover:bg-[#002a3d] transition-colors whitespace-nowrap h-[5vh] md:h-[6vh] lg:h-[7vh] xl:h-[8vh] w-[20vh] lg:w-[23vh] xl:w-[30vh]"
         >
           Join The Adventure
-        </a>
+        </Link>
         {/* Learn More Button */}
         <a
           href="#"
