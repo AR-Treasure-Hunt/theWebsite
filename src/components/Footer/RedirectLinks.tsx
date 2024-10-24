@@ -13,7 +13,7 @@ export const FOOTER_LINKS = [
   },
   {
       title: 'Code of Conduct',
-      link: '/'
+      link: '/code-of-conduct'
   }
 ];
 
