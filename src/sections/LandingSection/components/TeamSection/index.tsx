@@ -1,8 +1,29 @@
 import React from 'react';
 import './team.css';
 import 'font-awesome/css/font-awesome.min.css';
-import davidImage from './david.png'; // Import the image
-import backgroundImage from './background.png'; // Import the background image
+
+// images haru 
+import Abi from './Images/Abi_Shrestha.png';
+import Anuja from './Images/Anuja_Lamsal.png';
+import Arpan from './Images/Arpan.png';
+import Bhishma from './Images/Bhishma.png';
+import Bibhushan from './Images/bibhusan.png';
+import david from './Images/david.png';
+import himesh_dulal from './Images/himesh_dulal.png';
+import Manjul_Tamrakar from './Images/Manjul_Tamrakar.png';
+import Mohit from './Images/Mohit-Rajbhandari.png';
+import Sally from './Images/sally_shrestha.png';
+import SamikshyaUpadhyay from './Images/SamikshyaUpadhyay.png';
+import Sinja from './Images/Sinja.png';
+import Sujay from './Images/Sujay.png';
+import Sushila_Shrestha from './Images/Sushila_Shrestha.png';
+import Swarnim_Bajracharya from './Images/Swarnim_Bajracharya.png';
+
+// back side of the card
+import backgroundImage from './background.png'; 
+
+// default image
+import defaultImage from './Images/default.png';
 
 // Interface for team member items
 interface SocialLinks {
@@ -15,7 +36,8 @@ interface TeamMember {
   name: string;
   role: string;
   quote: string;
-  socialLinks?: SocialLinks; // Add this line
+  socialLinks?: SocialLinks;
+  image?: string;
 }
 
 // team data
@@ -23,6 +45,7 @@ interface TeamMember {
 const teamData: TeamMember[] = [
   {
     name: 'Bibhushan Saakha',
+    image : Bibhushan,
     role: 'Event Lead',
     quote:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
@@ -53,6 +76,7 @@ const teamData: TeamMember[] = [
     },
   {
     name: 'Sinja Ghimire ',
+    image : Sinja ,
     role: 'Content Creator',
     quote:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -74,6 +98,7 @@ const teamData: TeamMember[] = [
   {
     name: 'Abi Shrestha',
     role: 'Web Development Lead',
+    image : Abi,
     quote:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
     socialLinks: {
@@ -83,6 +108,7 @@ const teamData: TeamMember[] = [
     }},
   {
     name: 'Himesh Dulal ',
+    image : himesh_dulal, 
     role: 'Backend Developer ',
     quote:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -93,6 +119,7 @@ const teamData: TeamMember[] = [
     }},
   {
     name: 'Manjul Tamrakar',
+    image : Manjul_Tamrakar , 
     role: 'Frontend Developer',
     quote:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -109,6 +136,7 @@ const teamData: TeamMember[] = [
   },
   {
     name: 'Sushila Shrestha ',
+    image : Sushila_Shrestha ,
     role: 'Frontend Developer',
     quote:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -119,6 +147,7 @@ const teamData: TeamMember[] = [
     }},
   {
     name: 'Anuja Lamsal',
+    image : Anuja ,
     role: 'Backend Developer',
     quote:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
@@ -132,6 +161,7 @@ const teamData: TeamMember[] = [
   {
     name: 'David Ramovich Mandal',
     role: 'Frontend Developer',
+    image : david,
     quote:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
   },
@@ -165,6 +195,7 @@ const teamData: TeamMember[] = [
     }},
   {
     name: 'Sujay Pal',
+    image : Sujay ,
     role: 'Marketing Lead',
     quote:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -175,12 +206,14 @@ const teamData: TeamMember[] = [
     }},
   {
     name: 'Samikshya Upadhyay',
+    image : SamikshyaUpadhyay,
     role: 'Talent Management',
     quote:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
   },
   {
     name: 'Mohit Rajbhandari',
+    image : Mohit , 
     role: 'Frontend Developer',
     quote:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
@@ -205,6 +238,7 @@ const teamData: TeamMember[] = [
     }},
   {
     name: 'Swarnim Bajracharya',
+    image : Swarnim_Bajracharya ,
     role: 'Creative Team Member',
     quote:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -215,6 +249,7 @@ const teamData: TeamMember[] = [
   }},
   {
     name: 'Sally Shrestha',
+    image : Sally , 
     role: '?????',
     quote:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -260,6 +295,7 @@ const teamData: TeamMember[] = [
   },
   {
     name: 'Arpan Aadhikari',
+    image : Arpan ,
     role: '?????',
     quote:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -279,7 +315,8 @@ const teamData: TeamMember[] = [
     linkedin: 'https://www.linkedin.com/in/nischal-baral-6b8404229/'
   }},
   {
-    name: 'bhishma Bhandari',
+    name: 'Bhishma Bhandari',
+    image: Bhishma ,
     role: 'Sponsorship Member',
     quote:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -298,7 +335,10 @@ const Team: React.FC = () => {
           {teamData.map((member, index) => (
             <div key={index} className="single-card">
               <div className="front">
-                <img src={davidImage} alt={member.name} className="card-image" />
+                <img src={member.image ? member.image : defaultImage} 
+            alt={member.name}  className="card-image" />
+           
+
                 <div className="name-below-image">{member.name}</div>
                 <div className="position-below-name">{member.role}</div>
                 <div
