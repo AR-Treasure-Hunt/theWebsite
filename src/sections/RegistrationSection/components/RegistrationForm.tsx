@@ -43,6 +43,7 @@ export default function RegistrationForm() {
     const [openSections, setOpenSections] = useState<number[]>([1])
     const [closingSection, setClosingSection] = useState<number | null>(null)
     const [completedSteps, setCompletedSteps] = useState<number[]>([])
+    const [isSection2Submitted, setIsSection2Submitted] = useState(false)
 
     const form = useForm<RegistrationSchema>({
         resolver: zodResolver(registrationSchema),
@@ -56,7 +57,8 @@ export default function RegistrationForm() {
         },
     })
 
-    const handleNextStep = async () => {
+    const handleNextStep = async (e?: React.MouseEvent) => {
+        e?.preventDefault() // Prevent form submission
         if (step === 1) {
             const isValid = await form.trigger([
                 "fullName",
@@ -68,26 +70,36 @@ export default function RegistrationForm() {
             if (!isValid) return
 
             setCompletedSteps(prev => [...prev, 1])
+            setClosingSection(1)
+            setTimeout(() => {
+                setStep(2)
+                setOpenSections([2])
+                setClosingSection(null)
+            }, 300)
         }
 
-        if (step < 3) {
-            setClosingSection(step)
+        if (step === 2) {
+            const isValid = await form.trigger(["teamOption", "teamName"])
+            if (!isValid) return
+
+            setClosingSection(2)
             setTimeout(() => {
-                setStep(step + 1)
-                setOpenSections(prev => [...prev, step + 1])
+                setStep(3)
+                setOpenSections([3])
                 setClosingSection(null)
             }, 300)
         }
     }
 
-    const handlePrevStep = () => {
-        if (step > 1 && step < 3 && !completedSteps.includes(2)) {
+    const handlePrevStep = (e: React.MouseEvent) => {
+        e.preventDefault()
+        if (step > 1 && step < 3 && !isSection2Submitted) {
             setClosingSection(step)
             setTimeout(() => {
                 setStep(step - 1)
-                setOpenSections(prev => prev.filter(s => s !== step))
+                setOpenSections([step - 1])
                 setClosingSection(null)
-            }, 300)
+            }, 200)
         }
     }
 
@@ -100,6 +112,7 @@ export default function RegistrationForm() {
             const newTeamCode = "TEAM" + Math.random().toString(36).substr(2, 6).toUpperCase()
             setTeamCode(newTeamCode)
             setCompletedSteps(prev => [...prev, 2])
+            setIsSection2Submitted(true)
             handleNextStep()
         }
     }
@@ -122,16 +135,17 @@ export default function RegistrationForm() {
     const toggleSection = (sectionNumber: number) => {
         if (!canAccessSection(sectionNumber)) return
 
+        if (isSection2Submitted && sectionNumber < 3) return
+
         if (openSections.includes(sectionNumber)) {
-            if (!isStepComplete(sectionNumber)) {
-                setClosingSection(sectionNumber)
-                setTimeout(() => {
-                    setOpenSections(prev => prev.filter(s => s !== sectionNumber))
-                    setClosingSection(null)
-                }, 300)
-            }
+            setClosingSection(sectionNumber)
+            setTimeout(() => {
+                setOpenSections(prev => prev.filter(s => s !== sectionNumber))
+                setClosingSection(null)
+            }, 200)
         } else {
-            setOpenSections(prev => [...prev, sectionNumber])
+            setOpenSections([sectionNumber])
+            setStep(sectionNumber)
         }
     }
 
@@ -161,7 +175,7 @@ export default function RegistrationForm() {
                                             "bg-muted hover:bg-muted/80": canAccessSection(sectionNumber),
                                             "bg-muted/50 cursor-not-allowed": !canAccessSection(sectionNumber)
                                         })}
-                                        disabled={!canAccessSection(sectionNumber)}
+                                        disabled={!canAccessSection(sectionNumber) || (isSection2Submitted && sectionNumber < 3)}
                                     >
                                         <span className="text-lg">
                                             {sectionNumber}. {
@@ -170,7 +184,7 @@ export default function RegistrationForm() {
                                                         "Team Creation Successful"
                                             }
                                         </span>
-                                        {isStepComplete(sectionNumber) ? (
+                                        {isStepComplete(sectionNumber) && isSection2Submitted ? (
                                             <div className="flex items-center space-x-2">
                                                 <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                                                     <CheckCircleIcon className="h-5 w-5 text-green-500" />
@@ -199,10 +213,14 @@ export default function RegistrationForm() {
                                                     <div className="p-4 space-y-4">
                                                         {sectionNumber === 1 && (
                                                             <>
-                                                                <PersonalDetails isDisabled={isStepComplete(1)} />
-                                                                {!isStepComplete(1) && step === 1 && (
+                                                                <PersonalDetails isDisabled={isSection2Submitted} />
+                                                                {!isSection2Submitted && step === 1 && (
                                                                     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                                                                        <Button onClick={handleNextStep} className="w-full text-lg tracking-wide bg-[#004B6E] hover:bg-[#002a3d]">
+                                                                        <Button
+                                                                            type="button"
+                                                                            onClick={handleNextStep}
+                                                                            className="w-full text-lg tracking-wide bg-[#004B6E] hover:bg-[#002a3d]"
+                                                                        >
                                                                             Next
                                                                         </Button>
                                                                     </motion.div>
@@ -211,11 +229,16 @@ export default function RegistrationForm() {
                                                         )}
                                                         {sectionNumber === 2 && (
                                                             <>
-                                                                <TeamSection isDisabled={isStepComplete(2)} />
-                                                                {!isStepComplete(2) && step === 2 && (
+                                                                <TeamSection isDisabled={isSection2Submitted} />
+                                                                {!isSection2Submitted && step === 2 && (
                                                                     <div className="flex justify-between">
                                                                         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                                                                            <Button variant="outline" className="text-lg tracking-wide" onClick={handlePrevStep}>
+                                                                            <Button
+                                                                                type="button"
+                                                                                variant="outline"
+                                                                                className="text-lg tracking-wide"
+                                                                                onClick={handlePrevStep}
+                                                                            >
                                                                                 Back
                                                                             </Button>
                                                                         </motion.div>
