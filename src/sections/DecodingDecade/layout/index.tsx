@@ -3,6 +3,7 @@ import DecodingDecadeFirstScreen from "../components/DecodingDecadeFirstScreen";
 import DecodingDecadeModal from "../components/DecodingDecadeModal";
 import DecodingDecadeSecondScreen from "../components/DecodingDecadeSecondScreen";
 import DecodingDecadeThirdScreen from "../components/DecodingDecadeThirdScreen";
+import { string } from "zod";
 
 export function DecodingDecadeSection() {
     // State goes here
@@ -25,10 +26,10 @@ export function DecodingDecadeSection() {
             {currentPage === 1 && <DecodingDecadeSecondScreen handleScreenChange={handleScreenChange} handleApiResponse={handleApiResponse} />}
             {currentPage === 2 && <DecodingDecadeThirdScreen  handleApiResponse={handleApiResponse} />}
         </DecodingDecadeModal>
-        {!apiResponse.success && (
+        {!apiResponse.success && apiResponse.message != '' && (
             <div className="absolute right-[50px] bottom-[50px] text-red-500 text-[24px] border border-red-500 rounded-md p-[16px]">{apiResponse.message}</div>
           )}
-        {apiResponse.success && (
+        {apiResponse.success && apiResponse.message != '' && (
             <div className="absolute right-[50px] bottom-[50px] text-red-500 text-[24px] border border-lime-500 rounded-md p-[16px]">{apiResponse.message}</div>
           )}
         </>
