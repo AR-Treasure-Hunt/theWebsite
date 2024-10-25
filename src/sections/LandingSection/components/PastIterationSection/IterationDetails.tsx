@@ -27,8 +27,8 @@ export default function IterationDetails({ detailsObj, roundObj }: Props) {
 
     return (
         <div className="md:p-8 my-8 text-white">
-            <h2 className="text-4xl md:text-7xl font-bold mb-1 tracking-wide">{detailsObj.year}</h2>
-            <p className="text-xl md:text-5xl mb-24 text-crayola-bright-yellow tracking-wide">({detailsObj.title})</p>
+            <h2 className="text-6xl md:text-7xl font-bold mb-1 tracking-wide">{detailsObj.year}</h2>
+            <p className="text-4xl md:text-5xl mb-24 text-crayola-bright-yellow tracking-wide">({detailsObj.title})</p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
                 <div className="bg-moussaka border-none col-span-2 md:col-span-3 relative p-4 h-36 sm:h-52 rounded-lg flex">
@@ -59,7 +59,7 @@ export default function IterationDetails({ detailsObj, roundObj }: Props) {
             </div>
 
             <div className="md:block hidden">
-                <h3 className="text-5xl md:text-7xl tracking-wide mb-32 text-deep-saffron">The <span className='text-metallic-yellow'>Three</span> rounds</h3>
+                <h3 className="text-5xl md:text-7xl tracking-wide mb-32 text-deep-saffron">The <span className='text-metallic-yellow'>{roundObj.length === 3 ? 'Three' : 'Two'}</span> rounds</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 z-30">
                     {roundObj.map((round, index) => (
                         <div key={index} className='relative'>
@@ -91,7 +91,7 @@ export default function IterationDetails({ detailsObj, roundObj }: Props) {
 
                 {showDetails && (
                     <div className="mt-4">
-                        <h3 className="text-2xl font-bold text-yellow-400 mb-24 sm:mb-36">The Three roundObj</h3>
+                        <h3 className="text-2xl capitalize font-bold text-yellow-400 mb-24 sm:mb-36">The {roundObj.length === 3 ? 'Three' : 'Two'} Rounds</h3>
                         <div className="space-y-36">
                             {roundObj.map((round, index) => (
                                 <div key={index} className='relative'>

@@ -16,6 +16,51 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
 
+  <!-- Preload the font with high priority -->
+  <link rel="preload" href="/font/Jersey10.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Inline critical CSS -->
+  <style>
+    @font-face {
+      font-family: 'Jersey 10';
+      src: url('/font/Jersey10.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: block;
+    }
+
+    body {
+      font-family: 'Jersey 10', sans-serif;
+    }
+
+    .fonts-loading {
+      visibility: hidden;
+    }
+  </style>
+
+  <!-- Font loading and swapping script -->
+  <script>
+    (function () {
+      document.documentElement.classList.add('fonts-loading');
+
+      if ("fonts" in document) {
+        Promise.all([
+          document.fonts.load("1em Jersey 10"),
+          document.fonts.ready
+        ]).then(function () {
+          document.documentElement.classList.remove('fonts-loading');
+          document.documentElement.classList.add('fonts-loaded');
+        }).catch(function () {
+          document.documentElement.classList.remove('fonts-loading');
+          document.documentElement.classList.add('fonts-failed');
+        });
+      } else {
+        // Fallback for browsers that don't support font loading API
+        document.documentElement.classList.remove('fonts-loading');
+      }
+    })();
+  </script>
+
   <title>AR Treasure Hunt 2024</title>
 </head>
 
