@@ -172,7 +172,7 @@ export default function RegistrationForm() {
     const getSectionTitle = (sectionNumber: number) => {
         if (sectionNumber === 1) return "Enter Your Details"
         if (sectionNumber === 2) return "Create or Join Team"
-        return teamAction === "create" ? "Team Created Successfully" : "Team Joined Successfully"
+        return "Final Step"
     }
 
     return (
