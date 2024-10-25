@@ -101,7 +101,7 @@
 
   .ground-tile-bg {
     width: 100%;
-    background-image: url("/images/ground_tile.png");
+    background-image: url("/images/ground_tile.webp");
     background-repeat: repeat;
   }
 

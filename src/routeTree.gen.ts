@@ -56,18 +56,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CodeOfConductImport
       parentRoute: typeof rootRoute
     }
-    '/registration': {
-      id: '/registration'
-      path: '/registration'
-      fullPath: '/registration'
-      preLoaderRoute: typeof RegistrationImport
-      parentRoute: typeof rootRoute
-    }
     '/decoding-decade': {
       id: '/decoding-decade'
       path: '/decoding-decade'
       fullPath: '/decoding-decade'
       preLoaderRoute: typeof DecodingDecadeImport
+      parentRoute: typeof rootRoute
+    }
+    '/registration': {
+      id: '/registration'
+      path: '/registration'
+      fullPath: '/registration'
+      preLoaderRoute: typeof RegistrationImport
       parentRoute: typeof rootRoute
     }
   }
@@ -78,46 +78,51 @@ declare module '@tanstack/react-router' {
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/code-of-conduct': typeof CodeOfConductRoute
-  '/registration': typeof RegistrationRoute
   '/decoding-decade': typeof DecodingDecadeRoute
+  '/registration': typeof RegistrationRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/code-of-conduct': typeof CodeOfConductRoute
-  '/registration': typeof RegistrationRoute
   '/decoding-decade': typeof DecodingDecadeRoute
+  '/registration': typeof RegistrationRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
   '/code-of-conduct': typeof CodeOfConductRoute
-  '/registration': typeof RegistrationRoute
   '/decoding-decade': typeof DecodingDecadeRoute
+  '/registration': typeof RegistrationRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/code-of-conduct' | '/registration' | '/decoding-decade'
+  fullPaths: '/' | '/code-of-conduct' | '/decoding-decade' | '/registration'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/code-of-conduct' | '/registration' | '/decoding-decade'
-  id: '__root__' | '/' | '/code-of-conduct' | '/registration' | '/decoding-decade'
+  to: '/' | '/code-of-conduct' | '/decoding-decade' | '/registration'
+  id:
+    | '__root__'
+    | '/'
+    | '/code-of-conduct'
+    | '/decoding-decade'
+    | '/registration'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CodeOfConductRoute: typeof CodeOfConductRoute
-  RegistrationRoute: typeof RegistrationRoute
   DecodingDecadeRoute: typeof DecodingDecadeRoute
+  RegistrationRoute: typeof RegistrationRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CodeOfConductRoute: CodeOfConductRoute,
-  RegistrationRoute: RegistrationRoute,
   DecodingDecadeRoute: DecodingDecadeRoute,
+  RegistrationRoute: RegistrationRoute,
 }
 
 export const routeTree = rootRoute
@@ -134,8 +139,8 @@ export const routeTree = rootRoute
       "children": [
         "/",
         "/code-of-conduct",
-        "/registration",
-        "/decoding-decade"
+        "/decoding-decade",
+        "/registration"
       ]
     },
     "/": {
@@ -144,11 +149,11 @@ export const routeTree = rootRoute
     "/code-of-conduct": {
       "filePath": "code-of-conduct.tsx"
     },
-    "/registration": {
-      "filePath": "registration.tsx"
-    },
     "/decoding-decade": {
       "filePath": "decoding-decade.tsx"
+    },
+    "/registration": {
+      "filePath": "registration.tsx"
     }
   }
 }
