@@ -35,7 +35,7 @@ const DecodingDecadeSecondScreen = (props: DecodingDecadeSecondScreenProps) => {
     <>
       <p className='text-center text-[28px] text-lime-500 mb-[12px]'>Congratulations! You've solved the clue!</p>
       <p className="text-left text-[28px] text-gray-600 mb-[6px]">Enter your team name so we can generate you an image to flex on Instagram:</p>
-      <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
+      <form method='post' onSubmit={handleSubmit} className="flex flex-col space-y-4">
         <input
           type="text"
           placeholder="Enter your team name"

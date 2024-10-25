@@ -36,7 +36,7 @@ const DecodingDecadeFirstScreen = (props: DecodingDecadeFirstScreenProps) => {
   return (
     <>
       <p className="text-left text-[28px] text-gray-600 mb-[6px]">So, have you solved the clue?</p>
-      <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
+      <form method='post' onSubmit={handleSubmit} className="flex flex-col space-y-4">
         <input
           type="text"
           placeholder="Enter your answer"
