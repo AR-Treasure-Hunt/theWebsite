@@ -6,7 +6,7 @@ import { Form } from "@/components/ui/form"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
-import { CheckCircleIcon, ChevronDownIcon, ChevronUpIcon, LockIcon } from "lucide-react"
+import { CheckCircleIcon, ChevronDownIcon, ChevronUpIcon, Loader2, LockIcon } from "lucide-react"
 
 import { registrationSchema, type RegistrationSchema } from "./RegistrationSchema"
 import { PersonalDetails } from "./PersonalDetails"
@@ -44,6 +44,8 @@ export default function RegistrationForm() {
     const [closingSection, setClosingSection] = useState<number | null>(null)
     const [completedSteps, setCompletedSteps] = useState<number[]>([])
     const [isSection2Submitted, setIsSection2Submitted] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
+    const [teamAction, setTeamAction] = useState<"create" | "join">("create")
 
     const form = useForm<RegistrationSchema>({
         resolver: zodResolver(registrationSchema),
@@ -58,7 +60,7 @@ export default function RegistrationForm() {
     })
 
     const handleNextStep = async (e?: React.MouseEvent) => {
-        e?.preventDefault() // Prevent form submission
+        e?.preventDefault()
         if (step === 1) {
             const isValid = await form.trigger([
                 "fullName",
@@ -103,17 +105,35 @@ export default function RegistrationForm() {
         }
     }
 
+    const simulateAsyncRequest = async () => {
+        return new Promise(resolve => setTimeout(resolve, 1000))
+    }
+
     const onSubmit = async (data: RegistrationSchema) => {
         console.log(data);
         if (step === 2) {
             const isValid = await form.trigger(["teamOption", "teamName"])
             if (!isValid) return
 
-            const newTeamCode = "TEAM" + Math.random().toString(36).substr(2, 6).toUpperCase()
-            setTeamCode(newTeamCode)
-            setCompletedSteps(prev => [...prev, 2])
-            setIsSection2Submitted(true)
-            handleNextStep()
+            setIsLoading(true)
+            setTeamAction(data.teamOption)
+
+            try {
+                await simulateAsyncRequest()
+
+                if (data.teamOption === "create") {
+                    const newTeamCode = "TEAM" + Math.random().toString(36).substr(2, 6).toUpperCase()
+                    setTeamCode(newTeamCode)
+                } else {
+                    setTeamCode(data.teamName || "")
+                }
+
+                setCompletedSteps(prev => [...prev, 2])
+                setIsSection2Submitted(true)
+                handleNextStep()
+            } finally {
+                setIsLoading(false)
+            }
         }
     }
 
@@ -149,6 +169,12 @@ export default function RegistrationForm() {
         }
     }
 
+    const getSectionTitle = (sectionNumber: number) => {
+        if (sectionNumber === 1) return "Enter Your Details"
+        if (sectionNumber === 2) return "Create or Join Team"
+        return teamAction === "create" ? "Team Created Successfully" : "Team Joined Successfully"
+    }
+
     return (
         <motion.div
             className="container mx-auto py-20"
@@ -178,11 +204,7 @@ export default function RegistrationForm() {
                                         disabled={!canAccessSection(sectionNumber) || (isSection2Submitted && sectionNumber < 3)}
                                     >
                                         <span className="text-lg">
-                                            {sectionNumber}. {
-                                                sectionNumber === 1 ? "Enter Your Details" :
-                                                    sectionNumber === 2 ? "Create or Join Team" :
-                                                        "Team Creation Successful"
-                                            }
+                                            {sectionNumber}. {getSectionTitle(sectionNumber)}
                                         </span>
                                         {isStepComplete(sectionNumber) && isSection2Submitted ? (
                                             <div className="flex items-center space-x-2">
@@ -243,11 +265,24 @@ export default function RegistrationForm() {
                                                                             </Button>
                                                                         </motion.div>
                                                                         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                                                                            <Button className="text-lg tracking-wide bg-[#004B6E] hover:bg-[#002a3d]" type="submit">
-                                                                                {form.getValues("teamOption") === "create" ?
-                                                                                    "Create Team" :
-                                                                                    "Join Team"
-                                                                                }
+                                                                            <Button
+                                                                                className="text-lg tracking-wide bg-[#004B6E] hover:bg-[#002a3d]"
+                                                                                type="submit"
+                                                                                disabled={isLoading}
+                                                                            >
+                                                                                {isLoading ? (
+                                                                                    <>
+                                                                                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                                                                                        {form.getValues("teamOption") === "create" ?
+                                                                                            "Creating Team..." :
+                                                                                            "Joining Team..."
+                                                                                        }
+                                                                                    </>
+                                                                                ) : (
+                                                                                    form.getValues("teamOption") === "create" ?
+                                                                                        "Create Team" :
+                                                                                        "Join Team"
+                                                                                )}
                                                                             </Button>
                                                                         </motion.div>
                                                                     </div>
@@ -258,6 +293,7 @@ export default function RegistrationForm() {
                                                             <SuccessSection
                                                                 teamCode={teamCode}
                                                                 onCopy={copyToClipboard}
+                                                                action={teamAction}
                                                             />
                                                         )}
                                                     </div>

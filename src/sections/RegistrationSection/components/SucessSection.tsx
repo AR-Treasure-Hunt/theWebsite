@@ -7,9 +7,10 @@ import clsx from "clsx"
 interface SuccessSectionProps {
     teamCode: string
     onCopy: () => void
+    action: "create" | "join"
 }
 
-export function SuccessSection({ teamCode, onCopy }: SuccessSectionProps) {
+export function SuccessSection({ teamCode, onCopy, action }: SuccessSectionProps) {
     const [showCopySuccess, setShowCopySuccess] = useState(false)
 
     const handleCopy = () => {
@@ -20,9 +21,14 @@ export function SuccessSection({ teamCode, onCopy }: SuccessSectionProps) {
 
     return (
         <div className="space-y-4">
-            <p>Team Created Successfully!</p>
+            <p>{action === "create" ? "Team Created Successfully!" : "Team Joined Successfully!"}</p>
             <p>Your team code is: <strong className="text-xl tracking-wide">{teamCode}</strong></p>
-            <p>Please remember this code and share it only with your team members.</p>
+            <p>
+                {action === "create"
+                    ? "Please remember this code and share it only with your team members."
+                    : "You have successfully joined the team. Welcome aboard!"
+                }
+            </p>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button
                     onClick={handleCopy}
@@ -44,6 +50,6 @@ export function SuccessSection({ teamCode, onCopy }: SuccessSectionProps) {
                     )}
                 </Button>
             </motion.div>
-        </div >
+        </div>
     )
 }
