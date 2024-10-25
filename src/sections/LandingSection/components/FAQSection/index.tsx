@@ -1,47 +1,55 @@
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
-// Interface for FAQ items
 interface FAQItem {
   question: string;
   answer: string;
 }
 
-// Sample FAQ data
 const faqData: FAQItem[] = [
   {
-    question: "What is an AR treasure hunt?",
-    answer: "An AR treasure hunt is an exciting adventure that combines augmented reality technology with real-world exploration. Participants use their smartphones to find virtual treasures hidden in physical locations."
+    question: "Is there a registration fee to participate?",
+    answer: "No, participation is absolutely free. You can, however, win many things before and during the event. So, make sure to follow all our social media accounts!"
   },
   {
-    question: "When can I participate?",
-    answer: "Our AR treasure hunts are scheduled regularly throughout the year. Check our events calendar for upcoming dates and times. We also offer special seasonal hunts during holidays!"
+    question: "Can I participate as an individual or as a team?",
+    answer: "You can register as an individual (solo), with a friend (duo) or with a max of two friends (trio). Experts say that this game is best played as a trio!"
   },
   {
-    question: "Who can participate?",
-    answer: "Anyone with a compatible smartphone can join our AR treasure hunts! We welcome participants of all ages, though children under 12 should be accompanied by an adult. No prior AR experience is necessary."
+    question: "What is Augmented Reality?",
+    answer: "Augmented Reality (AR) is a technology that blends the digital world with the real one by placing digital elements, such as images, videos, and 3D models, on top of the physical environment in real-time that you can observe through your phone camera."
+  },
+  {
+    question: "Can I participate in the event with no prior experience of AR?",
+    answer: "Yes, you can! This event is designed for participants of all experience levels. Instructions and tutorials will be provided for your ease."
+  },
+  {
+    question: "How many rounds will ARTH v3 have?",
+    answer: "Like the last iteration, ARTH v3 will have 3 rounds, with the final round being the AR Hunt."
+  },
+  {
+    question: "Is ARTH v3 any different from ARTH v2?",
+    answer: "Absolutely! Our team has been working relentlessly to provide a fun and novel experience for you. ARTH v3 will have features never seen before, as was the case with ARTH v2."
+  },
+  {
+    question: "Is there an age restriction?",
+    answer: "No, AR Treasure Hunt is free for all. Participants under the age of 18 must acquire approval from their legal guardian, though."
   }
 ];
 
-// Single FAQ item component
 const FAQItem: React.FC<FAQItem> = ({ question, answer }) => {
-  // State to manage the open/closed state of the FAQ item
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div className="border-b bg-moussaka p-4 border-gray-200 py-4">
-      {/* Clickable button to toggle the FAQ item */}
       <button
         className="flex justify-between items-center w-full text-left font-medium text-white focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span style={{ fontSize: '26px' }}>{question}</span>
-        {/* ChevronDown icon that rotates when the item is open */}
         <ChevronDown
           className={`w-5 h-5 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`}
         />
       </button>
-      {/* Collapsible answer section */}
       <div
         className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
       >
@@ -51,8 +59,6 @@ const FAQItem: React.FC<FAQItem> = ({ question, answer }) => {
   );
 };
 
-// Main FAQ Section
-// Main FAQ Section
 const FAQSection: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto my-8 px-4 mb-8">
@@ -66,6 +72,5 @@ const FAQSection: React.FC = () => {
     </div>
   );
 };
-
 
 export default FAQSection;
