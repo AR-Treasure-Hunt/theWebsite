@@ -9,6 +9,7 @@ import TreeR from './TreeR.webp';
 import Pik from './Pik.webp';
 import Treasure from './Treasure.webp';
 
+
 export const assets = {
     cloudup,
     clouddown,
