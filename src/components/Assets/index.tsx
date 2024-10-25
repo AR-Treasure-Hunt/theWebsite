@@ -1,11 +1,11 @@
-import Heart from "/images/heart.png";
-import TreasureOpen from "/images/open-treasure.png"
-import City from "/images/city.png";
-import NepalCity from "/images/nepalCity.png";
-import CoinSparkle from "/images/coinSparkle.png";
-import DiamondSword from "/images/diamondSword.png";
-import ClickArea from "/images/clickable.png"
-import Book from "/images/book.png";
+import Heart from "/images/heart.webp";
+import TreasureOpen from "/images/open-treasure.webp"
+import City from "/images/city.webp";
+import NepalCity from "/images/nepalCity.webp";
+import CoinSparkle from "/images/coinSparkle.webp";
+import DiamondSword from "/images/diamondSword.webp";
+import ClickArea from "/images/clickable.webp"
+import Book from "/images/book.webp";
 
 export {
     Heart,

@@ -28,7 +28,7 @@ const BlueTriangle: React.FC<{ isOpen: boolean }> = ({ isOpen }) => (
 
 const NavMenu: React.FC<NavMenuProps> = ({ navItems, isDropdownOpen, toggleDropdown }) => {
   return (
-    <ul className="hidden lg:flex space-x-2 sm:space-x-4 xl:space-x-8 2xl:space-x-20 text-[3vh] lg:text-[3.5vh] leading-8 text-[#004B6E] items-center tracking-normal">
+    <ul className="hidden lg:flex space-x-2 sm:space-x-4 xl:space-x-8 2xl:space-x-10 text-[3vh] lg:text-[3.5vh] leading-8 text-[#004B6E] items-center tracking-normal">
       {navItems.map((item: NavItem, index: number) => (
         <li key={index} className="relative">
           <a href={item.href} className="px-0 flex items-center" onClick={item.hasDropdown ? toggleDropdown : undefined}>

@@ -1,13 +1,14 @@
-import cloudup from './cloudup.png'
-import clouddown from './clouddown.png';
-import Mountains from './Mountains.png';
-import Ground from './Ground.png'
-import Temple from './Temple.png'
-import TreeL1 from './TreeL1.png'
-import TreeL2 from './TreeL2.png'
-import TreeR from './TreeR.png'
-import Pik from './Pik.gif'
-import Treasure from './Treasure.png'
+import cloudup from './cloudup.webp';
+import clouddown from './clouddown.webp';
+import Mountains from './Mountains.webp';
+import Ground from './Ground.webp';
+import Temple from './Temple.webp';
+import TreeL1 from './TreeL1.webp';
+import TreeL2 from './TreeL2.webp';
+import TreeR from './TreeR.webp';
+import Pik from './Pik.webp';
+import Treasure from './Treasure.webp';
+
 
 export const assets = {
     cloudup,
