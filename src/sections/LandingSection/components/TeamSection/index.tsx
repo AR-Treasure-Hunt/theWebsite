@@ -10,11 +10,7 @@ const Team: React.FC = () => {
       <h1 className="text-5xl font-jersey text-white text-center w-full max-w-[1200px] mx-auto mb-8">
         Meet the team
       </h1>
-      <TeamGrid 
-        teamData={teamData}
-        defaultImage={defaultImage}
-        backgroundImage={backgroundImage}
-      />
+      <TeamGrid teamData={teamData} defaultImage={defaultImage} backgroundImage={backgroundImage} />
     </div>
   );
 };

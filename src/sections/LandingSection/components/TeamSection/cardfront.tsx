@@ -9,10 +9,10 @@ interface CardFrontProps {
 export const CardFront: React.FC<CardFrontProps> = ({ member, defaultImage }) => {
   return (
     <div className="absolute inset-0 flex flex-col items-center justify-center bg-white rounded-2xl p-5 backface-hidden">
-      <img 
-        src={member.image || defaultImage} 
-        alt={member.name} 
-        className="w-4/5 h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10" 
+      <img
+        src={member.image || defaultImage}
+        alt={member.name}
+        className="w-4/5 h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
       />
       <div className="absolute top-5 left-6 text-4xl font-bold text-[#702412] z-20">
         {member.name.charAt(0)}
