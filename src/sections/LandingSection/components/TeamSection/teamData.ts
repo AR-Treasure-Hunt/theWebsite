@@ -14,6 +14,9 @@ import Sinja from './Images/Sinja.png';
 import Sujay from './Images/Sujay.png';
 import Sushila_Shrestha from './Images/Sushila_Shrestha.png';
 import Swarnim_Bajracharya from './Images/Swarnim_Bajracharya.png';
+import royas from './Images/royas.png'
+import albina from './Images/albina.png'
+import kshitiz from './Images/kshitiz.png'
 
 export const teamData: TeamMember[] = [
     {
@@ -43,6 +46,7 @@ export const teamData: TeamMember[] = [
       }},
     {
       name: 'Royas Shakya',
+      image: royas,
       role: 'Talent Manager',
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -238,6 +242,7 @@ export const teamData: TeamMember[] = [
    },
     {
       name: 'Albina Shrestha',
+      image: albina,
       role: 'Character and Background Design',
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -254,6 +259,7 @@ export const teamData: TeamMember[] = [
     },
     {
       name: 'Kshitiz Khanal',
+      image: kshitiz,
       role: '?????',
       quote:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
