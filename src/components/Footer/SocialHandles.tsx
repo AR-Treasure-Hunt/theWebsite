@@ -1,10 +1,10 @@
 import { FiFacebook, FiInstagram, FiLinkedin, FiTwitter } from 'react-icons/fi';
 
 const socialMediaLinks = [
-  { icon: FiFacebook, url: 'https://www.facebook.com' },
-  { icon: FiInstagram, url: 'https://www.instagram.com' },
-  { icon: FiTwitter, url: 'https://www.twitter.com' },
-  { icon: FiLinkedin, url: 'https://www.linkedin.com' },
+  { icon: FiFacebook, url: 'https://www.facebook.com/artreasurehunt' },
+  { icon: FiInstagram, url: 'https://www.instagram.com/ar_treasurehunt.itmeet/' },
+  { icon: FiTwitter, url: 'https://x.com/ar_treasurehunt' },
+  { icon: FiLinkedin, url: 'https://www.linkedin.com/company/ar-treasure-hunt/posts/?feedView=all' },
 ];
 
 const SocialHandles = () => {
