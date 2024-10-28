@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Outlet, createRootRoute } from '@tanstack/react-router';
+import { SnackbarProvider } from 'notistack';
 
 export const Route = createRootRoute({
   component: RootComponent,
@@ -40,9 +41,9 @@ function RootComponent() {
   }
 
   return (
-    <>
+    <SnackbarProvider>
       <Outlet />
       {/* <TanStackRouterDevtools position="bottom-right" /> */}
-    </>
+    </SnackbarProvider>
   );
 }
