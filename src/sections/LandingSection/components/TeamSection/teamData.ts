@@ -1,6 +1,7 @@
 import { TeamMember } from './type'
  import Abi from './Images/Abi_Shrestha.png';
 import Anuja from './Images/Anuja_Lamsal.png';
+import Ayusha from './Images/Ayusha.png'
 import Arpan from './Images/Arpan.png';
 import Bhishma from './Images/Bhishma.png';
 import Bibhushan from './Images/bibhusan.png';
@@ -17,6 +18,12 @@ import Swarnim_Bajracharya from './Images/Swarnim_Bajracharya.png';
 import royas from './Images/royas.png'
 import albina from './Images/albina.png'
 import kshitiz from './Images/kshitiz.png'
+import Angelina from './Images/Angelina.png'
+import aakriti from './Images/aakriti.png'
+import neo from './Images/neo.png'
+import regal from './Images/regal.png'
+import subani from './Images/subani.png'
+import nilotpal from './Images/nilotpal.png'
 
 export const teamData: TeamMember[] = [
     {
@@ -28,6 +35,7 @@ export const teamData: TeamMember[] = [
     },
     {
       name: 'Nilotpal Dhakal',
+      image: nilotpal,
       role: 'Talent Manager',
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -64,6 +72,7 @@ export const teamData: TeamMember[] = [
       }},
     {
       name: 'Subani Malla',
+      image: subani,
       role: 'Character and Background Design ',
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -107,6 +116,7 @@ export const teamData: TeamMember[] = [
       }},
     {
       name: 'Neo Shakya',
+      image: neo,
       role: 'Character and Background Design',
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
@@ -131,6 +141,7 @@ export const teamData: TeamMember[] = [
     },
     {
       name: 'Aayusha Jaspau',
+      image: Ayusha,
       role: '?????',
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
@@ -162,6 +173,7 @@ export const teamData: TeamMember[] = [
     },
     {
       name: 'Angelina Ghimire',
+      image: Angelina,
       role: 'Creative Lead',
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -197,6 +209,7 @@ export const teamData: TeamMember[] = [
     },
     {
       name: 'Regal Adhikari',
+      image: regal,
       role: 'Game development Lead',
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -206,6 +219,7 @@ export const teamData: TeamMember[] = [
       }},
     {
       name: 'Aakriti Banjara',
+      image: aakriti,
       role: 'Game Development',
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
