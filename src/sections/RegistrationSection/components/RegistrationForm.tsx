@@ -1,5 +1,5 @@
-import { useState } from "react"
-import { useForm } from "react-hook-form"
+import { useState, useEffect } from "react"
+import { FormProvider, useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { motion, AnimatePresence } from "framer-motion"
 import { Form } from "@/components/ui/form"
@@ -13,6 +13,7 @@ import { PersonalDetails } from "./PersonalDetails"
 import { TeamSection } from "./TeamSection"
 import { SuccessSection } from "./SucessSection"
 import clsx from "clsx"
+import { useCreateTeam, useJoinTeam } from "@/api/registration"
 
 const expandCollapse = {
     open: {
@@ -38,6 +39,9 @@ const expandCollapse = {
 }
 
 export default function RegistrationForm() {
+    const createTeamMutation = useCreateTeam();
+    const joinTeamMutation = useJoinTeam();
+
     const [step, setStep] = useState(1)
     const [teamCode, setTeamCode] = useState("")
     const [openSections, setOpenSections] = useState<number[]>([1])
@@ -52,12 +56,14 @@ export default function RegistrationForm() {
         defaultValues: {
             fullName: "",
             address: "",
+            email: "",
             phoneNumber: "",
             institution: "",
+            socialMedia: "",
             teamOption: "create",
             teamName: "",
         },
-    })
+    });
 
     const handleNextStep = async (e?: React.MouseEvent) => {
         e?.preventDefault()
@@ -105,37 +111,53 @@ export default function RegistrationForm() {
         }
     }
 
-    const simulateAsyncRequest = async () => {
-        return new Promise(resolve => setTimeout(resolve, 1000))
-    }
-
     const onSubmit = async (data: RegistrationSchema) => {
         console.log(data);
         if (step === 2) {
-            const isValid = await form.trigger(["teamOption", "teamName"])
-            if (!isValid) return
+            const isValid = await form.trigger(['teamOption', 'teamName', 'socialMedia']);
+            if (!isValid) return;
 
-            setIsLoading(true)
-            setTeamAction(data.teamOption)
+            setIsLoading(true);
+            setTeamAction(data.teamOption);
 
             try {
-                await simulateAsyncRequest()
-
-                if (data.teamOption === "create") {
-                    const newTeamCode = "TEAM" + Math.random().toString(36).substr(2, 6).toUpperCase()
-                    setTeamCode(newTeamCode)
+                if (data.teamOption === 'create') {
+                    const res = await createTeamMutation.mutateAsync({
+                        teamName: data.teamName,
+                        userData: {
+                            name: data.fullName,
+                            email: data.email,
+                            phone_number: data.phoneNumber,
+                            institution: data.institution,
+                            address: data.address,
+                            social_media: data.socialMedia
+                        }
+                    });
+                    setTeamCode(res.data.teamCode);
                 } else {
-                    setTeamCode(data.teamName || "")
+                    const res = await joinTeamMutation.mutateAsync({
+                        teamCode: data.teamName,
+                        userData: {
+                            name: data.fullName,
+                            email: data.email,
+                            phone_number: data.phoneNumber,
+                            institution: data.institution,
+                            address: data.address,
+                            social_media: data.socialMedia
+                        }
+                    });
+                    setTeamCode(res.data.teamCode);
                 }
 
-                setCompletedSteps(prev => [...prev, 2])
-                setIsSection2Submitted(true)
-                handleNextStep()
+                setCompletedSteps((prev) => [...prev, 2]);
+                setIsSection2Submitted(true);
+                handleNextStep();
             } finally {
-                setIsLoading(false)
+                setIsLoading(false);
             }
         }
-    }
+    };
+
 
     const copyToClipboard = () => {
         navigator.clipboard.writeText(teamCode)
@@ -177,7 +199,6 @@ export default function RegistrationForm() {
 
     return (
         <motion.div
-            className="container mx-auto py-20"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
@@ -188,7 +209,7 @@ export default function RegistrationForm() {
                     <CardDescription className="text-xl tracking-wide">Complete all sections to register</CardDescription>
                 </CardHeader>
                 <CardContent>
-                    <Form {...form}>
+                    <FormProvider {...form}>
                         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
                             {[1, 2, 3].map((sectionNumber) => (
                                 <Collapsible
@@ -304,7 +325,7 @@ export default function RegistrationForm() {
                                 </Collapsible>
                             ))}
                         </form>
-                    </Form>
+                    </FormProvider>
                 </CardContent>
             </Card>
         </motion.div>

@@ -27,6 +27,21 @@ export function PersonalDetails({ isDisabled }: PersonalDetailsProps) {
 
             <FormField
                 control={form.control}
+                name="email"
+                render={({ field }) => (
+                    <FormItem>
+                        <FormLabel>Email</FormLabel>
+                        <FormControl>
+                            <Input {...field} type="email" disabled={isDisabled} />
+                        </FormControl>
+                        <FormMessage />
+                    </FormItem>
+                )}
+            />
+
+
+            <FormField
+                control={form.control}
                 name="address"
                 render={({ field }) => (
                     <FormItem>
@@ -59,6 +74,20 @@ export function PersonalDetails({ isDisabled }: PersonalDetailsProps) {
                 render={({ field }) => (
                     <FormItem>
                         <FormLabel>Institution</FormLabel>
+                        <FormControl>
+                            <Input {...field} disabled={isDisabled} />
+                        </FormControl>
+                        <FormMessage />
+                    </FormItem>
+                )}
+            />
+
+            <FormField
+                control={form.control}
+                name="socialMedia"
+                render={({ field }) => (
+                    <FormItem>
+                        <FormLabel>Social Media Link</FormLabel>
                         <FormControl>
                             <Input {...field} disabled={isDisabled} />
                         </FormControl>
