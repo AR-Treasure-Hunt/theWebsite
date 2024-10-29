@@ -17,13 +17,14 @@ export const CardFront: React.FC<CardFrontProps> = ({ member, defaultImage }) =>
         />
       </div>
 
-    
       <div className="absolute top-5 left-6 text-4xl font-bold text-[#702412] z-20">
         {member.name.charAt(0)}
       </div>
       <div className="absolute top-12 left-5 text-5xl text-[#702412] after:content-['\2660']" />
       <div className="absolute bottom-12 text-center z-10">
-        <h3 className="text-3xl font-jersey text-[#702412] lg:leading-[1vh] leading-[2vh] ">{member.name}</h3>
+        <h3 className="text-3xl font-jersey text-[#702412] lg:leading-[1vh] leading-[2vh] ">
+          {member.name}
+        </h3>
         <p className="text-sm text-[#702412]/60 font-rubik mt-2">{member.role}</p>
       </div>
     </div>

@@ -1,5 +1,5 @@
-import NavBar from "../components/NavBar/index";
-import Footer from "../components/Footer/index";
+import NavBar from '../components/NavBar/index';
+import Footer from '../components/Footer/index';
 
 export default function DefaultLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -8,5 +8,5 @@ export default function DefaultLayout({ children }: { children: React.ReactNode 
       {children}
       <Footer />
     </>
-  )
+  );
 }

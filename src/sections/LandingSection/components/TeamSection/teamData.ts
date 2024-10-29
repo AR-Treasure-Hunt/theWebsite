@@ -26,6 +26,7 @@ import regal from './Images/regal.png'
 import subani from './Images/subani.png'
 import nilotpal from './Images/nilotpal.png'
 import ankit from './Images/ankit.png'
+import nirbhica from './Images/nirbhica.png'
 
 export const teamData: TeamMember[] = [
     {
@@ -69,8 +70,7 @@ export const teamData: TeamMember[] = [
           github: 'https://github.com/shkroyas',
           instagram: 'https://www.instagram.com/r.royas',
           linkedin: 'https://www.linkedin.com/in/royas-shakya?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-        }
-      },
+        }},
     {
       name: 'Sinja Ghimire ',
       image : Sinja ,
@@ -136,8 +136,7 @@ export const teamData: TeamMember[] = [
           github: '',
           instagram: '',
           linkedin: '',
-        }
-    },
+        }},
     {
       name: 'Sushila Shrestha ',
       image : Sushila_Shrestha ,
@@ -159,8 +158,7 @@ export const teamData: TeamMember[] = [
           github: 'https://github.com/anujalamsal',
           instagram: 'https://www.instagram.com/anujaaahere/',
           linkedin: 'https://www.linkedin.com/in/anuja-lamsal-b4237b271/',
-        }
-      },
+        }},
     {
       name: 'Aayusha Jaspau',
       image: Ayusha,
@@ -171,8 +169,7 @@ export const teamData: TeamMember[] = [
           github: 'https://github.com/aayushaaaa',
           instagram: 'https://www.instagram.com/aayushaaa.__/profilecard/?igsh=MXVmN2pvaDJsOTJncw==',
           linkedin: 'https://www.linkedin.com/in/aayusha-jaspau-bb7203334',
-        }
-    },
+        }},
     {
       name: 'David Ramovich Mandal',
       role: 'Frontend Developer',
@@ -183,8 +180,7 @@ export const teamData: TeamMember[] = [
           github: '',
           instagram: '',
           linkedin: '',
-        }
-    },
+        }},
     {
       name: 'Sumira Makaju',
       role: 'Content Creator',
@@ -195,8 +191,7 @@ export const teamData: TeamMember[] = [
           github: '',
           instagram: 'https://www.instagram.com/_mimi_su_?igsh=MTRjZnppY29taWdreg==',
           linkedin: '',
-        }
-    },
+        }},
     {
       name: 'Shreejan Karmacharya',
       role: 'Social Media Manager',
@@ -206,19 +201,18 @@ export const teamData: TeamMember[] = [
           github: '',
           instagram: '',
           linkedin: '',
-        }
-    },
+        }},
     {
       name: 'Nirbhica Shrestha',
       role: '?????',
+      image: nirbhica,
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
         socialLinks: {
           github: '',
           instagram: '',
           linkedin: '',
-        }
-    },
+        }},
     {
       name: 'Angelina Ghimire',
       image: Angelina,
@@ -251,8 +245,7 @@ export const teamData: TeamMember[] = [
           github: '',
           instagram: '',
           linkedin: '',
-        }
-    },
+        }},
     {
       name: 'Mohit Rajbhandari',
       image : Mohit , 
@@ -263,8 +256,7 @@ export const teamData: TeamMember[] = [
           github: '',
           instagram: '',
           linkedin: '',
-        }
-    },
+        }},
     {
       name: 'Regal Adhikari',
       image: regal,
@@ -315,8 +307,7 @@ export const teamData: TeamMember[] = [
         github: '',
         instagram: '',
         linkedin: '',
-      }
-   },
+      }},
     {
       name: 'Albina Shrestha',
       image: albina,
@@ -337,8 +328,7 @@ export const teamData: TeamMember[] = [
           github: '',
           instagram: '',
           linkedin: '',
-        }
-    },
+        }},
     {
       name: 'Kshitiz Khanal',
       image: kshitiz,
@@ -357,8 +347,7 @@ export const teamData: TeamMember[] = [
           github: '',
           instagram: '',
           linkedin: '',
-        }
-    },
+        }},
     {
       name: 'Arpan Aadhikari',
       image : Arpan ,
