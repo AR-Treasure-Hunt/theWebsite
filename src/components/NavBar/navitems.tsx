@@ -1,6 +1,6 @@
 export const navItems = [
-    { label: "Home", href: "#" },
-    { label: "About", href: "#" },
+    { label: "Home", href: "#", id:"home" },
+    { label: "About", href: "#", id:'about-section' },
     { 
       label: "Past Iterations", 
       href: "#", 
@@ -10,6 +10,6 @@ export const navItems = [
         { label: 'Iteration 2022', href: '#2022' },
       ],
     },
-    { label:"FAQ", href: "#" },
+    { label:"FAQ", href: "#", id: 'faq' },
   ];
   

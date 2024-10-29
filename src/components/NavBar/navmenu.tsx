@@ -1,3 +1,4 @@
+import { useHandleSmoothScroll } from '@/utils/useHandleSmoothScroll';
 import React from 'react';
 
 interface NavItem {
@@ -5,6 +6,7 @@ interface NavItem {
   href: string;
   hasDropdown?: boolean;
   dropdownItems?: { label: string; href: string }[];
+  id?: string;
 }
 
 interface NavMenuProps {
@@ -31,7 +33,7 @@ const NavMenu: React.FC<NavMenuProps> = ({ navItems, isDropdownOpen, toggleDropd
     <ul className="hidden lg:flex space-x-2 sm:space-x-4 xl:space-x-8 2xl:space-x-10 text-[3vh] lg:text-[3.5vh] leading-8 text-[#004B6E] items-center tracking-normal">
       {navItems.map((item: NavItem, index: number) => (
         <li key={index} className="relative">
-          <a href={item.href} className="px-0 flex items-center" onClick={item.hasDropdown ? toggleDropdown : undefined}>
+          <a href={item.href} className="px-0 flex items-center" onClick={(e) => {if(item.hasDropdown) {toggleDropdown()}; useHandleSmoothScroll(e, item.id || '')}}>
             {item.label}
             {item.hasDropdown && <BlueTriangle isOpen={isDropdownOpen} />}
           </a>
@@ -39,7 +41,7 @@ const NavMenu: React.FC<NavMenuProps> = ({ navItems, isDropdownOpen, toggleDropd
             <ul className="absolute top-full mt-2 shadow-lg rounded-md p-2 bg-white border-t border-[#004B6E]">
               {item.dropdownItems?.map((dropdownItem, idx) => (
                 <li key={idx}>
-                  <a href={dropdownItem.href} className="block text-[2.5vh] lg:text-[3.5vh] px-[1vh] py-[1.5vh] 2xl:leading-[2vh]  hover:bg-gray-100 text-[#FF8700]">
+                  <a href={dropdownItem.href} className="block text-[2.5vh] lg:text-[3.5vh] px-[1vh] py-[1.5vh] 2xl:leading-[2vh]  hover:bg-gray-100 text-[#FF8700]" >
                     {dropdownItem.label}
                   </a>
                 </li>
