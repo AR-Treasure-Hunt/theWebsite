@@ -71,8 +71,10 @@ export default function RegistrationForm() {
             const isValid = await form.trigger([
                 "fullName",
                 "address",
+                "email",
                 "phoneNumber",
-                "institution"
+                "institution",
+                'socialMedia',
             ])
 
             if (!isValid) return
@@ -112,7 +114,6 @@ export default function RegistrationForm() {
     }
 
     const onSubmit = async (data: RegistrationSchema) => {
-        console.log(data);
         if (step === 2) {
             const isValid = await form.trigger(['teamOption', 'teamName', 'socialMedia']);
             if (!isValid) return;

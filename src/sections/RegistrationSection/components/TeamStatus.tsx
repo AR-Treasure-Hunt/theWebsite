@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 export function TeamStatusSection() {
     const [teamCode, setTeamCode] = useState<string>("");
 
-    const { data: teamStatus, isLoading, isError, refetch } = useGetTeamStatus(teamCode, false);
+    const { data: teamStatus, isLoading, isError, refetch, error } = useGetTeamStatus(teamCode, false);
 
     const handleGetTeamStatus = () => {
         if (teamCode !== "") {
@@ -50,7 +50,9 @@ export function TeamStatusSection() {
                         ) : isError ? (
                             <div className="flex flex-col items-center justify-center h-40 space-y-4">
                                 <p className="text-center text-red-500">
-                                    There was an error fetching your team status. Please try again later.
+                                    {
+                                        error?.response?.data?.error || 'There was an error fetching the team details'
+                                    }
                                 </p>
                             </div>
                         ) : teamStatus ? (

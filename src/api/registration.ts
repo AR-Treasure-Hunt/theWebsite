@@ -45,12 +45,20 @@ export function useJoinTeam() {
 }
 
 export function useGetTeamStatus(id: string, enabled: boolean) {
-  return useQuery<TeamStatusResponseI>({
+  return useQuery<
+    TeamStatusResponseI,
+    AxiosError<{
+      data: string;
+      error: string;
+      message: string;
+    }>
+  >({
     queryKey: ['team', { id }],
     queryFn: async () => {
       const { data } = await api.get<TeamStatusResponseI>(endpoints.teamStatus(id));
       return data;
     },
-    enabled: !!id && enabled,
+    retry: 1,
+    enabled: !!id && enabled
   });
 }

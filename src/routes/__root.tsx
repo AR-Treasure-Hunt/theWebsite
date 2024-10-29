@@ -41,9 +41,8 @@ function RootComponent() {
   }
 
   return (
-    <SnackbarProvider>
+    <SnackbarProvider autoHideDuration={2000}>
       <Outlet />
-      {/* <TanStackRouterDevtools position="bottom-right" /> */}
     </SnackbarProvider>
   );
 }
