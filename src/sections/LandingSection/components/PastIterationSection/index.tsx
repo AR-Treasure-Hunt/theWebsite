@@ -38,10 +38,12 @@ export default function PastIterationSection() {
     return (
         <div className="ground-tile-bg">
             <IterationDetails
+                year="2023"
                 detailsObj={detailsObj23}
                 roundObj={roundObj23}
             />
             <IterationDetails
+                year="2022"
                 detailsObj={detailsObj22}
                 roundObj={roundObj22}
             />
