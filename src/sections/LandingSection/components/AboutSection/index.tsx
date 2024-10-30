@@ -1,3 +1,4 @@
+import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Heart, TreasureOpen } from '@/components/Assets';
 
@@ -24,12 +25,12 @@ export default function AboutSection() {
               <div className="relative mb-4 w-full max-w-[150px] md:max-w-[200px]">
                 <img src={Heart} alt="Heart icon" className="w-full h-auto" />
               </div>
-              <span className="text-ice-citadel tracking-wide text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center">
+              <span className="text-ice-citadel text-medium tracking-wide text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center">
                 What Exactly Is Augmented Reality (AR)?
               </span>
             </CardTitle>
           </CardHeader>
-          <CardContent className="text-base tracking-wide sm:text-lg md:text-xl text-white">
+          <CardContent className="text-lg font-rubik text-justify sm:text-lg md:text-xl text-white">
             {whatIsAR}
           </CardContent>
         </Card>
@@ -44,7 +45,7 @@ export default function AboutSection() {
               </span>
             </CardTitle>
           </CardHeader>
-          <CardContent className="text-base tracking-wide sm:text-lg md:text-xl text-white">
+          <CardContent className="text-lg font-rubik text-justify sm:text-lg md:text-xl text-white">
             {treasureHuntDescription}
           </CardContent>
         </Card>
@@ -57,7 +58,7 @@ export default function AboutSection() {
             </span>
           </CardTitle>
         </CardHeader>
-        <CardContent className="text-base tracking-wide sm:text-lg md:text-xl text-white">
+        <CardContent className="text-lg font-rubik text-justify sm:text-lg md:text-xl text-white">
           {whatIsARTH}
         </CardContent>
       </Card>

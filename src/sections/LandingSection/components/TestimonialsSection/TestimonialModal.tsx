@@ -13,7 +13,7 @@ const TestimonialModal = (props: TestimonialModalProps) => {
   return (
     <div className="w-[328px] border-black border-solid p-[32px] rounded-[40px] bg-moussaka">
       <ImageContainer img={img} />
-      <p className="text-almondine mb-[0px]">{testimonial}</p>
+      <p className="text-almondine text-lg font-rubik text-center  mb-1">{testimonial}</p>
       <h2 className="text-[30px] font-normal text-ice-citadel text-end ">- {name}</h2>
     </div>
   );

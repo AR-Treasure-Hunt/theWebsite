@@ -143,7 +143,7 @@ export const teamData: TeamMember[] = [
       image : Sushila_Shrestha ,
       role: 'Frontend Developer',
       quote:
-        'A quiet spark with a creativity in heart, diving into design and software, always up for new adventures to learn, grow, and keep things exciting!',
+        'A quiet spark with creativity in heart, diving into design and software, always up for new adventures to learn, grow, and keep things exciting!',
       socialLinks: {
         github: 'https://github.com/sushilashrestha',
         instagram: 'https://www.instagram.com/__susshhh__/',

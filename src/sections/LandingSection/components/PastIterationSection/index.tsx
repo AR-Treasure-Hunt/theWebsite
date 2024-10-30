@@ -3,9 +3,9 @@ import { City, NepalCity, ClickArea } from '@/components/Assets';
 
 export default function PastIterationSection() {
   const roundObj23 = [
-    { title: 'Preliminary', icon: ClickArea },
-    { title: 'Escape the Building', icon: City },
-    { title: 'AR Hunt', icon: NepalCity }
+    { title: 'Preliminary', icon: ClickArea, description: 'A quiz-based round to test the participants\' knowledge on AR and the event itself.' },
+    { title: 'Escape the Building', icon: City , description: 'A physical round where participants have to solve puzzles and escape the building.' },
+    { title: 'AR Hunt', icon: NepalCity , description: 'A treasure hunt using AR technology to find virtual clues and solve puzzles.' }
   ];
 
   const detailsObj23 = {
@@ -19,8 +19,8 @@ export default function PastIterationSection() {
   };
 
   const roundObj22 = [
-    { title: 'Preliminary', icon: ClickArea },
-    { title: 'AR Hunt', icon: NepalCity }
+    { title: 'Preliminary', icon: ClickArea, description: 'A quiz-based round to test the participants\' knowledge on AR and the event itself.' },
+    { title: 'AR Hunt', icon: NepalCity , description: 'A treasure hunt using AR technology to find virtual clues and solve puzzles.' }
   ];
 
   const detailsObj22 = {

@@ -8,6 +8,7 @@ interface Props {
     roundObj: {
         title: string;
         icon: string;
+        description: string;
     }[];
     detailsObj: {
         year: string;
@@ -87,6 +88,9 @@ export default function IterationDetails({ year, detailsObj, roundObj }: Props) 
               <div className="bg-moussaka relative border-none rounded-lg h-52 p-4 z-10">
                 <h4 className="text-3xl tracking-wide mb-2 text-almondine z-10">{round.title}</h4>
                 <hr className="bg-almondine h-[2px]" />
+                <p className='font-rubik text-md tracking-wide'>
+                {round.description}
+                </p>
               </div>
             </div>
           ))}
@@ -96,7 +100,7 @@ export default function IterationDetails({ year, detailsObj, roundObj }: Props) 
             <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-wide mb-1 text-almondine">
               Some Details
             </h4>
-            <p className="text-base sm:text-lg md:text-xl text-almondine">
+            <p className="text-base font-rubik sm:text-lg md:text-xl text-almondine">
               {detailsObj.roundDetails}
             </p>
           </CardContent>
