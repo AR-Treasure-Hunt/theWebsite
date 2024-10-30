@@ -3,7 +3,7 @@ import { Outlet, createRootRoute } from '@tanstack/react-router';
 import { SnackbarProvider } from 'notistack';
 
 export const Route = createRootRoute({
-  component: RootComponent,
+  component: RootComponent
 });
 
 const DELAY = 500;
@@ -35,15 +35,14 @@ function RootComponent() {
   if (!isFontLoaded && !isTimeoutPassed) {
     return (
       <div className="min-w-screen min-h-screen flex justify-center items-center">
-        <div className='loader' />
+        <div className="loader" />
       </div>
     );
   }
 
   return (
-    <SnackbarProvider>
+    <SnackbarProvider autoHideDuration={2000}>
       <Outlet />
-      {/* <TanStackRouterDevtools position="bottom-right" /> */}
     </SnackbarProvider>
   );
 }

@@ -8,11 +8,7 @@ interface TeamGridProps {
   backgroundImage: string;
 }
 
-export const TeamGrid: React.FC<TeamGridProps> = ({ 
-  teamData, 
-  defaultImage, 
-  backgroundImage 
-}) => {
+export const TeamGrid: React.FC<TeamGridProps> = ({ teamData, defaultImage, backgroundImage }) => {
   return (
     <div className="w-full">
       <div className="flex flex-wrap justify-around w-full gap-3">
