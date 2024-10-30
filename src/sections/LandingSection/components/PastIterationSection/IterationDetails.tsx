@@ -4,30 +4,28 @@ import { Button } from '@/components/ui/button';
 import { CoinSparkle, DiamondSword, Book } from '@/components/Assets';
 
 interface Props {
-  roundObj: {
-    title: string;
-    icon: string;
-  }[];
-  detailsObj: {
     year: string;
-    title: string;
-    prizePool: string;
-    participants: string;
-    college: string;
-    roundDetails: string;
-  };
+    roundObj: {
+        title: string;
+        icon: string;
+    }[];
+    detailsObj: {
+        year: string;
+        title: string;
+        prizePool: string;
+        participants: string;
+        college: string;
+        roundDetails: string;
+    }
 }
 
-export default function IterationDetails({ detailsObj, roundObj }: Props) {
-  const [showDetails, setShowDetails] = useState(false);
+export default function IterationDetails({ year, detailsObj, roundObj }: Props) {
+    const [showDetails, setShowDetails] = useState(false);
 
-  return (
-    <div className="md:p-8 my-8 text-white">
-      <h2 className="text-6xl md:text-7xl font-bold mb-1 tracking-wide">{detailsObj.year}</h2>
-      <p className="text-4xl md:text-5xl mb-24 text-crayola-bright-yellow tracking-wide">
-        ({detailsObj.title})
-      </p>
-
+    return (
+        <div id={year} className="md:p-8 my-8 text-white">
+            <h2 className="text-6xl md:text-7xl font-bold mb-1 tracking-wide">{detailsObj.year}</h2>
+            <p className="text-4xl md:text-5xl mb-24 text-crayola-bright-yellow tracking-wide">({detailsObj.title})</p>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         <div className="bg-moussaka border-none col-span-2 md:col-span-3 relative p-4 h-36 sm:h-52 rounded-lg flex">
           <img

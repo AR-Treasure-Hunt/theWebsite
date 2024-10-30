@@ -4,6 +4,7 @@ import { navItems } from './navitems';
 import { Menu, X } from 'lucide-react';
 import NavMenu from './navmenu';
 import MobileNavMenu from './MobileNavMenu';
+import {Link} from '@tanstack/react-router';
 
 interface NavItem {
   href: string;
@@ -11,6 +12,7 @@ interface NavItem {
   hasDropdown?: boolean;
   dropdownItems?: { href: string; label: string }[];
 }
+
 
 const BlueTriangle: React.FC<{ isOpen: boolean }> = ({ isOpen }) => (
   <svg
@@ -26,11 +28,15 @@ const BlueTriangle: React.FC<{ isOpen: boolean }> = ({ isOpen }) => (
 
 const Title = () => {
   return (
-    <div className="flex items-center flex-shrink-0">
+    <div >
+      <Link to='/' className="flex items-center flex-shrink-0">
       <img className="h-[4vh] md:h-[5vh] w-[4vh] md:w-[5vh]" src={Logo} alt="logo" />
       <h1 className="ml-2 sm:ml-[2vh] text-[3vh] md:text-[4vh] xl:text-[5vh] leading-tight tracking-normal text-[#004B6E] whitespace-nowrap">
+      
         AR Treasure Hunt
+        
       </h1>
+      </Link>
     </div>
   );
 };
@@ -60,11 +66,7 @@ const Navbar: React.FC = () => {
         </button>
       </div>
       {isMobileDrawerOpen && (
-        <MobileNavMenu
-          navItems={navItems}
-          isDropdownOpen={isDropdownOpen}
-          toggleDropdown={toggleDropdown}
-        />
+        <MobileNavMenu closeNavMenu={toggleNavbar} navItems={navItems} isDropdownOpen={isDropdownOpen} toggleDropdown={toggleDropdown} />
       )}
     </nav>
   );
