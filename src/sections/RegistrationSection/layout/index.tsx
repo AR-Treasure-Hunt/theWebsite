@@ -7,9 +7,9 @@ export default function RegistrationSection() {
         <div className="min-h-screen content-container flex justify-center">
             <div className="w-full max-w-md">
                 <Tabs defaultValue="registration" className="w-full">
-                    <TabsList className="self-center mt-20">
-                        <TabsTrigger value="registration">Registration</TabsTrigger>
-                        <TabsTrigger value="team-status">Team Status</TabsTrigger>
+                    <TabsList className="self-center mt-20 py-6 px-2">
+                        <TabsTrigger value="registration" className="text-lg">Registration</TabsTrigger>
+                        <TabsTrigger value="team-status" className="text-lg">Team Status</TabsTrigger>
                     </TabsList>
                     <TabsContent value="registration">
                         <RegistrationForm />

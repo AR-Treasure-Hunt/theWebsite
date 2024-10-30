@@ -66,19 +66,26 @@ export default function RegistrationForm() {
   });
 
   const handleNextStep = async (e?: React.MouseEvent) => {
-    e?.preventDefault();
+    e?.preventDefault()
     if (step === 1) {
-      const isValid = await form.trigger(['fullName', 'address', 'phoneNumber', 'institution']);
+      const isValid = await form.trigger([
+        "fullName",
+        "address",
+        "email",
+        "phoneNumber",
+        "institution",
+        'socialMedia',
+      ])
 
-      if (!isValid) return;
+      if (!isValid) return
 
-      setCompletedSteps((prev) => [...prev, 1]);
-      setClosingSection(1);
+      setCompletedSteps(prev => [...prev, 1])
+      setClosingSection(1)
       setTimeout(() => {
-        setStep(2);
-        setOpenSections([2]);
-        setClosingSection(null);
-      }, 300);
+        setStep(2)
+        setOpenSections([2])
+        setClosingSection(null)
+      }, 300)
     }
 
     if (step === 2) {
@@ -107,7 +114,6 @@ export default function RegistrationForm() {
   };
 
   const onSubmit = async (data: RegistrationSchema) => {
-    console.log(data);
     if (step === 2) {
       const isValid = await form.trigger(['teamOption', 'teamName', 'socialMedia']);
       if (!isValid) return;
@@ -210,7 +216,7 @@ export default function RegistrationForm() {
                   onOpenChange={() => toggleSection(sectionNumber)}>
                   <CollapsibleTrigger
                     className={clsx(
-                      'flex items-center justify-between w-full p-4 font-medium text-left rounded-lg transition-colors',
+                      'flex items-center justify-between w-full p-4 text-lg text-left rounded-lg transition-colors',
                       {
                         'bg-muted hover:bg-muted/80': canAccessSection(sectionNumber),
                         'bg-muted/50 cursor-not-allowed': !canAccessSection(sectionNumber)

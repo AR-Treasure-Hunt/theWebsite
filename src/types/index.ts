@@ -74,3 +74,12 @@ export type TeamStatusResponseI = {
     };
   };
 };
+
+export interface BaseErrorResponse {
+  success: false;
+  message: string;
+}
+
+export interface ValidationErrorResponse extends BaseErrorResponse {
+  errors: Record<string, string>;
+}

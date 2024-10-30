@@ -20,7 +20,7 @@ export function SuccessSection({ teamCode, onCopy, action }: SuccessSectionProps
   };
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 text-lg">
       <p>{action === 'create' ? 'Team Created Successfully!' : 'Team Joined Successfully!'}</p>
       <p>
         Your team code is: <strong className="text-xl tracking-wide">{teamCode}</strong>
