@@ -1,33 +1,22 @@
 import { TeamMember } from './type'
- import Abi from './Images/Abi_Shrestha.png';
-import Anuja from './Images/Anuja_Lamsal.png';
-import Ayusha from './Images/Ayusha.png'
-import Arpan from './Images/Arpan.png';
-import Bhishma from './Images/Bhishma.png';
-import Bibhushan from './Images/bibhusan.png';
-import david from './Images/david.png';
-import himesh_dulal from './Images/himesh_dulal.png';
-import Manjul_Tamrakar from './Images/Manjul_Tamrakar.png';
-import Mohit from './Images/Mohit-Rajbhandari.png';
-import Sally from './Images/sally_shrestha.png';
-import SamikshyaUpadhyay from './Images/SamikshyaUpadhyay.png';
-import Sinja from './Images/Sinja.png';
-import Sujay from './Images/Sujay.png';
-import Sushila_Shrestha from './Images/Sushila_Shrestha.png';
-import sumira from './Images/sumira.png'
-import Swarnim_Bajracharya from './Images/Swarnim_Bajracharya.png';
-import royas from './Images/royas.png'
-import albina from './Images/albina.png'
-import kshitiz from './Images/kshitiz.png'
-import Angelina from './Images/Angelina.png'
-import aakriti from './Images/aakriti.png'
-import neo from './Images/neo.png'
-import regal from './Images/regal.png'
-import subani from './Images/subani.png'
-import nilotpal from './Images/nilotpal.png'
-import ankit from './Images/ankit.png'
-import nirbhica from './Images/nirbhica.png'
-import nirjal from './Images/nirjal.png'
+ import Abi from './Images/Abi_Shrestha.webp';
+import Anuja from './Images/Anuja_Lamsal.webp';
+import Arpan from './Images/Arpan.webp';
+import Bhishma from './Images/Bhishma.webp';
+import Bibhushan from './Images/bibhusan.webp';
+import david from './Images/david.webp';
+import himesh_dulal from './Images/himesh_dulal.webp';
+import Manjul_Tamrakar from './Images/Manjul_Tamrakar.webp';
+import Mohit from './Images/Mohit-Rajbhandari.webp';
+import Sally from './Images/sally_shrestha.webp';
+import SamikshyaUpadhyay from './Images/SamikshyaUpadhyay.webp';
+import Sinja from './Images/Sinja.webp';
+import Sujay from './Images/Sujay.webp';
+import Sushila_Shrestha from './Images/Sushila_Shrestha.webp';
+import Swarnim_Bajracharya from './Images/Swarnim_Bajracharya.webp';
+import royas from './Images/royas.webp'
+import albina from './Images/albina.webp'
+import kshitiz from './Images/kshitiz.webp'
 
 export const teamData: TeamMember[] = [
     {

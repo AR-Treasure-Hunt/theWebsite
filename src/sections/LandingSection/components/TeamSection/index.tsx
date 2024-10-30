@@ -1,7 +1,7 @@
 import React from 'react';
 import { TeamGrid } from './teamgrid';
 import { teamData } from './teamData';
-import defaultImage from './Images/default.png';
+import defaultImage from './Images/default.webp';
 import backgroundImage from './background.png';
 
 const Team: React.FC = () => {
