@@ -1,10 +1,12 @@
 import React from 'react';
 import { assets } from './assets/assets';
 import ResponsivePixelArtImage from './image';
+import { Link } from '@tanstack/react-router';
+import { useHandleSmoothScroll } from '@/utils/useHandleSmoothScroll';
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="relative w-full h-[100svh] overflow-hidden bg-[#F0EBFF]">
+    <div className="relative w-full h-[100svh] overflow-hidden bg-[#F0EBFF]" id='home'>
       {/* Main Content */}
       <div className="text-center lg:text-start lg:px-0 lg:pl-[10vh] xl:pl-[15vh] pt-[25vh] sm:pt-[28vh] md:pt-[30vh] lg:pt-[25vh] xl:pt-[17vh] text-[#003F5A] z-30 relative">
         <h1 className="text-[9vh] sm:text-[11vh] md:text-[13vh] lg:text-[13vh] xl:text-[14.3vh] mb-[2vh] sm:mb-[1.5vh] lg:mb-[4vh] leading-[7.5vh] sm:leading-[8vh] lg:leading-[9vh] tracking-[0.005em]">
@@ -20,16 +22,17 @@ const HeroSection: React.FC = () => {
         {/* Button Section */}
         <div className="flex flex-col md:flex-row items-center gap-[2vh] self-stretch mt-[1.5vh] lg:mt-[2vh] xl:mt-[2.5vh] w-full justify-center lg:justify-start">
         {/* Join The Adventure Button */}
-        <a
-          href="#"
+        <Link
+          to="/registration"
           className="flex justify-center items-center bg-[#003F5A] text-white text-[2.1vh] sm:text-[2.5vh] lg:text-[3vh] xl:text-[4vh] rounded-[1vh] hover:bg-[#002a3d] transition-colors whitespace-nowrap h-[5vh] md:h-[6vh] lg:h-[7vh] xl:h-[8vh] w-[20vh] lg:w-[23vh] xl:w-[30vh]"
         >
           Join The Adventure
-        </a>
+        </Link>
         {/* Learn More Button */}
         <a
           href="#"
           className="flex justify-center items-center text-[#003F5A] text-[2.1vh] sm:text-[2.5vh] lg:text-[3vh] xl:text-[4vh] backdrop-blur border-[0.3vh] lg:border-[0.3vh] border-[#003F5A] hover:bg-[#f0f0f0] transition-colors whitespace-nowrap h-[5vh] md:h-[6vh] lg:h-[7vh] xl:h-[8vh] w-[20vh] md:w-[16vh] lg:w-[20vh] rounded-[1vh]"
+          onClick={(e) => {useHandleSmoothScroll(e, 'about-section')}}
         >
           Learn More
         </a>

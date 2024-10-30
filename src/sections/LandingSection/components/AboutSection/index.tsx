@@ -7,7 +7,7 @@ export default function AboutSection() {
     const whatIsARTH = "AR Treasure Hunt combines the excitement of a traditional treasure hunt with the immersive experience of Augmented Reality. Participants use their smartphones or AR devices to find virtual clues, solve puzzles, and interact with digital objects that are overlaid on real-world locations. Instead of just following physical clues, participants engage with AR elements that are seamlessly integrated into their environment. This makes the hunt more dynamic, engaging, and challenging, as players navigate both the real world and a digital layer of clues and puzzles.";
 
     return (
-        <div className="ground-tile-bg md:p-8 text-white">
+        <div className="ground-tile-bg md:p-8 text-white" id='about-section'>
             <h1 className="text-4xl md:text-5xl lg:text-6xl mb-4">
                 Wait, What is <span className="text-yellow-400">AR Treasure Hunt?</span>
             </h1>

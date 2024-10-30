@@ -61,7 +61,7 @@ const FAQItem: React.FC<FAQItem> = ({ question, answer }) => {
 
 const FAQSection: React.FC = () => {
   return (
-    <div className="max-w-7xl mx-auto my-8 px-4 mb-8">
+    <div className="max-w-7xl mx-auto my-8 px-4 mb-8"  id='faq'>
       <h2 className="text-5xl font-bold mb-6 text-center text-white">FAQ</h2>
       <div className="space-y-2">
         {/* Render FAQ items */}
