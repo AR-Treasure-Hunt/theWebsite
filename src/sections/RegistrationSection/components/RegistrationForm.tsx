@@ -216,7 +216,7 @@ export default function RegistrationForm() {
                   onOpenChange={() => toggleSection(sectionNumber)}>
                   <CollapsibleTrigger
                     className={clsx(
-                      'flex items-center justify-between w-full p-4 font-medium text-left rounded-lg transition-colors',
+                      'flex items-center justify-between w-full p-4 text-lg text-left rounded-lg transition-colors',
                       {
                         'bg-muted hover:bg-muted/80': canAccessSection(sectionNumber),
                         'bg-muted/50 cursor-not-allowed': !canAccessSection(sectionNumber)

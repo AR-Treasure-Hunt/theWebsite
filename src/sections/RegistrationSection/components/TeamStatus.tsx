@@ -49,16 +49,17 @@ export function TeamStatusSection() {
               </div>
             ) : isError ? (
               <div className="flex flex-col items-center justify-center h-40 space-y-4">
-                <p className="text-center text-red-500">
+                <p className="text-center text-red-500 text-lg">
                   {
-                    error?.response?.data?.error || 'There was an error fetching the team details'
+                    error?.response?.data.message || 'There was an error fetching the team details'
                   }
                 </p>
               </div>
             ) : teamStatus ? (
               <div className="space-y-4">
                 <div className="space-y-2">
-                  <h3 className="text-lg">Team Members</h3>
+                  <h3 className="text-lg">Team Name: {teamStatus.data.teamName}</h3>
+                  <h3 className="text-lg">Members</h3>
                   <div className="grid grid-cols-1 gap-2">
                     {Object.values(teamStatus.data.members).map((member, index) => (
                       <div
@@ -69,7 +70,7 @@ export function TeamStatusSection() {
                         })}
                       >
                         {typeof member !== "string" ? (
-                          <div className="flex tracking-wide text-md flex-col space-y-1">
+                          <div className="flex tracking-wide text-md flex-col space-y-1 sm:text-lg">
                             <span className="flex items-center space-x-2">
                               <User className="h-4 w-4 text-gray-600" />
                               <span>Name: {member.name}</span>
@@ -105,7 +106,7 @@ export function TeamStatusSection() {
               </div>
             ) : (
               <div className="flex flex-col items-center justify-center h-40 space-y-4">
-                <p className="text-center text-gray-500">
+                <p className="text-center text-lg text-gray-500">
                   Enter your team code to see your team details.
                 </p>
               </div>

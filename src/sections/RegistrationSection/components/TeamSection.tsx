@@ -27,11 +27,11 @@ export function TeamSection({ isDisabled }: TeamSectionProps) {
                 className="flex flex-col space-y-2">
                 <div className="flex items-center space-x-2">
                   <RadioGroupItem value="create" id="create" />
-                  <Label htmlFor="create">Create Team</Label>
+                  <Label htmlFor="create" className="text-lg">Create Team</Label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <RadioGroupItem value="join" id="join" />
-                  <Label htmlFor="join">Join Team</Label>
+                  <Label htmlFor="join" className="text-lg">Join Team</Label>
                 </div>
               </RadioGroup>
             </FormControl>

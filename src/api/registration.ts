@@ -5,13 +5,16 @@ import {
   CreateTeamResponseI,
   JoinTeamPayload,
   CreateTeamPayload,
-  TeamStatusResponseI
+  TeamStatusResponseI,
+  ValidationErrorResponse,
+  BaseErrorResponse
 } from '@/types';
 import { AxiosError } from 'axios';
+import { showValidationErrors, isValidationError, showErrorMessage } from '@/utils/snackbar';
 import { useSnackbar } from 'notistack';
 
 export function useCreateTeam() {
-  const snackbar = useSnackbar();
+  const { enqueueSnackbar } = useSnackbar();
 
   return useMutation({
     mutationKey: ['create'],
@@ -21,14 +24,23 @@ export function useCreateTeam() {
       });
       return data;
     },
-    onError: (data: any) => {
-      snackbar.enqueueSnackbar(data.response?.data.message, { variant: 'error' });
+    onError: (error: AxiosError<ValidationErrorResponse>) => {
+      const errorResponse = error.response?.data;
+
+      if (errorResponse?.errors) {
+        showValidationErrors(errorResponse.errors, enqueueSnackbar);
+      } else {
+        showErrorMessage(
+          errorResponse?.message || 'An error occurred while creating the team',
+          enqueueSnackbar
+        );
+      }
     }
   });
 }
 
 export function useJoinTeam() {
-  const snackbar = useSnackbar();
+  const { enqueueSnackbar } = useSnackbar();
 
   return useMutation({
     mutationKey: ['join'],
@@ -38,8 +50,32 @@ export function useJoinTeam() {
       });
       return data;
     },
-    onError: (data: any) => {
-      snackbar.enqueueSnackbar(data.response?.data.message, { variant: 'error' });
+    // had to put any due to too many differing cases
+    onError: (error: AxiosError<any>) => {
+      const errorResponse = error.response?.data;
+      const status = error.response?.status;
+
+      switch (status) {
+        case 401:
+          // Team code doesnt exist
+          enqueueSnackbar(errorResponse?.message, {
+            variant: 'error'
+          });
+          break;
+
+        case 400:
+          if (errorResponse?.message && !isValidationError(errorResponse)) {
+            // Team is full
+            showErrorMessage(errorResponse.message, enqueueSnackbar);
+          } else if (isValidationError(errorResponse)) {
+            // validation error
+            showValidationErrors(errorResponse?.errors, enqueueSnackbar);
+          }
+          break;
+
+        default:
+          showErrorMessage('An error occurred while joining the team', enqueueSnackbar);
+      }
     }
   });
 }
@@ -47,11 +83,7 @@ export function useJoinTeam() {
 export function useGetTeamStatus(id: string, enabled: boolean) {
   return useQuery<
     TeamStatusResponseI,
-    AxiosError<{
-      data: string;
-      error: string;
-      message: string;
-    }>
+    AxiosError<BaseErrorResponse>
   >({
     queryKey: ['team', { id }],
     queryFn: async () => {
@@ -59,6 +91,7 @@ export function useGetTeamStatus(id: string, enabled: boolean) {
       return data;
     },
     retry: 1,
-    enabled: !!id && enabled
+    enabled: !!id && enabled,
+    staleTime: 30000,
   });
 }
