@@ -1,11 +1,14 @@
 import { useHandleSmoothScroll } from '@/utils/useHandleSmoothScroll';
 import React from 'react';
+import {Link} from '@tanstack/react-router';
 
 interface NavItem {
   label: string;
   href: string;
   hasDropdown?: boolean;
-  dropdownItems?: { label: string; href: string }[];
+  dropdownItems?: {
+    id: string; label: string; href: string 
+}[];
   id?: string;
 }
 
@@ -32,27 +35,17 @@ const NavMenu: React.FC<NavMenuProps> = ({ navItems, isDropdownOpen, toggleDropd
     <ul className="hidden lg:flex space-x-2 sm:space-x-4 xl:space-x-8 2xl:space-x-10 text-[3vh] lg:text-[3.5vh] leading-8 text-[#004B6E] items-center tracking-normal">
       {navItems.map((item: NavItem, index: number) => (
         <li key={index} className="relative">
-          <a
-            href={item.href}
-            className="px-0 flex items-center"
-            onClick={(e) => {
-              if (item.hasDropdown) {
-                toggleDropdown();
-              }
-              useHandleSmoothScroll(e, item.id || '');
-            }}>
+          <Link to={item.href} className="px-0 flex items-center" onClick={(e) => {if(item.hasDropdown) {toggleDropdown()}; useHandleSmoothScroll(e, item.id || '')}}>
             {item.label}
             {item.hasDropdown && <BlueTriangle isOpen={isDropdownOpen} />}
-          </a>
+          </Link>
           {item.hasDropdown && isDropdownOpen && (
             <ul className="absolute top-full mt-2 shadow-lg rounded-md p-2 bg-white border-t border-[#004B6E]">
               {item.dropdownItems?.map((dropdownItem, idx) => (
                 <li key={idx}>
-                  <a
-                    href={dropdownItem.href}
-                    className="block text-[2.5vh] lg:text-[3.5vh] px-[1vh] py-[1.5vh] 2xl:leading-[2vh]  hover:bg-gray-100 text-[#FF8700]">
+                  <Link to={dropdownItem.href}  className="block text-[2.5vh] lg:text-[3.5vh] px-[1vh] py-[1.5vh] 2xl:leading-[2vh]  hover:bg-gray-100 text-[#FF8700]" onClick={(e) => {if(item.hasDropdown) {toggleDropdown()}; useHandleSmoothScroll(e, dropdownItem.id || '')}} >
                     {dropdownItem.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -60,11 +53,11 @@ const NavMenu: React.FC<NavMenuProps> = ({ navItems, isDropdownOpen, toggleDropd
         </li>
       ))}
       <li className="hidden lg:flex justify-center">
-        <a
-          href="#"
-          className="h-[5vh] lg:h-[6vh] w-auto flex justify-center items-center py-[1.1vh] px-[1.5vh] 2xl:py-[2.4vh] border rounded-[1vh] bg-[#004B6E] hover:bg-[#002a3d] transition-colors text-white text-[3vh] lg:text-[3.8vh]">
-          Sponsor Us
-        </a>
+      <Link
+        to='/registration'
+        className="h-[5vh] lg:h-[6vh] w-auto flex justify-center items-center py-[1.1vh] px-[1.5vh] 2xl:py-[2.4vh] border rounded-[1vh] bg-[#004B6E] hover:bg-[#002a3d] transition-colors text-white text-[3vh] lg:text-[3.8vh]">
+        Register
+      </Link>
       </li>
     </ul>
   );
