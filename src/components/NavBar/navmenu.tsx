@@ -25,8 +25,7 @@ const BlueTriangle: React.FC<{ isOpen: boolean }> = ({ isOpen }) => (
     viewBox="0 0 20 20"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className={`ml-1 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
-  >
+    className={`ml-1 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}>
     <path d="M10 14L5 7H15L10 14Z" fill="#004B6E" />
   </svg>
 );
@@ -59,7 +58,6 @@ const NavMenu: React.FC<NavMenuProps> = ({ navItems, isDropdownOpen, toggleDropd
         className="h-[5vh] lg:h-[6vh] w-auto flex justify-center items-center py-[1.1vh] px-[1.5vh] 2xl:py-[2.4vh] border rounded-[1vh] bg-[#004B6E] hover:bg-[#002a3d] transition-colors text-white text-[3vh] lg:text-[3.8vh]">
         Register
       </Link>
-
       </li>
     </ul>
   );
