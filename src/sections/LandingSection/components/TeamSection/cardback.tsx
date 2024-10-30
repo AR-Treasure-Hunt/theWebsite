@@ -21,7 +21,7 @@ export const CardBack: React.FC<CardBackProps> = ({ member, backgroundImage }) =
             <h2 className="text-3xl font-jersey text-white">{member.name}</h2>
             <h4 className="text-sm font-rubik text-white/80">{member.role}</h4>
             <div className="flex items-center h-full">
-              <p className="text-xl text-[#FBD9BE] my-auto w-9/10 flex items-center justify-center h-full">
+              <p className="text-xl text-[#FBD9BE] mt-4 w-9/10 flex  justify-center h-full">
                 {member.quote}
               </p>
             </div>
