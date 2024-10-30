@@ -122,30 +122,25 @@ export default function RegistrationForm() {
       setTeamAction(data.teamOption);
 
       try {
+        const userData = {
+          name: data.fullName,
+          email: data.email,
+          phone_number: data.phoneNumber,
+          institution: data.institution,
+          address: data.address,
+          ...(data.socialMedia ? { social_media: data.socialMedia } : {})
+        };
+  
         if (data.teamOption === 'create') {
           const res = await createTeamMutation.mutateAsync({
             teamName: data.teamName,
-            userData: {
-              name: data.fullName,
-              email: data.email,
-              phone_number: data.phoneNumber,
-              institution: data.institution,
-              address: data.address,
-              social_media: data.socialMedia
-            }
+            userData
           });
           setTeamCode(res.data.teamCode);
         } else {
           const res = await joinTeamMutation.mutateAsync({
             teamCode: data.teamName,
-            userData: {
-              name: data.fullName,
-              email: data.email,
-              phone_number: data.phoneNumber,
-              institution: data.institution,
-              address: data.address,
-              social_media: data.socialMedia
-            }
+            userData
           });
           setTeamCode(res.data.teamCode);
         }

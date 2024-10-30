@@ -1,11 +1,11 @@
-import DefaultLayout from '@/layout';
 import RegistrationSection from '@/sections/RegistrationSection/layout';
+import RegistrationLayout from '@/layout/RegistrationLayout';
 
 function RegistrationPage() {
   return (
-    <DefaultLayout>
+    <RegistrationLayout>
       <RegistrationSection />
-    </DefaultLayout>
+    </RegistrationLayout>
   );
 }
 

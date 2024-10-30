@@ -91,10 +91,12 @@ export function TeamStatusSection() {
                               <MapPin className="h-4 w-4 text-gray-600" />
                               <span>Address: {member.address}</span>
                             </span>
-                            <span className="flex items-center space-x-2">
-                              <Globe className="h-4 w-4 text-gray-600" />
-                              <span>Social Media: {member.social_media}</span>
-                            </span>
+                            {member.social_media &&
+                              <span className="flex items-center space-x-2">
+                                <Globe className="h-4 w-4 text-gray-600" />
+                                <span>Social Media: {member.social_media}</span>
+                              </span>
+                            }
                           </div>
                         ) : (
                           <div className="text-gray-500">{member}</div>
