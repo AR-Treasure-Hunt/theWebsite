@@ -65,28 +65,28 @@ export default function RegistrationForm() {
     }
   });
 
-    const handleNextStep = async (e?: React.MouseEvent) => {
-        e?.preventDefault()
-        if (step === 1) {
-            const isValid = await form.trigger([
-                "fullName",
-                "address",
-                "email",
-                "phoneNumber",
-                "institution",
-                'socialMedia',
-            ])
+  const handleNextStep = async (e?: React.MouseEvent) => {
+    e?.preventDefault()
+    if (step === 1) {
+      const isValid = await form.trigger([
+        "fullName",
+        "address",
+        "email",
+        "phoneNumber",
+        "institution",
+        'socialMedia',
+      ])
 
-            if (!isValid) return
+      if (!isValid) return
 
-            setCompletedSteps(prev => [...prev, 1])
-            setClosingSection(1)
-            setTimeout(() => {
-                setStep(2)
-                setOpenSections([2])
-                setClosingSection(null)
-            }, 300)
-        }
+      setCompletedSteps(prev => [...prev, 1])
+      setClosingSection(1)
+      setTimeout(() => {
+        setStep(2)
+        setOpenSections([2])
+        setClosingSection(null)
+      }, 300)
+    }
 
     if (step === 2) {
       const isValid = await form.trigger(['teamOption', 'teamName']);
@@ -113,10 +113,10 @@ export default function RegistrationForm() {
     }
   };
 
-    const onSubmit = async (data: RegistrationSchema) => {
-        if (step === 2) {
-            const isValid = await form.trigger(['teamOption', 'teamName', 'socialMedia']);
-            if (!isValid) return;
+  const onSubmit = async (data: RegistrationSchema) => {
+    if (step === 2) {
+      const isValid = await form.trigger(['teamOption', 'teamName', 'socialMedia']);
+      if (!isValid) return;
 
       setIsLoading(true);
       setTeamAction(data.teamOption);
