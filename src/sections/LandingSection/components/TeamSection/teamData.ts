@@ -17,6 +17,17 @@ import Swarnim_Bajracharya from './Images/Swarnim_Bajracharya.webp';
 import royas from './Images/royas.webp'
 import albina from './Images/albina.webp'
 import kshitiz from './Images/kshitiz.webp'
+import nilotpal from './Images/nilotpal.webp'
+import neo from './Images/neo.webp'
+import nirjal from './Images/nirjal.webp'
+import regal from './Images/regal.webp'
+import subani from './Images/subani.webp'
+import sumira from './Images/sumira.webp'
+import aakriti from './Images/aakriti.webp'
+import Ayusha from './Images/Ayusha.webp'
+import Angelina from './Images/Angelina.webp'
+import ankit from './Images/ankit.webp'
+import nirbhica from './Images/nirbhica.webp'
 
 export const teamData: TeamMember[] = [
     {

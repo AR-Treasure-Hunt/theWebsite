@@ -1,5 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router';
-
+import { Link } from '@tanstack/react-router';
+import { ArrowLeft } from 'lucide-react';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import {
   Accordion,
@@ -16,12 +17,16 @@ function CodeOfConductComponent() {
   return (
     <div className="bg-[#F0EBFF] text-[#003F5A]">
       <div className="container mx-auto px-4 py-8 ">
+        <Link to="/" className="flex items-center justify-start p-4 text-2xl text-[#003F5A]">
+          <ArrowLeft size={24} />
+          <span className="ml-2">Back to Home</span>
+        </Link>
         <h1 className="py-12 text-6xl text-center">Code of Conduct</h1>
         <Card className="mb-8 bg-[#F0EBFF] text-[#003F5A]">
           <CardHeader>
             <div className="flex items-center  justify-between mb-4">
-              {/* <img src="/placeholder.svg?height=50&width=100" width={100} height={50} alt="IT Meet 2023 Logo" /> */}
-              <h1 className="text-6xl font-bold ">AR Treasure Hunt</h1>
+              <img src="/itmeet_dark.png" width={120} height={50} alt="IT Meet 2023 Logo" />
+              <h1 className="text-6xl font-medium ">AR Treasure Hunt</h1>
               <img
                 src="/android-chrome-192x192.png"
                 width={75}
@@ -29,15 +34,15 @@ function CodeOfConductComponent() {
                 alt="AR Treasure Hunt Logo"
               />
             </div>
-            <h2 className="text-4xl font-semibold text-center ">
+            <h2 className="text-4xl font-medium text-center ">
               Rules to be followed during the event
             </h2>
-            <p className="text-center text-2xl font-medium text-muted-foreground">
+            <p className="text-center text-2xl font-rubik font-medium text-muted-foreground">
               Please read this carefully!
             </p>
           </CardHeader>
           <CardContent>
-            <p className="mb-4 text-2xl text-primary">
+            <p className="mb-4 text-lg font-normal  font-rubik text-primary">
               What we want from this Treasure Hunt is to see all the participants having fun and
               creating memories. During the game, we would like to request you to please be careful
               so that you won't fall into any minor or in the worst-case scenario major accidents.
@@ -48,10 +53,10 @@ function CodeOfConductComponent() {
               pathways will be slippery, for which we would like to request you all to be extra
               cautious while searching for treasures.
             </p>
-            <p className="text-4xl font-semibold  text-center  mb-4">
+            <p className="text-4xl   text-center  mb-4">
               Win through being prepared, not with a rush.
             </p>
-            <p className="mb-4 text-2xl text-primary">
+            <p className="mb-4 font-lg font-rubik text-primary">
               The following rules are in the interest of safety. Random spot checks will be done at
               certain sites by Hunt coordinators. If there is any sign of reckless behavior as
               judged by a Hunt coordinator, that team will be disqualified. All decisions in these
@@ -60,14 +65,14 @@ function CodeOfConductComponent() {
           </CardContent>
         </Card>
         <Card className="mb-8 bg-[#F0EBFF] text-[#003F5A]">
-          <CardHeader className="text-4xl font-bold mb-4 ">
+          <CardHeader className="text-4xl  mb-4 ">
             Rules to be followed throughout the event:
           </CardHeader>
-          <CardContent className="text-2xl text-primary">
-            <Accordion type="single" collapsible className="mb-8 text-primary">
+          <CardContent className="text-xl text-primary">
+            <Accordion type="single" collapsible className="mb-8 font-rubik text-primary">
               <AccordionItem value="item-1">
-                <AccordionTrigger className=" text-2xl ">General Conduct</AccordionTrigger>
-                <AccordionContent className="text-2xl">
+                <AccordionTrigger className=" text-xl ">General Conduct</AccordionTrigger>
+                <AccordionContent className="text-xl">
                   <ul className="list-disc pl-6 space-y-2">
                     <li>Use welcoming and inclusive language.</li>
                     <li>
@@ -83,8 +88,8 @@ function CodeOfConductComponent() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
-                <AccordionTrigger className="text-2xl">Participation Guidelines</AccordionTrigger>
-                <AccordionContent className="text-2xl">
+                <AccordionTrigger className="text-xl">Participation Guidelines</AccordionTrigger>
+                <AccordionContent className="text-xl">
                   <ul className="list-disc pl-6 space-y-2">
                     <li>
                       Participants are expected to arrive at least 30 minutes prior to the time of
@@ -101,8 +106,8 @@ function CodeOfConductComponent() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
-                <AccordionTrigger className="text-2xl">Disqualification Behaviors</AccordionTrigger>
-                <AccordionContent className="text-2xl">
+                <AccordionTrigger className="text-xl ">Disqualification Behaviors</AccordionTrigger>
+                <AccordionContent className="text-xl">
                   <p>Any of the following behaviors may result in disqualification:</p>
                   <ul className="list-disc pl-6 space-y-2">
                     <li>
@@ -123,9 +128,9 @@ function CodeOfConductComponent() {
         </Card>
         <Card className="bg-[#F0EBFF] text-[#003F5A]">
           <CardHeader>
-            <h2 className="text-4xl font-bold text-[#003F5A] ">Reporting:</h2>
+            <h2 className="text-4xl text-[#003F5A] ">Reporting:</h2>
           </CardHeader>
-          <CardContent className="text-2xl text-primary">
+          <CardContent className="text-lg font-rubik text-primary">
             <p>
               Instances of any of the unacceptable behaviors listed above, but not limited to those,
               can be reported at kucc@ku.edu.np or bibhushansaakha@gmail.com. All the reported

@@ -25,7 +25,7 @@ export const CardFront: React.FC<CardFrontProps> = ({ member, defaultImage }) =>
         <h3 className="text-3xl font-jersey text-[#702412] lg:leading-[1vh] leading-[2vh] ">
           {member.name}
         </h3>
-        <p className="text-sm text-[#702412]/60 font-rubik mt-2">{member.role}</p>
+        <p className="text-sm text-[#702412]/70 font-bold font-rubik mt-2">{member.role}</p>
       </div>
     </div>
   );

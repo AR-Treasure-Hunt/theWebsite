@@ -1,5 +1,5 @@
 import { useHandleSmoothScroll } from '@/utils/useHandleSmoothScroll';
-
+import { Link } from '@tanstack/react-router';
 export const FOOTER_LINKS = [
   {
     title: 'Sponsor Us',
@@ -14,10 +14,6 @@ export const FOOTER_LINKS = [
     link: '/',
     id: 'faq'
   },
-  {
-    title: 'Code of Conduct',
-    link: '/code-of-conduct'
-  }
 ];
 
 const RedirectLinks = () => {
@@ -37,6 +33,12 @@ const RedirectLinks = () => {
             </a>
           </li>
         ))}
+        <li className="text-center">
+          <Link to="/code-of-conduct" className="text-[24px] md:text-[28px]  hover:underline">
+
+            Code of Conduct
+          </Link>
+        </li>
       </ul>
     </div>
   );
