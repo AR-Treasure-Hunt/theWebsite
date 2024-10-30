@@ -8,7 +8,7 @@ const ImageContainer = (props: ImageContainerProps) => {
 
   return (
     <div className="relative mb-[16px]">
-      <img src={img} className="rounded-[16px]" />
+      <img src={img} className="rounded-[16px] h-[20vh] mx-auto" />
     </div>
   );
 };

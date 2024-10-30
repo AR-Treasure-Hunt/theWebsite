@@ -19,7 +19,7 @@ const FooterBottomContentWrapper = ({ children }: { children: React.ReactNode })
 const Footer = () => {
   return (
     <div className="bg-[#F0EBFF]  text-[#003F5A">
-      <h1 className="text-5xl text-[#003F5A] md:text-7xl text-center mb-[16px]">Get In Touch</h1>
+      <h1 className="text-5xl text-[#003F5A] md:text-7xl text-center mb-[16px] pt-4">Get In Touch</h1>
       <FooterTopContentWrapper>
         <ContactInfoContainer />
         <ContactPersonContainer />
