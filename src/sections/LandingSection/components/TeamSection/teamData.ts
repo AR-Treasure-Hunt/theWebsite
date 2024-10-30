@@ -27,6 +27,7 @@ import subani from './Images/subani.png'
 import nilotpal from './Images/nilotpal.png'
 import ankit from './Images/ankit.png'
 import nirbhica from './Images/nirbhica.png'
+import nirjal from './Images/nirjal.png'
 
 export const teamData: TeamMember[] = [
     {
@@ -162,7 +163,7 @@ export const teamData: TeamMember[] = [
     {
       name: 'Aayusha Jaspau',
       image: Ayusha,
-      role: '?????',
+      role: 'Creative Team Member',
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
         socialLinks: {
@@ -204,7 +205,7 @@ export const teamData: TeamMember[] = [
         }},
     {
       name: 'Nirbhica Shrestha',
-      role: '?????',
+      role: 'Creative Team Member',
       image: nirbhica,
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -266,6 +267,7 @@ export const teamData: TeamMember[] = [
       socialLinks: {
         github: 'https://github.com/regaladhikari',
         linkedin: 'https://www.linkedin.com/in/regal-adhikari-03b958254/',
+        instagram: 'https://www.instagram.com/adhikariregal/'
       }},
     {
       name: 'Aakriti Banjara',
@@ -291,7 +293,7 @@ export const teamData: TeamMember[] = [
     {
       name: 'Sally Shrestha',
       image : Sally , 
-      role: '?????',
+      role: 'Sponsorship Lead',
       quote:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
     socialLinks: {
@@ -300,7 +302,7 @@ export const teamData: TeamMember[] = [
     }},
     {
       name: 'Rohit Karki',
-      role: '?????',
+      role: 'Game Developer',
       quote:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
       socialLinks: {
@@ -340,18 +342,19 @@ export const teamData: TeamMember[] = [
       }},
     {
       name: 'Nirjal Bhurtel',
+      image: nirjal,
       role: 'App developer',
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
         socialLinks: {
-          github: '',
-          instagram: '',
-          linkedin: '',
+          github: 'http://github.com/erwinschrodinger1',
+          instagram: 'https://www.instagram.com/nirjal_bhurtel/',
+          linkedin: 'http://www.linkedin.com/in/nirjal',
         }},
     {
       name: 'Arpan Aadhikari',
       image : Arpan ,
-      role: '?????',
+      role: 'Sponsorship Team member',
       quote:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
     socialLinks: {
