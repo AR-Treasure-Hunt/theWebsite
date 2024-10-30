@@ -1,47 +1,47 @@
-import { useState } from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Loader2, User, Mail, Phone, Building, MapPin, Globe } from "lucide-react";
-import { useGetTeamStatus } from "@/api/registration";
-import clsx from "clsx";
-import { motion } from "framer-motion";
+import { useState } from 'react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { Loader2, User, Mail, Phone, Building, MapPin, Globe } from 'lucide-react';
+import { useGetTeamStatus } from '@/api/registration';
+import clsx from 'clsx';
+import { motion } from 'framer-motion';
 
 export function TeamStatusSection() {
-    const [teamCode, setTeamCode] = useState<string>("");
+  const [teamCode, setTeamCode] = useState<string>('');
 
     const { data: teamStatus, isLoading, isError, refetch, error } = useGetTeamStatus(teamCode, false);
 
-    const handleGetTeamStatus = () => {
-        if (teamCode !== "") {
-            refetch();
-        }
-    };
+  const handleGetTeamStatus = () => {
+    if (teamCode !== '') {
+      refetch();
+    }
+  };
 
-    return (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-            <Card className="w-full max-w-md mx-auto">
-                <CardHeader>
-                    <CardTitle className="text-4xl tracking-wide font-bold">Team Status</CardTitle>
-                    <CardDescription className="text-xl tracking-wide">Check the status of your team</CardDescription>
-                </CardHeader>
-                <CardContent>
-                    <div className="space-y-4">
-                        <div className="flex items-center space-x-2">
-                            <Input
-                                placeholder="Enter Team Code"
-                                value={teamCode}
-                                onChange={(e) => setTeamCode(e.target.value)}
-                                className="flex-1"
-                            />
-                            <Button
-                                onClick={handleGetTeamStatus}
-                                className="tracking-wide bg-[#004B6E] hover:bg-[#002a3d]"
-
-                            >
-                                Check Status
-                            </Button>
-                        </div>
+  return (
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+      <Card className="w-full max-w-md mx-auto">
+        <CardHeader>
+          <CardTitle className="text-4xl tracking-wide font-bold">Team Status</CardTitle>
+          <CardDescription className="text-xl tracking-wide">
+            Check the status of your team
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="space-y-4">
+            <div className="flex items-center space-x-2">
+              <Input
+                placeholder="Enter Team Code"
+                value={teamCode}
+                onChange={(e) => setTeamCode(e.target.value)}
+                className="flex-1"
+              />
+              <Button
+                onClick={handleGetTeamStatus}
+                className="tracking-wide bg-[#004B6E] hover:bg-[#002a3d]">
+                Check Status
+              </Button>
+            </div>
 
                         {isLoading ? (
                             <div className="flex justify-center items-center h-40">

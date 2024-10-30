@@ -1,6 +1,6 @@
-import RegistrationForm from "../components/RegistrationForm";
-import { TeamStatusSection } from "../components/TeamStatus";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import RegistrationForm from '../components/RegistrationForm';
+import { TeamStatusSection } from '../components/TeamStatus';
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 
 export default function RegistrationSection() {
     return (
@@ -22,3 +22,4 @@ export default function RegistrationSection() {
         </div>
     );
 }
+

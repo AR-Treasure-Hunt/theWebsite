@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { useSubmitTeamName } from '@/api/DecodingDecadeQuery'; // Import your custom hook
 
 interface DecodingDecadeSecondScreenProps {
-    handleScreenChange: (screen: number)=>void;
-    handleApiResponse: (success: boolean, message: string)=>void;
+  handleScreenChange: (screen: number) => void;
+  handleApiResponse: (success: boolean, message: string) => void;
 }
 
 const DecodingDecadeSecondScreen = (props: DecodingDecadeSecondScreenProps) => {
-    // Props goes here
-    const {handleScreenChange, handleApiResponse} = props
+  // Props goes here
+  const { handleScreenChange, handleApiResponse } = props;
 
   // State goes here
   const [teamName, setTeamName] = useState('');
@@ -26,16 +26,23 @@ const DecodingDecadeSecondScreen = (props: DecodingDecadeSecondScreenProps) => {
         handleScreenChange(2);
       },
       onError: (error) => {
-        handleApiResponse(false, error.message || 'An error occurred while submitting your team name.');
+        handleApiResponse(
+          false,
+          error.message || 'An error occurred while submitting your team name.'
+        );
       }
     });
   };
 
   return (
     <>
-      <p className='text-center text-[28px] text-lime-500 mb-[12px]'>Congratulations! You've solved the clue!</p>
-      <p className="text-left text-[28px] text-gray-600 mb-[6px]">Enter your team name so we can generate you an image to flex on Instagram:</p>
-      <form method='post' onSubmit={handleSubmit} className="flex flex-col space-y-4">
+      <p className="text-center text-[28px] text-lime-500 mb-[12px]">
+        Congratulations! You've solved the clue!
+      </p>
+      <p className="text-left text-[28px] text-gray-600 mb-[6px]">
+        Enter your team name so we can generate you an image to flex on Instagram:
+      </p>
+      <form method="post" onSubmit={handleSubmit} className="flex flex-col space-y-4">
         <input
           type="text"
           placeholder="Enter your team name"
@@ -46,8 +53,7 @@ const DecodingDecadeSecondScreen = (props: DecodingDecadeSecondScreenProps) => {
         <button
           type="submit"
           disabled={submitTeamName.isPending} // Assuming isPending is the correct property
-          className="text-[18px] bg-[#004B6E] text-white py-2 rounded-md font-medium hover:opacity-50 transition-colors disabled:opacity-50"
-        >
+          className="text-[18px] bg-[#004B6E] text-white py-2 rounded-md font-medium hover:opacity-50 transition-colors disabled:opacity-50">
           {submitTeamName.isPending ? 'Submitting...' : 'Submit'}
         </button>
       </form>

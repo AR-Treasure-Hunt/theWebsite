@@ -16,8 +16,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({ socialLinks }) => {
           href={socialLinks.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-2xl transition-colors ease-in-out hover:text-gray-500"
-        >
+          className="text-2xl transition-colors ease-in-out hover:text-gray-500">
           <Github size={24} />
         </a>
       )}
@@ -26,8 +25,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({ socialLinks }) => {
           href={socialLinks.instagram}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-2xl transition-colors ease-in-out hover:text-pink-500"
-        >
+          className="text-2xl transition-colors ease-in-out hover:text-pink-500">
           <Instagram size={24} />
         </a>
       )}
@@ -36,8 +34,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({ socialLinks }) => {
           href={socialLinks.linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-2xl transition-colors ease-in-out hover:text-[#0077b5]"
-        >
+          className="text-2xl transition-colors ease-in-out hover:text-[#0077b5]">
           <Linkedin size={24} />
         </a>
       )}

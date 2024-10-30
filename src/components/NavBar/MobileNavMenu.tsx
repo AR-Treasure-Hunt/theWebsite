@@ -26,11 +26,11 @@ const BlueTriangle: React.FC<{ isOpen: boolean }> = ({ isOpen }) => (
     viewBox="0 0 20 20"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className={`ml-1 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
-  >
+    className={`ml-1 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}>
     <path d="M10 14L5 7H15L10 14Z" fill="#004B6E" />
   </svg>
 );
+
 
 const MobileNavMenu: React.FC<MobileNavMenuProps> = ({ navItems, isDropdownOpen, toggleDropdown, closeNavMenu }) => {
   return (

@@ -1,6 +1,7 @@
 import { TeamMember } from './type'
  import Abi from './Images/Abi_Shrestha.png';
 import Anuja from './Images/Anuja_Lamsal.png';
+import Ayusha from './Images/Ayusha.png'
 import Arpan from './Images/Arpan.png';
 import Bhishma from './Images/Bhishma.png';
 import Bibhushan from './Images/bibhusan.png';
@@ -13,10 +14,19 @@ import SamikshyaUpadhyay from './Images/SamikshyaUpadhyay.png';
 import Sinja from './Images/Sinja.png';
 import Sujay from './Images/Sujay.png';
 import Sushila_Shrestha from './Images/Sushila_Shrestha.png';
+import sumira from './Images/sumira.png'
 import Swarnim_Bajracharya from './Images/Swarnim_Bajracharya.png';
 import royas from './Images/royas.png'
 import albina from './Images/albina.png'
 import kshitiz from './Images/kshitiz.png'
+import Angelina from './Images/Angelina.png'
+import aakriti from './Images/aakriti.png'
+import neo from './Images/neo.png'
+import regal from './Images/regal.png'
+import subani from './Images/subani.png'
+import nilotpal from './Images/nilotpal.png'
+import ankit from './Images/ankit.png'
+import nirbhica from './Images/nirbhica.png'
 
 export const teamData: TeamMember[] = [
     {
@@ -24,10 +34,15 @@ export const teamData: TeamMember[] = [
       image : Bibhushan,
       role: 'Event Lead',
       quote:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
-    },
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+        socialLinks: {
+          github: 'https://github.com/bibhushansaakha',
+          instagram: 'https://www.instagram.com/bibhushansaakha/',
+          linkedin: 'https://www.linkedin.com/in/bibhushansaakha/'
+        }},
     {
       name: 'Nilotpal Dhakal',
+      image: nilotpal,
       role: 'Talent Manager',
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -36,6 +51,7 @@ export const teamData: TeamMember[] = [
         }},
     {
       name: 'Ankit Kumar Karn',
+      image: ankit,
       role: 'Social Media Manager',
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -50,7 +66,11 @@ export const teamData: TeamMember[] = [
       role: 'Talent Manager',
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
-      },
+        socialLinks: {
+          github: 'https://github.com/shkroyas',
+          instagram: 'https://www.instagram.com/r.royas',
+          linkedin: 'https://www.linkedin.com/in/royas-shakya?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+        }},
     {
       name: 'Sinja Ghimire ',
       image : Sinja ,
@@ -64,6 +84,7 @@ export const teamData: TeamMember[] = [
       }},
     {
       name: 'Subani Malla',
+      image: subani,
       role: 'Character and Background Design ',
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -107,10 +128,15 @@ export const teamData: TeamMember[] = [
       }},
     {
       name: 'Neo Shakya',
+      image: neo,
       role: 'Character and Background Design',
       quote:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
-    },
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+        socialLinks: {
+          github: '',
+          instagram: '',
+          linkedin: '',
+        }},
     {
       name: 'Sushila Shrestha ',
       image : Sushila_Shrestha ,
@@ -127,41 +153,69 @@ export const teamData: TeamMember[] = [
       image : Anuja ,
       role: 'Backend Developer',
       quote:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
-    },
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+        socialLinks: {
+          github: 'https://github.com/anujalamsal',
+          instagram: 'https://www.instagram.com/anujaaahere/',
+          linkedin: 'https://www.linkedin.com/in/anuja-lamsal-b4237b271/',
+        }},
     {
       name: 'Aayusha Jaspau',
+      image: Ayusha,
       role: '?????',
       quote:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
-    },
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+        socialLinks: {
+          github: 'https://github.com/aayushaaaa',
+          instagram: 'https://www.instagram.com/aayushaaa.__/profilecard/?igsh=MXVmN2pvaDJsOTJncw==',
+          linkedin: 'https://www.linkedin.com/in/aayusha-jaspau-bb7203334',
+        }},
     {
       name: 'David Ramovich Mandal',
       role: 'Frontend Developer',
       image : david,
       quote:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
-    },
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+        socialLinks: {
+          github: '',
+          instagram: '',
+          linkedin: '',
+        }},
     {
       name: 'Sumira Makaju',
       role: 'Content Creator',
+      image: sumira,
       quote:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
-    },
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+        socialLinks: {
+          github: '',
+          instagram: 'https://www.instagram.com/_mimi_su_?igsh=MTRjZnppY29taWdreg==',
+          linkedin: '',
+        }},
     {
       name: 'Shreejan Karmacharya',
       role: 'Social Media Manager',
       quote:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
-    },
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+        socialLinks: {
+          github: '',
+          instagram: '',
+          linkedin: '',
+        }},
     {
       name: 'Nirbhica Shrestha',
       role: '?????',
+      image: nirbhica,
       quote:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
-    },
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+        socialLinks: {
+          github: '',
+          instagram: '',
+          linkedin: '',
+        }},
     {
       name: 'Angelina Ghimire',
+      image: Angelina,
       role: 'Creative Lead',
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
@@ -186,32 +240,42 @@ export const teamData: TeamMember[] = [
       image : SamikshyaUpadhyay,
       role: 'Talent Management',
       quote:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
-    },
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+        socialLinks: {
+          github: '',
+          instagram: '',
+          linkedin: '',
+        }},
     {
       name: 'Mohit Rajbhandari',
       image : Mohit , 
       role: 'Frontend Developer',
       quote:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
-    },
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+        socialLinks: {
+          github: '',
+          instagram: '',
+          linkedin: '',
+        }},
     {
       name: 'Regal Adhikari',
+      image: regal,
       role: 'Game development Lead',
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
       socialLinks: {
         github: 'https://github.com/regaladhikari',
-        linkedin: 'https://www.linkedin.com/in/regal-adhikari-03b958254/'
+        linkedin: 'https://www.linkedin.com/in/regal-adhikari-03b958254/',
       }},
     {
       name: 'Aakriti Banjara',
+      image: aakriti,
       role: 'Game Development',
       quote:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
       socialLinks: {
         github: 'https://github.com/Aakriti555',
-        linkedin: 'https://www.linkedin.com/in/aakriti-banjara-2b5b66240/'
+        linkedin: 'https://www.linkedin.com/in/aakriti-banjara-2b5b66240/',
       }},
     {
       name: 'Swarnim Bajracharya',
@@ -239,7 +303,11 @@ export const teamData: TeamMember[] = [
       role: '?????',
       quote:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
-   },
+      socialLinks: {
+        github: '',
+        instagram: '',
+        linkedin: '',
+      }},
     {
       name: 'Albina Shrestha',
       image: albina,
@@ -255,8 +323,12 @@ export const teamData: TeamMember[] = [
       name: 'Shreejan P. Karmacharya', 
       role: 'Content Creator',
       quote:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
-    },
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+        socialLinks: {
+          github: '',
+          instagram: '',
+          linkedin: '',
+        }},
     {
       name: 'Kshitiz Khanal',
       image: kshitiz,
@@ -270,8 +342,12 @@ export const teamData: TeamMember[] = [
       name: 'Nirjal Bhurtel',
       role: 'App developer',
       quote:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
-    },
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+        socialLinks: {
+          github: '',
+          instagram: '',
+          linkedin: '',
+        }},
     {
       name: 'Arpan Aadhikari',
       image : Arpan ,
