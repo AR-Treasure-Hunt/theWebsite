@@ -28,7 +28,7 @@ import Ayusha from './Images/Ayusha.webp'
 import Angelina from './Images/Angelina.webp'
 import ankit from './Images/ankit.webp'
 import nirbhica from './Images/nirbhica.webp'
-import shreejan from './Images/shreejan.png'
+import shreejan from './Images/shreejan.webp'
 
 export const teamData: TeamMember[] = [
     {
@@ -67,7 +67,7 @@ export const teamData: TeamMember[] = [
       image: royas,
       role: 'Talent Manager',
       quote:
-        '',
+        'A tech enthusiast at heart, filled with creativity and driven by an endless curiosity.',
         socialLinks: {
           github: 'https://github.com/shkroyas',
           instagram: 'https://www.instagram.com/r.royas',
