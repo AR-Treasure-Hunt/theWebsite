@@ -27,7 +27,7 @@ export type JoinTeamPayload = {
     phone_number: string;
     institution: string;
     address: string;
-    social_media: string;
+    social_media?: string;
   };
 };
 
@@ -39,7 +39,7 @@ export type CreateTeamPayload = {
     phone_number: string;
     institution: string;
     address: string;
-    social_media: string;
+    social_media?: string;
   };
 };
 
@@ -58,7 +58,7 @@ export type TeamMemberI = {
   phone_number: string
   institution: string
   address: string
-  social_media: string
+  social_media: string | null
 };
 
 export type TeamStatusResponseI = {

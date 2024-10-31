@@ -16,7 +16,7 @@ export function PersonalDetails({ isDisabled }: PersonalDetailsProps) {
         name="fullName"
         render={({ field }) => (
           <FormItem>
-            <FormLabel>Full Name</FormLabel>
+            <FormLabel>Full Name *</FormLabel>
             <FormControl>
               <Input {...field} disabled={isDisabled} />
             </FormControl>
@@ -30,7 +30,7 @@ export function PersonalDetails({ isDisabled }: PersonalDetailsProps) {
         name="email"
         render={({ field }) => (
           <FormItem>
-            <FormLabel>Email</FormLabel>
+            <FormLabel>Email *</FormLabel>
             <FormControl>
               <Input {...field} type="email" disabled={isDisabled} />
             </FormControl>
@@ -44,7 +44,7 @@ export function PersonalDetails({ isDisabled }: PersonalDetailsProps) {
         name="address"
         render={({ field }) => (
           <FormItem>
-            <FormLabel>Address</FormLabel>
+            <FormLabel>Address *</FormLabel>
             <FormControl>
               <Input {...field} disabled={isDisabled} />
             </FormControl>
@@ -58,9 +58,9 @@ export function PersonalDetails({ isDisabled }: PersonalDetailsProps) {
         name="phoneNumber"
         render={({ field }) => (
           <FormItem>
-            <FormLabel>Phone Number</FormLabel>
+            <FormLabel>Phone Number *</FormLabel>
             <FormControl>
-              <Input {...field} disabled={isDisabled} />
+              <Input {...field} disabled={isDisabled} type="number" />
             </FormControl>
             <FormMessage />
           </FormItem>
@@ -72,7 +72,7 @@ export function PersonalDetails({ isDisabled }: PersonalDetailsProps) {
         name="institution"
         render={({ field }) => (
           <FormItem>
-            <FormLabel>Institution</FormLabel>
+            <FormLabel>Institution *</FormLabel>
             <FormControl>
               <Input {...field} disabled={isDisabled} />
             </FormControl>
