@@ -2,12 +2,9 @@ import { useHandleSmoothScroll } from '@/utils/useHandleSmoothScroll';
 import { Link } from '@tanstack/react-router';
 export const FOOTER_LINKS = [
   {
-    title: 'Sponsor Us',
-    link: '/'
-  },
-  {
-    title: 'Partnership',
-    link: '/'
+    title: 'About Us',
+    link: '/',
+    id: 'about-section'
   },
   {
     title: 'FAQs',

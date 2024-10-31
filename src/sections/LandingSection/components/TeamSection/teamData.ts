@@ -28,6 +28,7 @@ import Ayusha from './Images/Ayusha.webp'
 import Angelina from './Images/Angelina.webp'
 import ankit from './Images/ankit.webp'
 import nirbhica from './Images/nirbhica.webp'
+import shreejan from './Images/shreejan.png'
 
 export const teamData: TeamMember[] = [
     {
@@ -194,8 +195,9 @@ export const teamData: TeamMember[] = [
           linkedin: 'https://www.linkedin.com/in/sumira-makaju-460ba52b0/',
         }},
     {
-      name: 'Shreejan Prasad Karmacharya',
+      name: 'Shreejan Karmacharya',
       role: 'Social Media Manager',
+      image: shreejan,
       quote:
         "I'm a traveler and an observer, passionate about exploring new places and meeting diverse people. I don’t confine my life to boundaries; I let it flow wherever it takes me, embracing every adventure along the way.",
         socialLinks: {
