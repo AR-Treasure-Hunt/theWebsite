@@ -36,7 +36,7 @@ export const teamData: TeamMember[] = [
       image : Bibhushan,
       role: 'Event Lead',
       quote:
-        '',
+        'Every expert was once a beginner.',
         socialLinks: {
           github: 'https://github.com/bibhushansaakha',
           instagram: 'https://www.instagram.com/bibhushansaakha/',
@@ -135,9 +135,9 @@ export const teamData: TeamMember[] = [
       quote:
         'Everything is a hobby to me, and I tend to learn my hobbies. Art, Music, Football, Games and Computers. Jack of all trades, but master of what?',
         socialLinks: {
-          github: '',
-          instagram: '',
-          linkedin: '',
+          github: 'https://github.com/Aleclai7',
+          instagram: 'https://www.instagram.com/haihaineodes/',
+          linkedin: 'https://www.linkedin.com/in/neo-shakya-361049336/',
         }},
     {
       name: 'Sushila Shrestha ',
@@ -232,7 +232,7 @@ export const teamData: TeamMember[] = [
       image : Sujay ,
       role: 'Marketing Lead',
       quote:
-        '',
+        'Part-time engineer, full-time Marvel fanatic - solving problems like Tony Stark, minus the suit!',
       socialLinks: {
         github: 'http://github.com/sujayp178',
         instagram: 'https://www.instagram.com/sujay_pl19/profilecard/?igsh=aXdpaXh6Ym1icmNu',
