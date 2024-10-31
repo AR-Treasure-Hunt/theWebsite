@@ -1,33 +1,33 @@
 import { TeamMember } from './type'
- import Abi from './Images/Abi_Shrestha.png';
-import Anuja from './Images/Anuja_Lamsal.png';
-import Ayusha from './Images/Ayusha.png'
-import Arpan from './Images/Arpan.png';
-import Bhishma from './Images/Bhishma.png';
-import Bibhushan from './Images/bibhusan.png';
-import david from './Images/david.png';
-import himesh_dulal from './Images/himesh_dulal.png';
-import Manjul_Tamrakar from './Images/Manjul_Tamrakar.png';
-import Mohit from './Images/Mohit-Rajbhandari.png';
-import Sally from './Images/sally_shrestha.png';
-import SamikshyaUpadhyay from './Images/SamikshyaUpadhyay.png';
-import Sinja from './Images/Sinja.png';
-import Sujay from './Images/Sujay.png';
-import Sushila_Shrestha from './Images/Sushila_Shrestha.png';
-import sumira from './Images/sumira.png'
-import Swarnim_Bajracharya from './Images/Swarnim_Bajracharya.png';
-import royas from './Images/royas.png'
-import albina from './Images/albina.png'
-import kshitiz from './Images/kshitiz.png'
-import Angelina from './Images/Angelina.png'
-import aakriti from './Images/aakriti.png'
-import neo from './Images/neo.png'
-import regal from './Images/regal.png'
-import subani from './Images/subani.png'
-import nilotpal from './Images/nilotpal.png'
-import ankit from './Images/ankit.png'
-import nirbhica from './Images/nirbhica.png'
-import nirjal from './Images/nirjal.png'
+ import Abi from './Images/Abi_Shrestha.webp';
+import Anuja from './Images/Anuja_Lamsal.webp';
+import Arpan from './Images/Arpan.webp';
+import Bhishma from './Images/Bhishma.webp';
+import Bibhushan from './Images/bibhusan.webp';
+import david from './Images/david.webp';
+import himesh_dulal from './Images/himesh_dulal.webp';
+import Manjul_Tamrakar from './Images/Manjul_Tamrakar.webp';
+import Mohit from './Images/Mohit-Rajbhandari.webp';
+import Sally from './Images/sally_shrestha.webp';
+import SamikshyaUpadhyay from './Images/SamikshyaUpadhyay.webp';
+import Sinja from './Images/Sinja.webp';
+import Sujay from './Images/Sujay.webp';
+import Sushila_Shrestha from './Images/Sushila_Shrestha.webp';
+import Swarnim_Bajracharya from './Images/Swarnim_Bajracharya.webp';
+import royas from './Images/royas.webp'
+import albina from './Images/albina.webp'
+import kshitiz from './Images/kshitiz.webp'
+import nilotpal from './Images/nilotpal.webp'
+import neo from './Images/neo.webp'
+import nirjal from './Images/nirjal.webp'
+import regal from './Images/regal.webp'
+import subani from './Images/subani.webp'
+import sumira from './Images/sumira.webp'
+import aakriti from './Images/aakriti.webp'
+import Ayusha from './Images/Ayusha.webp'
+import Angelina from './Images/Angelina.webp'
+import ankit from './Images/ankit.webp'
+import nirbhica from './Images/nirbhica.webp'
 
 export const teamData: TeamMember[] = [
     {
@@ -143,7 +143,7 @@ export const teamData: TeamMember[] = [
       image : Sushila_Shrestha ,
       role: 'Frontend Developer',
       quote:
-        'A quiet spark with a creativity in heart, diving into design and software, always up for new adventures to learn, grow, and keep things exciting!',
+        'A quiet spark with creativity in heart, diving into design and software, always up for new adventures to learn, grow, and keep things exciting!',
       socialLinks: {
         github: 'https://github.com/sushilashrestha',
         instagram: 'https://www.instagram.com/__susshhh__/',
@@ -187,20 +187,20 @@ export const teamData: TeamMember[] = [
       role: 'Content Creator',
       image: sumira,
       quote:
-        '',
+        'Bold, Brave, and unapologetically herself.',
         socialLinks: {
-          github: '',
+          github: 'https://github.com/SumiraMakaju',
           instagram: 'https://www.instagram.com/_mimi_su_?igsh=MTRjZnppY29taWdreg==',
-          linkedin: '',
+          linkedin: 'https://www.linkedin.com/in/sumira-makaju-460ba52b0/',
         }},
     {
-      name: 'Shreejan Karmacharya',
+      name: 'Shreejan Prasad Karmacharya',
       role: 'Social Media Manager',
       quote:
-        '',
+        "I'm a traveler and an observer, passionate about exploring new places and meeting diverse people. I don’t confine my life to boundaries; I let it flow wherever it takes me, embracing every adventure along the way.",
         socialLinks: {
           github: '',
-          instagram: '',
+          instagram: 'https://www.instagram.com/karmacharya_shreejan/',
           linkedin: '',
         }},
     {
@@ -243,20 +243,20 @@ export const teamData: TeamMember[] = [
       quote:
         '',
         socialLinks: {
-          github: '',
-          instagram: '',
-          linkedin: '',
+          github: 'https://github.com/Samikshyagithub',
+          instagram: 'https://www.instagram.com/_samikshyay_/',
+          linkedin: 'https://www.linkedin.com/in/samikshyaupadhyay/',
         }},
     {
       name: 'Mohit Rajbhandari',
       image : Mohit , 
       role: 'Frontend Developer',
       quote:
-        '',
+        "You have to live the way other's wont, so in time you can live the way other's can't.",
         socialLinks: {
-          github: '',
-          instagram: '',
-          linkedin: '',
+          github: 'https://github.com/RbMo7',
+          instagram: 'https://www.instagram.com/rb_mohit/',
+          linkedin: 'https://www.linkedin.com/in/mohit-rajbhandari-03a059234/',
         }},
     {
       name: 'Regal Adhikari',
@@ -315,26 +315,16 @@ export const teamData: TeamMember[] = [
       image: albina,
       role: 'Character and Background Design',
       quote:
-        '',
+        "I'm drawn to books, art, mixed media, lyricism and whimsy. I enjoy experimenting and believe good things take time.",
         socialLinks: {
           github: 'https://github.com/alberrrry',
           instagram: 'https://www.instagram.com/alberrrry/',
           linkedin: 'https://www.linkedin.com/in/albina-shrestha-75955b2a1/'
         }},
     {
-      name: 'Shreejan P. Karmacharya', 
-      role: 'Content Creator',
-      quote:
-        '',
-        socialLinks: {
-          github: '',
-          instagram: '',
-          linkedin: '',
-        }},
-    {
       name: 'Kshitiz Khanal',
       image: kshitiz,
-      role: '?????',
+      role: 'Sponsorship Team member',
       quote:
       '',
       socialLinks: {
