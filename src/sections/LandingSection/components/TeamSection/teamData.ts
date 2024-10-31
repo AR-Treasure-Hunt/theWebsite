@@ -187,20 +187,20 @@ export const teamData: TeamMember[] = [
       role: 'Content Creator',
       image: sumira,
       quote:
-        '',
+        'Bold, Brave, and unapologetically herself.',
         socialLinks: {
-          github: '',
+          github: 'https://github.com/SumiraMakaju',
           instagram: 'https://www.instagram.com/_mimi_su_?igsh=MTRjZnppY29taWdreg==',
-          linkedin: '',
+          linkedin: 'https://www.linkedin.com/in/sumira-makaju-460ba52b0/',
         }},
     {
-      name: 'Shreejan Karmacharya',
+      name: 'Shreejan Prasad Karmacharya',
       role: 'Social Media Manager',
       quote:
-        '',
+        "I'm a traveler and an observer, passionate about exploring new places and meeting diverse people. I don’t confine my life to boundaries; I let it flow wherever it takes me, embracing every adventure along the way.",
         socialLinks: {
           github: '',
-          instagram: '',
+          instagram: 'https://www.instagram.com/karmacharya_shreejan/',
           linkedin: '',
         }},
     {
@@ -243,20 +243,20 @@ export const teamData: TeamMember[] = [
       quote:
         '',
         socialLinks: {
-          github: '',
-          instagram: '',
-          linkedin: '',
+          github: 'https://github.com/Samikshyagithub',
+          instagram: 'https://www.instagram.com/_samikshyay_/',
+          linkedin: 'https://www.linkedin.com/in/samikshyaupadhyay/',
         }},
     {
       name: 'Mohit Rajbhandari',
       image : Mohit , 
       role: 'Frontend Developer',
       quote:
-        '',
+        "You have to live the way other's wont, so in time you can live the way other's can't.",
         socialLinks: {
-          github: '',
-          instagram: '',
-          linkedin: '',
+          github: 'https://github.com/RbMo7',
+          instagram: 'https://www.instagram.com/rb_mohit/',
+          linkedin: 'https://www.linkedin.com/in/mohit-rajbhandari-03a059234/',
         }},
     {
       name: 'Regal Adhikari',
@@ -315,26 +315,16 @@ export const teamData: TeamMember[] = [
       image: albina,
       role: 'Character and Background Design',
       quote:
-        '',
+        "I'm drawn to books, art, mixed media, lyricism and whimsy. I enjoy experimenting and believe good things take time.",
         socialLinks: {
           github: 'https://github.com/alberrrry',
           instagram: 'https://www.instagram.com/alberrrry/',
           linkedin: 'https://www.linkedin.com/in/albina-shrestha-75955b2a1/'
         }},
     {
-      name: 'Shreejan P. Karmacharya', 
-      role: 'Content Creator',
-      quote:
-        '',
-        socialLinks: {
-          github: '',
-          instagram: '',
-          linkedin: '',
-        }},
-    {
       name: 'Kshitiz Khanal',
       image: kshitiz,
-      role: '?????',
+      role: 'Sponsorship Team member',
       quote:
       '',
       socialLinks: {
