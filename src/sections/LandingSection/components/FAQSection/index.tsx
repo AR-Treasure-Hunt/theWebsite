@@ -15,7 +15,7 @@ const faqData: FAQItem[] = [
   {
     question: 'Can I participate as an individual or as a team?',
     answer:
-      'You can register as an individual (solo), with a friend (duo) or with a max of two friends (trio). Experts say that this game is best played as a trio!'
+      'You\'ll need a team of 3 to participate. '
   },
   {
     question: 'What is Augmented Reality?',
