@@ -15,7 +15,7 @@ export default function AboutSection() {
       <h1 className="text-4xl md:text-5xl lg:text-6xl mb-4">
         Wait, What is <span className="text-yellow-400">AR Treasure Hunt?</span>
       </h1>
-      <p className="mb-6 text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+      <p className="mb-6 text-xl text-almondine  sm:text-2xl md:text-3xl lg:text-4xl">
         To understand AR Treasure Hunt, let us first understand the basics.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -30,7 +30,7 @@ export default function AboutSection() {
               </span>
             </CardTitle>
           </CardHeader>
-          <CardContent className="text-lg font-rubik text-justify sm:text-lg md:text-xl text-white">
+          <CardContent className="text-lg font-rubik text-almondine  text-justify sm:text-lg md:text-xl ">
             {whatIsAR}
           </CardContent>
         </Card>
@@ -45,7 +45,7 @@ export default function AboutSection() {
               </span>
             </CardTitle>
           </CardHeader>
-          <CardContent className="text-lg font-rubik text-justify sm:text-lg md:text-xl text-white">
+          <CardContent className="text-lg font-rubik text-almondine  text-justify sm:text-lg md:text-xl">
             {treasureHuntDescription}
           </CardContent>
         </Card>
@@ -58,7 +58,7 @@ export default function AboutSection() {
             </span>
           </CardTitle>
         </CardHeader>
-        <CardContent className="text-lg font-rubik text-justify sm:text-lg md:text-xl text-white">
+        <CardContent className="text-lg text-almondine  font-rubik text-justify sm:text-lg md:text-xl ">
           {whatIsARTH}
         </CardContent>
       </Card>

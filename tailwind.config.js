@@ -9,7 +9,7 @@ export default {
 	  extend: {
 		fontFamily: {
 		  jersey: ['Jersey 10', 'sans-serif'],
-		  rubik: ['Rubik', 'sans-serif'],
+		  rubik: ['Nunito', 'sans-serif'],
 		},
 		screens: {
 		  sm: '640px',

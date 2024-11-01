@@ -58,7 +58,7 @@ const FAQItem: React.FC<FAQItem> = ({ question, answer }) => {
       </button>
       <div
         className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
-        <p className="pt-4 pb-2 text-white" style={{ fontSize: '20px' }}>
+        <p className="pt-4 pb-2 text-white font-rubik" style={{ fontSize: '20px' }}>
           {answer}
         </p>
       </div>
