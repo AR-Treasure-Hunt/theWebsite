@@ -3,9 +3,9 @@ import { City, NepalCity, ClickArea } from '@/components/Assets';
 
 export default function PastIterationSection() {
   const roundObj23 = [
-    { title: 'Preliminary', icon: ClickArea, description: 'A quiz-based round to test the participants\' knowledge on AR and the event itself.' },
-    { title: 'Escape the Building', icon: City , description: 'A physical round where participants have to solve puzzles and escape the building.' },
-    { title: 'AR Hunt', icon: NepalCity , description: 'A treasure hunt using AR technology to find virtual clues and solve puzzles.' }
+    { title: 'Preliminary', icon: ClickArea, description: 'In the first round, participants had to solve puzzles and riddles on the event website. These ranged from easy tasks like finding a hidden treasure location to more complex challenges.' },
+    { title: 'Escape the Building', icon: City , description: 'The second round was all about escaping from a mysterious virtual building. Participants had to solve puzzles and explore the rooms to find a way out.' },
+    { title: 'AR Hunt', icon: NepalCity , description: 'The final round was a physical challenge using an AR app. Only the top 5 teams from the earlier rounds got to compete in this exciting final stage.' }
   ];
 
   const detailsObj23 = {
@@ -15,12 +15,12 @@ export default function PastIterationSection() {
     participants: '500+',
     college: '80+',
     roundDetails:
-      'AR Treasure Hunt combines the excitement of a traditional treasure hunt with the immersive experience of Augmented Reality. Participants use their smartphones or AR devices to find virtual clues, solve puzzles, and interact with digital objects that are overlaid on real-world locations.'
+      'The AR Treasure Hunt 2023 is Nepal\'s largest and most innovative event, combining Augmented Reality technology with an exciting treasure hunt experience. Across multiple rounds, 223 individuals representing 91 teams tackle online riddles, solve immersive virtual puzzles, and compete in a final physical challenge using the event\'s AR app. This unique opportunity allows participants to discover digital treasures and explore new dimensions of engagement in a dynamic, augmented environment.'
   };
 
   const roundObj22 = [
-    { title: 'Preliminary', icon: ClickArea, description: 'A quiz-based round to test the participants\' knowledge on AR and the event itself.' },
-    { title: 'AR Hunt', icon: NepalCity , description: 'A treasure hunt using AR technology to find virtual clues and solve puzzles.' }
+    { title: 'Preliminary', icon: ClickArea, description: 'The initial online phase of the AR Treasure Hunt 2023 event, where participants had to solve a series of increasingly challenging clues hosted on the event\'s Discord server, with the top-performing teams moving on to the next round of the competition.' },
+    { title: 'AR Hunt', icon: NepalCity , description: 'The top 6 teams were then invited to the Kathmandu University premises for the physical treasure hunt, where they had to decipher clues provided by the AR app and safely acquire the treasures.' }
   ];
 
   const detailsObj22 = {

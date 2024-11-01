@@ -88,7 +88,7 @@ export default function IterationDetails({ year, detailsObj, roundObj }: Props) 
               <div className="bg-moussaka relative border-none rounded-lg h-52 p-4 z-10">
                 <h4 className="text-3xl tracking-wide mb-2 text-almondine z-10">{round.title}</h4>
                 <hr className="bg-almondine h-[2px]" />
-                <p className='font-rubik text-md tracking-wide'>
+                <p className='font-rubik text-md text-almondine tracking-wide'>
                 {round.description}
                 </p>
               </div>

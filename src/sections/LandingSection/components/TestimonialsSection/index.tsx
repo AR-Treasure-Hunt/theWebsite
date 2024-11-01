@@ -7,7 +7,7 @@ export default function TestimonialsSection() {
       <h1 className="text-5xl md:text-7xl mx-auto font-normal text-white">
         Let's hear from the <span className="text-gold">past participants</span>!
       </h1>
-      <div className="flex justify-around flex-wrap">
+      <div className="flex gap-8 justify-around flex-wrap">
         {TESTIMONIALS.map((testimonial) => (
           <TestimonialModal
             key={testimonial.id}
