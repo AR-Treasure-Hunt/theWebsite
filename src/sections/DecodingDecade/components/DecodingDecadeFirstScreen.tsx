@@ -16,7 +16,7 @@ const DecodingDecadeFirstScreen = ({ handleScreenChange }: DecodingDecadeFirstSc
   const [attempts, setAttempts] = useState(0);
 
   // API base URL - could move to environment variable
-  const API_BASE_URL = 'https://factorfive.onrender.com';
+  const API_BASE_URL = 'https://factorfive.vercel.app';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

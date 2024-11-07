@@ -14,7 +14,7 @@ const DecodingDecadeSecondScreen = () => {
   const [error, setError] = useState<string | null>(null);
   const [isImageLoading, setIsImageLoading] = useState(false);
 
-  const API_BASE_URL = 'https://factorfive.onrender.com';
+  const API_BASE_URL = 'https://factorfive.vercel.app';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
