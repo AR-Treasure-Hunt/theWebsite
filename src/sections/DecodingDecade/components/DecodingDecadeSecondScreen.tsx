@@ -14,7 +14,7 @@ const DecodingDecadeSecondScreen = () => {
   const [error, setError] = useState<string | null>(null);
   const [isImageLoading, setIsImageLoading] = useState(false);
 
-  const API_BASE_URL = 'http://127.0.0.1:8000';
+  const API_BASE_URL = 'https://factorfive.onrender.com';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -63,6 +63,7 @@ const DecodingDecadeSecondScreen = () => {
       setImageBlob(blob);
     } catch (error) {
       setError(error instanceof Error ? error.message : 'An unexpected error occurred');
+      console.log(error);
     } finally {
       setIsPending(false);
       setIsImageLoading(false);

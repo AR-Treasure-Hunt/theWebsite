@@ -16,7 +16,7 @@ const DecodingDecadeFirstScreen = ({ handleScreenChange }: DecodingDecadeFirstSc
   const [attempts, setAttempts] = useState(0);
 
   // API base URL - could move to environment variable
-  const API_BASE_URL = 'http://127.0.0.1:8000';
+  const API_BASE_URL = 'https://factorfive.onrender.com';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

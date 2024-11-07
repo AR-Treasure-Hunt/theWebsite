@@ -14,7 +14,7 @@ const DecodingDecadeLeaderboard = () => {
   useEffect(() => {
     const fetchTeams = async () => {
       try {
-        const response = await fetch('http://localhost:8000/teams');
+        const response = await fetch('https://factorfive.onrender.com/teams');
         if (!response.ok) {
           throw new Error('Failed to fetch leaderboard');
         }
