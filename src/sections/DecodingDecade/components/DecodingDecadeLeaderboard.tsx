@@ -59,20 +59,18 @@ const DecodingDecadeLeaderboard = () => {
           <div 
             key={rank}
             className={`
-              flex items-center space-x-3 p-3 rounded-lg
-              ${Number(rank) === 1 ? 'bg-yellow-50' : 'bg-gray-50'}
-              transition-colors duration-200 hover:bg-gray-100
+              flex items-center space-x-3 p-3 rounded-lg bg-gray-50 transition-colors duration-200 hover:bg-gray-100
             `}
           >
             <span 
               className={`
-                flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-gray-200'}
+                flex-shrink-0 text-gray-700 w-8 h-8 flex items-center justify-center rounded-full bg-gray-200'}
                 text-white font-semibold
               `}
             >
               {rank}
             </span>
-            <span className="text-gray-700 font-rubik font-medium">{team}</span>
+            <span className="text-gray-700 font-rubik font-bold">{team}</span>
           </div>
         ))}
         
