@@ -16,6 +16,7 @@ const DecodingDecadeLeaderboard = () => {
       try {
         const response = await fetch('https://factorfive.vercel.app/teams');
         if (!response.ok) {
+          
           throw new Error('Failed to fetch leaderboard');
         }
         const data = await response.json();
@@ -50,7 +51,7 @@ const DecodingDecadeLeaderboard = () => {
     <div className="bg-white rounded-lg shadow p-6 max-h-[400px] overflow-y-auto">
       <div className="flex items-center space-x-2 mb-4">
         <Trophy className="h-6 w-6 text-yellow-500" />
-        <h2 className="text-xl font-semibold text-gray-800">Team Rankings</h2>
+        <h2 className="text-[40px] font-semibold mx-auto text-gray-800">Team Rankings</h2>
       </div>
       
       <div className="space-y-2">
@@ -65,8 +66,7 @@ const DecodingDecadeLeaderboard = () => {
           >
             <span 
               className={`
-                flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full
-                ${Number(rank) === 1 ? 'bg-yellow-500' : 'bg-gray-200'}
+                flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-gray-200'}
                 text-white font-semibold
               `}
             >
