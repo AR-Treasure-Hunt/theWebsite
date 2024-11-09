@@ -65,7 +65,7 @@ const DecodingDecadeLeaderboard = () => {
             <span 
               className={`
                 flex-shrink-0 text-gray-700 w-8 h-8 flex items-center justify-center rounded-full bg-gray-200'}
-                text-white font-semibold
+                font-semibold
               `}
             >
               {rank}
