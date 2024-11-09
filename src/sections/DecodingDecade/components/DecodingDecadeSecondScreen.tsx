@@ -76,7 +76,6 @@ const DecodingDecadeSecondScreen = () => {
         }
         
         const errorData: ApiResponse = await response.json();
-        console.log(errorData);
         throw new Error(errorData.detail || 'Failed to get image');
       }
 
@@ -93,7 +92,6 @@ const DecodingDecadeSecondScreen = () => {
       setImageBlob(blob);
     } catch (error) {
       setError(error instanceof Error ? error.message : 'An unexpected error occurred');
-      console.log(error);
     } finally {
       setIsPending(false);
       setIsImageLoading(false);
