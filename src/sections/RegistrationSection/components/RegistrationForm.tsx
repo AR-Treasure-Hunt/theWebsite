@@ -198,7 +198,7 @@ export default function RegistrationForm() {
         <CardHeader>
           <CardTitle className="text-4xl tracking-wide font-bold">Registration</CardTitle>
           <CardDescription className="text-xl tracking-wide">
-            Complete all sections to register
+            Deadline Extended to 27th November
           </CardDescription>
         </CardHeader>
         <CardContent>
