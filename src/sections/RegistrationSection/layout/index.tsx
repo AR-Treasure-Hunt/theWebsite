@@ -1,4 +1,5 @@
 import RegistrationForm from '../components/RegistrationForm';
+import RegistrationClosed from '../components/RegistrationClosed';
 import { TeamStatusSection } from '../components/TeamStatus';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 
@@ -11,8 +12,10 @@ export default function RegistrationSection() {
                         <TabsTrigger value="registration" className="text-lg sm:text-2xl">Registration</TabsTrigger>
                         <TabsTrigger value="team-status" className="text-lg sm:text-2xl">Team Status</TabsTrigger>
                     </TabsList>
+                    <RegistrationClosed />
                     <TabsContent value="registration">
                         <RegistrationForm />
+                        
                     </TabsContent>
                     <TabsContent value="team-status">
                         <TeamStatusSection />
