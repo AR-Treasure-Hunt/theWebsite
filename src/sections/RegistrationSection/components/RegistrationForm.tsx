@@ -197,9 +197,9 @@ export default function RegistrationForm() {
       <Card className="w-full max-w-md mx-auto">
         <CardHeader>
           <CardTitle className="text-4xl tracking-wide font-bold">Registration</CardTitle>
-          <CardDescription className="text-xl tracking-wide">
+          {/* <CardDescription className="text-xl tracking-wide">
             Deadline Extended to 27th November
-          </CardDescription>
+          </CardDescription> */}
         </CardHeader>
         <CardContent>
           <FormProvider {...form}>
