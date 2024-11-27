@@ -60,7 +60,7 @@ export default function RegistrationForm() {
       phoneNumber: '',
       institution: '',
       socialMedia: '',
-      teamOption: 'create',
+      teamOption: 'join',
       teamName: ''
     }
   });

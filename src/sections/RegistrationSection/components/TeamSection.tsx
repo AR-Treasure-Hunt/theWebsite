@@ -26,11 +26,7 @@ export function TeamSection({ isDisabled }: TeamSectionProps) {
                 disabled={isDisabled}
                 className="flex flex-col space-y-2">
                 <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="create" id="create" />
-                  <Label htmlFor="create" className="text-lg">Create Team</Label>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="join" id="join" />
+                  <RadioGroupItem defaultChecked={true} value="join" id="join" />
                   <Label htmlFor="join" className="text-lg">Join Team</Label>
                 </div>
               </RadioGroup>
