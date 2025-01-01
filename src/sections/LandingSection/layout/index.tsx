@@ -4,7 +4,7 @@ import HeroSection from '../components/HeroSection';
 import PastIterationSection from '../components/PastIterationSection';
 import TeamSection from '../components/TeamSection';
 import TestimonialsSection from '../components/TestimonialsSection';
-
+import SponsorSection from '../components/SponsorSection';
 function LandingSection() {
   return (
     <>
@@ -14,6 +14,7 @@ function LandingSection() {
           <AboutSection />
           <PastIterationSection />
           <TestimonialsSection />
+          <SponsorSection />
           <TeamSection />
           <FAQSection />
         </div>
